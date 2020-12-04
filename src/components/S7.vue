@@ -7,6 +7,7 @@
       />
       <div class="spinner">
         <i class="fas fa-spinner"></i>
+  
       </div>
     </div>
 

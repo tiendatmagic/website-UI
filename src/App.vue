@@ -8,150 +8,150 @@
         type="text"
         id="myInput"
         v-on:keyup="myFunction"
-        placeholder="Search for names.."
-        title="Type in a name"
+        placeholder="Tìm kiếm nhanh"
+        title="Nhập tên ví dụ để tìm kiếm"
       />
 
       <div class="smain" id="smain">
-        <div class="sitem-lg-4">
-          <p>Form đăng nhập</p>
+        <div class="site sitem-lg-4">
+          <kbd>Form đăng nhập</kbd>
           <S1 />
         </div>
-        <div class="sitem-lg-8">
-          <p>Form đăng ký</p>
+        <div class="site sitem-lg-8">
+          <kbd>Form đăng ký</kbd>
           <S2 />
         </div>
 
-        <div class="sitem-md-4">
-          <p>Thanh bar</p>
+        <div class="site sitem-md-4">
+          <kbd>Thanh bar</kbd>
           <S3 />
         </div>
 
-        <div class="sitem-md-4">
-          <p>Hiệu ứng Input focus</p>
+        <div class="site sitem-md-4">
+          <kbd>Hiệu ứng Input focus</kbd>
           <S4 />
         </div>
 
-        <div class="sitem-md-4">
-          <p>Gradient Button</p>
+        <div class="site sitem-md-4">
+          <kbd>Gradient Button</kbd>
           <S5 />
         </div>
 
-        <div class="sitem-lg-6">
-          <p>Hình ảnh nhiều dạng</p>
+        <div class="site sitem-lg-6">
+          <kbd>Hình ảnh nhiều dạng</kbd>
           <S6 />
         </div>
-        <div class="sitem-lg-3 sitem-md-6 sitem-sm-6">
-          <p>Hiệu ứng xoay tròn</p>
+        <div class="site sitem-lg-3 sitem-md-6 sitem-sm-6">
+          <kbd>Hiệu ứng xoay tròn</kbd>
           <S7 />
         </div>
-        <div class="sitem-lg-3 sitem-md-6 sitem-sm-6">
-          <p>Hiệu ứng ping</p>
+        <div class="site sitem-lg-3 sitem-md-6 sitem-sm-6">
+          <kbd>Hiệu ứng ping</kbd>
           <S8 />
         </div>
-        <div class="sitem-md-3">
-          <p>Hiệu ứng button co dãn</p>
+        <div class="site sitem-md-3">
+          <kbd>Hiệu ứng button co dãn</kbd>
           <S9 />
         </div>
 
-        <div class="sitem-md-4">
-          <p>Bảng modal</p>
+        <div class="site sitem-md-4">
+          <kbd>Bảng modal</kbd>
           <S10 />
         </div>
 
-        <div class="sitem-md-3">
-          <p>Button mạng xã hội</p>
+        <div class="site sitem-md-3">
+          <kbd>Button mạng xã hội</kbd>
           <S11 />
         </div>
 
-        <div class="sitem-md-2">
-          <p>Button mạng xã hội 2</p>
+        <div class="site sitem-md-2">
+          <kbd>Button mạng xã hội 2</kbd>
           <S12 />
         </div>
 
-        <div class="sitem-md-3">
-          <p>Thanh bar loading</p>
+        <div class="site sitem-md-3">
+          <kbd>Thanh bar loading</kbd>
           <S13 />
         </div>
-        <div class="sitem-md-3">
-          <p>Chữ Gradient</p>
+        <div class="site sitem-md-3">
+          <kbd>Chữ Gradient</kbd>
           <S14 />
         </div>
-        <div class="sitem-md-4">
-          <p>Thẻ ATM Vietcombank</p>
+        <div class="site sitem-md-4">
+          <kbd>Thẻ ATM Vietcombank</kbd>
           <S15 />
         </div>
 
-        <div class="sitem-md-2">
-          <p>Chuông thông báo</p>
+        <div class="site sitem-md-2">
+          <kbd>Chuông thông báo</kbd>
           <S16 />
         </div>
 
-        <div class="sitem-lg-4 sitem-md-6">
-          <p>Form liên hệ</p>
+        <div class="site sitem-lg-4 sitem-md-6">
+          <kbd>Form liên hệ</kbd>
           <S17 />
         </div>
 
-        <div class="sitem-lg-3 sitem-md-6">
-          <p>Dropdown</p>
+        <div class="site sitem-lg-3 sitem-md-6">
+          <kbd>Dropdown</kbd>
           <S18 />
         </div>
 
-        <div class="sitem-lg-5 sitem-md-12">
-          <p>Danh sách sản phẩm</p>
+        <div class="site sitem-lg-5 sitem-md-12">
+          <kbd>Danh sách sản phẩm</kbd>
           <S19 />
         </div>
-        <div class="sitem-lg-3 sitem-md-6">
-          <p>Thẻ thông tin</p>
+        <div class="site sitem-lg-3 sitem-md-6">
+          <kbd>Thẻ thông tin</kbd>
           <S20 />
         </div>
-        <div class="sitem-lg-5 sitem-md-6">
-          <p>Đặt câu hỏi story Facebook</p>
+        <div class="site sitem-lg-5 sitem-md-6">
+          <kbd>Đặt câu hỏi story Facebook</kbd>
           <S21 />
         </div>
-        <div class="sitem-lg-4 sitem-md-6">
-          <p>Trang báo lỗi</p>
+        <div class="site sitem-lg-4 sitem-md-6">
+          <kbd>Trang báo lỗi</kbd>
           <S22 />
         </div>
-        <div class="sitem-lg-3 sitem-md-6">
-          <p>Nút phân trang</p>
+        <div class="site sitem-lg-3 sitem-md-6">
+          <kbd>Nút phân trang</kbd>
           <S23 />
         </div>
-        <div class="sitem-lg-4 sitem-md-6">
-          <p>Tùy chọn facebook</p>
+        <div class="site sitem-lg-4 sitem-md-6">
+          <kbd>Tùy chọn facebook</kbd>
           <S24 />
         </div>
-        <div class="sitem-lg-2 sitem-md-6">
-          <p>Hiệu ứng lắc lư</p>
+        <div class="site sitem-lg-2 sitem-md-6">
+          <kbd>Hiệu ứng lắc lư</kbd>
           <S25 />
         </div>
-        <div class="sitem-lg-3 sitem-md-12">
-          <p>Danh sách tag</p>
+        <div class="site sitem-lg-3 sitem-md-12">
+          <kbd>Danh sách tag</kbd>
           <S26 />
         </div>
 
-        <div class="sitem-lg-4 sitem-md-6">
-          <p>Form đăng nhập và icon</p>
+        <div class="site sitem-lg-4 sitem-md-6">
+          <kbd>Form đăng nhập và icon</kbd>
           <S27 />
         </div>
 
-        <div class="sitem-lg-3 sitem-md-12">
-          <p>Form nhập mật khẩu</p>
+        <div class="site sitem-lg-3 sitem-md-12">
+          <kbd>Form nhập mật khẩu</kbd>
           <S28 />
         </div>
 
-        <div class="sitem-lg-3 sitem-md-12">
-          <p>Danh sách tag</p>
+        <div class="site sitem-lg-3 sitem-md-12">
+          <kbd>Danh sách tag</kbd>
           <S29 />
         </div>
 
-        <div class="sitem-lg-3 sitem-md-12">
-          <p>Danh sách tag</p>
+        <div class="site sitem-lg-3 sitem-md-12">
+          <kbd>Danh sách tag</kbd>
           <S30 />
         </div>
 
-        <div class="sitem-lg-3 sitem-md-12">
-          <p>Danh sách tag</p>
+        <div class="site sitem-lg-3 sitem-md-12">
+          <kbd>Danh sách tag</kbd>
           <S31 />
         </div>
       </div>
@@ -250,7 +250,7 @@ export default {
       smain = document.getElementById("smain");
       div = smain.getElementsByTagName("div");
       for (i = 0; i < div.length; i++) {
-        td = div[i].getElementsByTagName("p")[0];
+        td = div[i].getElementsByTagName("kbd")[0];
         if (td) {
           txtValue = td.textContent || td.innerText;
           if (txtValue.toUpperCase().indexOf(filter) > -1) {
@@ -272,7 +272,7 @@ export default {
 
 ::-webkit-scrollbar-thumb {
   background: pink;
-  border-radius: 10px;
+  border-radius: 30px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -293,6 +293,10 @@ html {
 h1 {
   text-align: center;
   color: deeppink;
+}
+kbd {
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .buttonhtmlcss {
   display: flex;
@@ -319,13 +323,23 @@ h1 {
 }
 
 #myInput {
-  background-image: url("/css/searchicon.png");
+  background-image: url("https://www.w3schools.com/css/searchicon.png");
   background-position: 10px 10px;
   background-repeat: no-repeat;
   width: 100%;
   font-size: 16px;
-  padding: 12px 20px 12px 40px;
+  padding: 12px 20px 10px 40px;
   border: 1px solid #ddd;
-  margin-bottom: 12px;
+  border-radius: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  outline: none;
+  transition: 0.3s ease-out;
+}
+
+#myInput:focus {
+  border: 1px solid palevioletred;
+  box-shadow: 0px 0px 7px 0px palevioletred;
+  transition: 0.3s ease-out;
 }
 </style>
