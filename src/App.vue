@@ -130,22 +130,22 @@
           <S26 />
         </div>
 
-        <div class="site sitem-lg-4 sitem-md-6">
+        <div class="sitem-md-4">
           <kbd>Form đăng nhập và icon</kbd>
           <S27 />
         </div>
 
-        <div class="site sitem-lg-3 sitem-md-12">
+        <div class="sitem-md-4">
           <kbd>Form nhập mật khẩu</kbd>
           <S28 />
         </div>
 
-        <div class="site sitem-lg-3 sitem-md-12">
-          <kbd>Danh sách tag</kbd>
+        <div class="sitem-md-4">
+          <kbd>Danh sách sản phẩm</kbd>
           <S29 />
         </div>
 
-        <div class="site sitem-lg-3 sitem-md-12">
+        <div class="sitem-md-12">
           <kbd>Danh sách tag</kbd>
           <S30 />
         </div>
