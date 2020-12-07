@@ -130,27 +130,36 @@
           <S26 />
         </div>
 
-        <div class="sitem-md-4">
+        <div class="site sitem-lg-6 sitem-md-6">
           <kbd>Form đăng nhập và icon</kbd>
           <S27 />
         </div>
 
-        <div class="sitem-md-4">
+        <div class="site sitem-lg-6 sitem-md-6">
           <kbd>Form nhập mật khẩu</kbd>
           <S28 />
         </div>
 
-        <div class="sitem-md-4">
+        <div class="site sitem-md-4">
           <kbd>Danh sách sản phẩm</kbd>
           <S29 />
         </div>
 
-        <div class="sitem-md-12">
-          <kbd>Danh sách tag</kbd>
+        <div class="site sitem-md-4">
+          <kbd>Đồng hồ thời gian</kbd>
           <S30 />
         </div>
 
-        <div class="site sitem-lg-3 sitem-md-12">
+        <div class="site sitem-md-4">
+          <kbd>Đồng hồ thời gian</kbd>
+          <S30 />
+        </div>
+        <div class="site sitem-md-4">
+          <kbd>Đồng hồ thời gian</kbd>
+          <S30 />
+        </div>
+
+        <div class="site sitem-lg-3 sitem-md-2">
           <kbd>Danh sách tag</kbd>
           <S31 />
         </div>

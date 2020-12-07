@@ -100,7 +100,7 @@ export default {
   font-size: 23px;
   left: 30px;
   line-height: 35px;
-  width: 100%;
+
 }
 
 @media only screen and (max-width: 1500px) {
