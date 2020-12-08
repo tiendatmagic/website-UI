@@ -135,7 +135,7 @@ h1 {
 }
 
 .card-item:hover {
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 10px 40px rgba(116, 116, 116, 0.329);
   position: relative;
   bottom: 5px;
   transition: 0.2s ease-out;

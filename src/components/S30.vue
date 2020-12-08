@@ -2,12 +2,16 @@
   <div class="smainn">
     <br />
     <div id="s30">
+
+
+
+
     <div class="box">
 
 
         <div class="button-group">
 
-            <button class="start">Start</button>
+            <button class="start" ref="start">Start</button>
             <button class="pause">Pause</button>
         </div>
 
@@ -43,11 +47,72 @@
         </div>
     </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
+    <code style="display:none">
+        
+        var time;
+        var action = 1;
+        function timeplay() {
+            time = setInterval(function () {
+                var day = new Date();
+                document.getElementsByClassName("gio")[0].innerHTML = day.getHours();
+                document.getElementsByClassName("phut")[0].innerHTML = day.getMinutes();
+                document.getElementsByClassName("giay")[0].innerHTML = day.getSeconds();
+
+            }, 1000)
+        }
+
+
+        document.getElementsByClassName("start")[0].addEventListener("click", function () {
+
+            if (action === 0) {
+                timeplay();
+                document.getElementsByClassName("alert")[0].style.display = 'flex';
+                document.getElementsByClassName("alertt")[0].innerText = "Thời gian tiếp tục";
+
+                setTimeout(function () {
+                    document.getElementsByClassName("alert")[0].style.display = 'none';
+                }, 3000)
+                action = 1;
+            }
+        });
+
+        document.getElementsByClassName("pause")[0].addEventListener("click", function () {
+            clearInterval(time);
+
+            document.getElementsByClassName("alert")[0].style.display = 'flex';
+            document.getElementsByClassName("alertt")[0].innerText = "Thời gian dừng lại";
+
+            setTimeout(function () {
+                document.getElementsByClassName("alert")[0].style.display = 'none';
+
+
+
+            }, 3000)
+            action = 0;
+        });
+        timeplay();
+    </code>
 
     <div class="buttonhtmlcss">
       <button @click="html()" class="btn">
         <i class="fa fa-eye"></i> Xem HTML
+      </button>
+           <button @click="js()" class="btn">
+        <i class="fa fa-eye"></i> Xem Javascript
       </button>
       <button @click="css()" class="btn">
         <i class="fa fa-eye"></i> Xem CSS
@@ -59,7 +124,9 @@
 <script>
 
 export default {
+
   methods: {
+          
     html() {
       var a = document.getElementById("s30").innerHTML;
 
@@ -78,7 +145,21 @@ export default {
       document.getElementById("html").style.display = "none";
       document.getElementById("css").style.display = "block";
     },
+
+    js() {
+      var c = document.getElementsByTagName("code")[0].innerHTML;
+      document.getElementById("tcss").innerHTML = c;
+      document.getElementsByClassName("modal")[0].style.display = "block";
+
+      document.getElementById("html").style.display = "none";
+      document.getElementById("css").style.display = "block";
+    },
+
+
+
+
   },
+
 };
 </script>
 
