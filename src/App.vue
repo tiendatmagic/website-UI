@@ -151,8 +151,8 @@
         </div>
 
         <div class="site sitem-md-4">
-          <kbd>Đồng hồ thời gian</kbd>
-          <S30 />
+          <kbd>Form thêm thẻ thanh toán</kbd>
+          <S31 />
         </div>
         <div class="site sitem-md-4">
           <kbd>Đồng hồ thời gian</kbd>
