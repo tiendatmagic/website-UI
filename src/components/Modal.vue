@@ -146,10 +146,10 @@ h3 {
 }
 
 .alert-modal {
-  width: 30%;
+  width: 25%;
   margin: 0 auto;
   margin: 15px;
-
+  z-index: 10;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
@@ -200,7 +200,9 @@ h3 {
   font-size: 35px;
   color: #21a67a;
 }
-
+.fa-times {
+  font-size: 30px;
+}
 .alert-items b {
   color: #31343f;
   font-size: 20px;
