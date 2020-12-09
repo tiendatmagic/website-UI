@@ -159,26 +159,25 @@
           <S32 />
         </div>
 
-        <div class="site sitem-lg-3 sitem-md-2">
+      <div class="site sitem-md-6">
+          <kbd>Bảng thông báo cập nhật</kbd>
+          <S33 />
+        </div>
+
+        <div class="site sitem-lg-3 sitem-md-4">
           <kbd>Danh sách tag</kbd>
           <S33 />
         </div>
 
-<div class="site sitem-lg-3 sitem-md-2">
+        <div class="site sitem-lg-3 sitem-md-4">
+          <kbd>Danh sách tag</kbd>
+          <S33 />
+        </div>
+
+        <div class="site sitem-lg-3 sitem-md-4">
           <kbd>Danh sách tag</kbd>
           <S34 />
         </div>
-
-        <div class="site sitem-lg-3 sitem-md-2">
-          <kbd>Danh sách tag</kbd>
-          <S33 />
-        </div>
-
-        <div class="site sitem-lg-3 sitem-md-2">
-          <kbd>Danh sách tag</kbd>
-          <S33 />
-        </div>
-
       </div>
 
       <div class="smain">
