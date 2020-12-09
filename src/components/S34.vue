@@ -161,4 +161,8 @@ export default {
   font-size: 18px;
   width: 90%;
 }
+.alert-items i {
+  margin: 12px;
+  cursor: pointer;
+}
 </style>

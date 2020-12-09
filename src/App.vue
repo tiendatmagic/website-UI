@@ -154,12 +154,12 @@
           <kbd>Form thêm thẻ thanh toán</kbd>
           <S31 />
         </div>
-        <div class="site sitem-md-6">
+        <div class="site sitem-md-4">
           <kbd>Tải xuống</kbd>
           <S32 />
         </div>
 
-      <div class="site sitem-md-6">
+      <div class="site sitem-md-4">
           <kbd>Bảng thông báo cập nhật</kbd>
           <S33 />
         </div>
