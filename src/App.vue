@@ -164,17 +164,17 @@
           <S33 />
         </div>
 
-        <div class="site sitem-lg-3 sitem-md-4">
+        <div class="site sitem-lg-4 sitem-md-6">
+          <kbd>Các loại thanh cảnh báo </kbd>
+          <S34 />
+        </div>
+
+        <div class="site sitem-md-4">
           <kbd>Danh sách tag</kbd>
           <S33 />
         </div>
 
-        <div class="site sitem-lg-3 sitem-md-4">
-          <kbd>Danh sách tag</kbd>
-          <S33 />
-        </div>
-
-        <div class="site sitem-lg-3 sitem-md-4">
+        <div class="site sitem-md-4">
           <kbd>Danh sách tag</kbd>
           <S34 />
         </div>
