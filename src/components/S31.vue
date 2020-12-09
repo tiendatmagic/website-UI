@@ -67,7 +67,6 @@ export default {
 }
 
 .box {
-  margin-top: 30px;
   display: flex;
   justify-content: center;
 }
@@ -77,8 +76,8 @@ export default {
   height: 200px;
   border-radius: 60px 0px 60px 0px;
   background-image: linear-gradient(
-    rgba(121, 121, 121, 0.705),
-    rgba(172, 172, 172, 0.37)
+    rgba(255, 0, 255, 0.705),
+    rgb(252, 5, 128)
   );
   overflow: hidden;
 }
@@ -98,15 +97,17 @@ export default {
   display: inline-block;
   font-weight: bold;
   font-size: 30px;
-  padding: 3px;
+  padding: 5px;
+  border-radius: 10px;
   margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .itemss p {
   margin-top: 10px;
   font-size: 17px;
   letter-spacing: 2px;
-  color: rgb(3, 101, 139);
+  color: #fff;
   font-size: 22px;
 }
 

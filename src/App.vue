@@ -140,29 +140,45 @@
           <S28 />
         </div>
 
-        <div class="site sitem-md-4">
+        <div class="site sitem-lg-4 sitem-md-6">
           <kbd>Danh sách sản phẩm</kbd>
           <S29 />
         </div>
 
-        <div class="site sitem-md-4">
+        <div class="site sitem-lg-5 sitem-md-6">
           <kbd>Đồng hồ thời gian</kbd>
           <S30 />
         </div>
 
-        <div class="site sitem-md-4">
+        <div class="site sitem-lg-3 sitem-md-6">
           <kbd>Form thêm thẻ thanh toán</kbd>
           <S31 />
         </div>
-        <div class="site sitem-md-4">
-          <kbd>Đồng hồ thời gian</kbd>
-          <S30 />
+        <div class="site sitem-md-6">
+          <kbd>Tải xuống</kbd>
+          <S32 />
         </div>
 
         <div class="site sitem-lg-3 sitem-md-2">
           <kbd>Danh sách tag</kbd>
-          <S31 />
+          <S33 />
         </div>
+
+<div class="site sitem-lg-3 sitem-md-2">
+          <kbd>Danh sách tag</kbd>
+          <S34 />
+        </div>
+
+        <div class="site sitem-lg-3 sitem-md-2">
+          <kbd>Danh sách tag</kbd>
+          <S33 />
+        </div>
+
+        <div class="site sitem-lg-3 sitem-md-2">
+          <kbd>Danh sách tag</kbd>
+          <S33 />
+        </div>
+
       </div>
 
       <div class="smain">
@@ -211,6 +227,9 @@ import S28 from "./components/S28.vue";
 import S29 from "./components/S29.vue";
 import S30 from "./components/S30.vue";
 import S31 from "./components/S31.vue";
+import S32 from "./components/S32.vue";
+import S33 from "./components/S33.vue";
+import S34 from "./components/S34.vue";
 import Modal from "./components/Modal.vue";
 import Footer from "./components/Footer.vue";
 export default {
@@ -248,6 +267,9 @@ export default {
     S29,
     S30,
     S31,
+    S32,
+    S33,
+    S34,
     Modal,
     Footer,
   },

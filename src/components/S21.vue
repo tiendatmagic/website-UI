@@ -66,7 +66,7 @@ export default {
   background-color: #fff;
   margin: 0 auto;
   margin-top: 50px;
-  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.411);
 }
 
 .avatar {
