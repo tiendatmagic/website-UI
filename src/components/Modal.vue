@@ -19,13 +19,20 @@
         </div>
       </div>
     </div>
-    <div class="modal-notification">
-      <p>
-        Sao chép thành công
-        <i class="fas fa-check"></i>
-      </p>
-      <div class="close-noti" @click="closenoti()">
-        <i class="far fa-times-circle"></i>
+
+    <div class="alert-modal">
+      <div class="alert-items">
+        <div class="item1">
+          <i class="far fa-check-circle"></i>
+        </div>
+        <div class="item2">
+          <b>Thông báo</b>
+          <p>Sao chép thành công</p>
+        </div>
+
+        <div class="item3">
+          <i class="fas fa-times" @click="closenoti()"></i>
+        </div>
       </div>
     </div>
   </div>
@@ -40,8 +47,7 @@ export default {
       document.getElementsByClassName("modal")[0].style.display = "none";
     },
     closenoti() {
-      document.getElementsByClassName("modal-notification")[0].style.display =
-        "none";
+      document.getElementsByClassName("alert-modal")[0].style.display = "none";
     },
 
     copyhtml: function () {
@@ -60,14 +66,15 @@ export default {
 
     copysuccess: function () {
       document
-        .getElementsByClassName("modal-notification")[0]
+        .getElementsByClassName("alert-modal")[0]
         .setAttribute("style", "display: none");
       document
-        .getElementsByClassName("modal-notification")[0]
+        .getElementsByClassName("alert-modal")[0]
         .setAttribute("style", "display: flex");
+
       setTimeout(function () {
         document
-          .getElementsByClassName("modal-notification")[0]
+          .getElementsByClassName("alert-modal")[0]
           .setAttribute("style", "display: none");
       }, 5000);
     },
@@ -138,24 +145,75 @@ h3 {
   background-color: rgb(83, 0, 42);
 }
 
-.modal-notification {
-  display: none;
-  width: 20%;
-  height: 60px;
-  font-size: 120%;
-  position: fixed;
-  top: 30px;
-  right: 0px;
-  background-color: deeppink;
-  border-radius: 20px;
+.alert-modal {
+  width: 30%;
+  margin: 0 auto;
+  margin: 15px;
+
   justify-content: center;
   align-items: center;
-  color: #fff;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0px 5px 15px 0px rgba(110, 110, 110, 0.349);
   animation: run 0.4s ease-out;
-  z-index: 102;
+  position: fixed;
+  background-color: #fff;
+  display: none;
+  top: 0px;
+  right: 0px;
 }
-.modal-notification i.fa-check {
-  color: green;
+
+.alert-items {
+  width: 96%;
+  height: 80%;
+  display: flex;
+  line-height: 30px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.alert-modal:nth-child(1) .alert-items {
+  border-left: 7px solid #007bc2;
+}
+
+.alert-modal:nth-child(2) .alert-items {
+  border-left: 7px solid #f0a92e;
+}
+
+.alert-modal:nth-child(3) .alert-items {
+  border-left: 7px solid #21a67a;
+}
+
+.fa-info-circle {
+  font-size: 35px;
+  color: #007bc2;
+}
+
+.fa-exclamation-circle {
+  font-size: 35px;
+  color: #f0a92e;
+}
+
+.fa-check-circle {
+  font-size: 35px;
+  color: #21a67a;
+}
+
+.alert-items b {
+  color: #31343f;
+  font-size: 20px;
+}
+
+.alert-items p {
+  color: #8a8c92;
+  font-size: 18px;
+  width: 90%;
+}
+.alert-items i {
+  margin: 12px;
+  cursor: pointer;
 }
 
 @keyframes run {
@@ -187,40 +245,14 @@ h3 {
   transition: 0.5s ease-out;
 }
 
-.close-noti {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  font-size: 30px;
-  color: #fff;
-  position: relative;
-  top: 0px;
-  left: 5%;
-}
-
-.close-noti:hover {
-  cursor: pointer;
-  color: red;
-  transition: 0.5s ease-out;
-}
-
-@media only screen and (min-width: 1300px) {
-  .close-noti {
-    position: relative;
-    top: 0px;
-    left: 12%;
-  }
-}
 @media only screen and (max-width: 935px) {
   .modal-content {
     width: 75% !important;
   }
 
-  .modal-notification {
-    width: 30%;
+  .alert-modal {
+    width: 40%;
   }
-
   @keyframes run {
     from {
       width: 0%;
@@ -234,21 +266,26 @@ h3 {
 }
 
 @media only screen and (max-width: 635px) {
-  .modal-notification {
-    width: 50%;
-  }
   .modal-content {
     width: 80% !important;
+  }
+  .alert-modal {
+    width: 55%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .alert-modal {
+    width: 65%;
   }
 }
 
 @media only screen and (max-width: 400px) {
-  .modal-notification {
-    width: 70%;
-  }
-
   .modal-content {
     width: 85% !important;
+  }
+
+  .alert-modal {
+    width: 85%;
   }
 }
 </style>

@@ -164,7 +164,7 @@
           <S33 />
         </div>
 
-        <div class="site sitem-lg-4 sitem-md-6">
+        <div class="site sitem-lg-4 sitem-md-4">
           <kbd>Các loại thanh cảnh báo </kbd>
           <S34 />
         </div>

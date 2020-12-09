@@ -41,6 +41,7 @@
         </div>
 
         <div class="alert-item">
+
           <div class="alert-items">
             <div class="item1">
               <i class="far fa-check-circle"></i>
@@ -54,7 +55,9 @@
               <i class="fas fa-times"></i>
             </div>
           </div>
+
         </div>
+
       </div>
     </div>
 
@@ -102,7 +105,7 @@ export default {
 }
 
 .alert-item {
-  width: 100%;
+  width: 98%;
   margin: 0 auto;
   margin: 15px;
   display: flex;
