@@ -186,6 +186,7 @@ hr {
   font-weight: bold;
   letter-spacing: 1.2px;
   margin-left: 30px;
+  margin-right: 30px;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   align-items: center;
