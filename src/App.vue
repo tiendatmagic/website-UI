@@ -178,6 +178,14 @@
           <kbd>Bảng nhập số điện thoại</kbd>
           <S36 />
         </div>
+
+            <div class="site sitem-md-4">
+          <kbd>Tăng giảm số lượng</kbd>
+          <S37 />
+        </div>
+
+
+
       </div>
 
       <div class="smain">
@@ -231,6 +239,8 @@ import S33 from "./components/S33.vue";
 import S34 from "./components/S34.vue";
 import S35 from "./components/S35.vue";
 import S36 from "./components/S36.vue";
+import S37 from "./components/S37.vue";
+
 import Modal from "./components/Modal.vue";
 import Footer from "./components/Footer.vue";
 export default {
@@ -273,6 +283,7 @@ export default {
     S34,
     S35,
     S36,
+    S37,
     Modal,
     Footer,
   },
