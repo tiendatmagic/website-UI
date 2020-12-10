@@ -76,8 +76,10 @@ export default {
   height: 200px;
   border-radius: 60px 0px 60px 0px;
   background-image: linear-gradient(
-    rgba(255, 0, 255, 0.705),
-    rgb(252, 5, 128)
+    rgba(212, 0, 255, 0.705), 
+    rgba(255, 0, 255, 0.705),    
+    rgb(252, 5, 157),
+    rgb(255, 95, 95)
   );
   overflow: hidden;
 }

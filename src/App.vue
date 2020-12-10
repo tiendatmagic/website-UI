@@ -136,7 +136,7 @@
         </div>
 
         <div class="site sitem-lg-6 sitem-md-6">
-          <kbd>Form nhập mật khẩu</kbd>
+          <kbd>Bảng nhập mật khẩu</kbd>
           <S28 />
         </div>
 
@@ -154,7 +154,7 @@
           <kbd>Form thêm thẻ thanh toán</kbd>
           <S31 />
         </div>
-        <div class="site sitem-md-4">
+        <div class="site sitem-lg-4 sitem-md-6">
           <kbd>Tải xuống</kbd>
           <S32 />
         </div>
@@ -164,19 +164,19 @@
           <S33 />
         </div>
 
-        <div class="site sitem-lg-4 sitem-md-4">
+        <div class="site sitem-lg-4 sitem-md-8">
           <kbd>Các loại thanh cảnh báo </kbd>
           <S34 />
         </div>
 
         <div class="site sitem-md-4">
-          <kbd>Danh sách tag</kbd>
-          <S33 />
+          <kbd>Thông báo facebook</kbd>
+          <S35 />
         </div>
 
         <div class="site sitem-md-4">
-          <kbd>Danh sách tag</kbd>
-          <S34 />
+          <kbd>Bảng nhập số điện thoại</kbd>
+          <S36 />
         </div>
       </div>
 
@@ -229,6 +229,8 @@ import S31 from "./components/S31.vue";
 import S32 from "./components/S32.vue";
 import S33 from "./components/S33.vue";
 import S34 from "./components/S34.vue";
+import S35 from "./components/S35.vue";
+import S36 from "./components/S36.vue";
 import Modal from "./components/Modal.vue";
 import Footer from "./components/Footer.vue";
 export default {
@@ -269,6 +271,8 @@ export default {
     S32,
     S33,
     S34,
+    S35,
+    S36,
     Modal,
     Footer,
   },
