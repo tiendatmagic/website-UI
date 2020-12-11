@@ -187,6 +187,8 @@
 
 
       </div>
+<Love />
+
 
       <div class="smain">
         <div class="sitem">
@@ -241,6 +243,8 @@ import S35 from "./components/S35.vue";
 import S36 from "./components/S36.vue";
 import S37 from "./components/S37.vue";
 
+
+import Love from "./components/Love.vue";
 import Modal from "./components/Modal.vue";
 import Footer from "./components/Footer.vue";
 export default {
@@ -284,6 +288,7 @@ export default {
     S35,
     S36,
     S37,
+    Love,
     Modal,
     Footer,
   },
@@ -334,6 +339,7 @@ body,
 html {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 h1 {
   text-align: center;
