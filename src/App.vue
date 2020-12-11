@@ -187,6 +187,7 @@
 
 
       </div>
+      <Like />
 <Love />
 
 
@@ -244,6 +245,7 @@ import S36 from "./components/S36.vue";
 import S37 from "./components/S37.vue";
 
 
+import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";
 import Modal from "./components/Modal.vue";
 import Footer from "./components/Footer.vue";
@@ -288,6 +290,7 @@ export default {
     S35,
     S36,
     S37,
+    Like,
     Love,
     Modal,
     Footer,

@@ -1,13 +1,13 @@
 <template>
   <div class="smainn">
-    <div class="alllove">
-      <div class="alllovemain">
+    <div class="alllike">
+      <div class="alllikemain">
         <div class="number">
-          <p>{{ nlove }}</p>
+          <p>{{ nlike }}</p>
         </div>
 
-        <div class="love" @click="numlove">
-          <i class="fas fa-heart"></i>
+        <div class="like" @click="numlike">
+    <i class="fas fa-thumbs-up"></i>
         </div>
       </div>
     </div>
@@ -18,40 +18,40 @@
 export default {
   data() {
     return {
-      nlove: 0,
+      nlike: 0,
     };
   },
   methods: {
-    numlove: function () {
-      this.nlove += 1;
+    numlike: function () {
+      this.nlike += 1;
       this.$http
         .put(
-          "https://tiendatmagic-chat.firebaseio.com/numberlove/love.json",
-          this.nlove
+          "https://tiendatmagic-chat.firebaseio.com/numberlike/like.json",
+          this.nlike
         )
         .then();
     },
 
-    getnumlove() {
+    getnumlike() {
       this.$http
-        .get("https://tiendatmagic-chat.firebaseio.com/numberlove.json")
+        .get("https://tiendatmagic-chat.firebaseio.com/numberlike.json")
         .then((response) => {
           return response.json();
         })
-        .then((datalove) => {
-          const newLove = [];
-          for (let keylove in datalove) {
-            newLove.push(datalove[keylove]);
+        .then((datalike) => {
+          const newlike = [];
+          for (let keylike in datalike) {
+            newlike.push(datalike[keylike]);
           }
-          this.nlove = Number(newLove);
+          this.nlike = Number(newlike);
         });
     },
   },
 
   created: function () {
-    this.getnumlove();
+    this.getnumlike();
     setInterval(() => {
-      this.getnumlove();
+      this.getnumlike();
     }, 10000);
 
     
@@ -61,28 +61,28 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.alllove {
+.alllike {
   width: 50px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
-  bottom: 30px;
+  bottom: 130px;
   right: 20px;
 }
 
-.love {
+.like {
   width: 50px;
   height: 50px;
   background-color: rgba(255, 255, 255, 0.877);
   box-shadow: 0px 5px 10px 0px rgba(131, 131, 131, 0.349);
-  display: flex;
+  display: flex;  
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   font-size: 23px;
-  color: rgb(255, 0, 0);
+  color: rgb(0, 162, 255);
   cursor: pointer;
 }
 
