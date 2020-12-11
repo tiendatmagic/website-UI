@@ -130,6 +130,7 @@ body {
   padding-left: 30px;
   padding-right: 30px;
   box-shadow: 0px 5px 15px 0px rgba(110, 110, 110, 0.349);
+
 }
 
 .title h2 {
@@ -146,7 +147,7 @@ body {
 .search input {
   width: 100%;
   height: 50px;
-  background-color: rgb(233, 233, 233);
+  background-color: rgb(247, 247, 247);
   border: none;
   border-radius: 20px;
   outline: none;

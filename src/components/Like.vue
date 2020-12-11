@@ -26,7 +26,7 @@ export default {
       this.nlike += 1;
       this.$http
         .put(
-          "https://tiendatmagic-chat.firebaseio.com/numberlike/like.json",
+          "https://tiendatmagicuidesign-default-rtdb.firebaseio.com/numberlike/like.json",
           this.nlike
         )
         .then();
@@ -34,7 +34,7 @@ export default {
 
     getnumlike() {
       this.$http
-        .get("https://tiendatmagic-chat.firebaseio.com/numberlike.json")
+        .get("https://tiendatmagicuidesign-default-rtdb.firebaseio.com/numberlike.json")
         .then((response) => {
           return response.json();
         })

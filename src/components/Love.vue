@@ -26,7 +26,7 @@ export default {
       this.nlove += 1;
       this.$http
         .put(
-          "https://tiendatmagic-chat.firebaseio.com/numberlove/love.json",
+          "https://tiendatmagicuidesign-default-rtdb.firebaseio.com/numberlove/love.json",
           this.nlove
         )
         .then();
@@ -34,7 +34,7 @@ export default {
 
     getnumlove() {
       this.$http
-        .get("https://tiendatmagic-chat.firebaseio.com/numberlove.json")
+        .get("https://tiendatmagicuidesign-default-rtdb.firebaseio.com/numberlove.json")
         .then((response) => {
           return response.json();
         })
