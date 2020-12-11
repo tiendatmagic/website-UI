@@ -48,13 +48,11 @@ export default {
     },
   },
 
-  created: function () {
+  mounted: function () {
     this.getnumlove();
     setInterval(() => {
       this.getnumlove();
     }, 10000);
-
-    
   },
 };
 </script>
@@ -62,7 +60,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .alllove {
-  width: 50px;
+  
   text-align: center;
   display: flex;
   justify-content: center;
@@ -70,11 +68,12 @@ export default {
   position: fixed;
   bottom: 30px;
   right: 20px;
+  z-index: 9;
 }
 
 .love {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   background-color: rgba(255, 255, 255, 0.877);
   box-shadow: 0px 5px 10px 0px rgba(131, 131, 131, 0.349);
   display: flex;
@@ -84,6 +83,7 @@ export default {
   font-size: 23px;
   color: rgb(255, 0, 0);
   cursor: pointer;
+  z-index: 999999;
 }
 
 .number p {
