@@ -69,11 +69,12 @@ export default {
 .box {
   display: flex;
   justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .box-item {
   width: 100%;
-  height: 200px;
+  padding: 10px;
   border-radius: 60px 0px 60px 0px;
   background-image: linear-gradient(
     rgba(212, 0, 255, 0.705), 
