@@ -80,8 +80,8 @@ export default {
 }
 
 .card-atm {
-  width: 90%;
-  max-width: 400px;
+  width: 100%;
+  max-width: 430px;
   height: 250px;
   margin: 0 auto;
   border-radius: 20px;

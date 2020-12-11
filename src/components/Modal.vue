@@ -17,6 +17,15 @@
           <button @click="copycss()">Copy css</button>
           <textarea readonly id="tcss" name=""></textarea>
         </div>
+
+        <div id="javascript">
+          <h3>Code Javascript</h3>
+          <button @click="copyjavascript()">Copy Javascript</button>
+          <textarea readonly id="tjs" name=""></textarea>
+        </div>
+
+
+
       </div>
     </div>
 
@@ -59,6 +68,13 @@ export default {
 
     copycss: function () {
       var copyText = document.getElementById("tcss");
+      copyText.select();
+      document.execCommand("copy");
+      this.copysuccess();
+    },
+
+     copyjavascript: function () {
+      var copyText = document.getElementById("tjs");
       copyText.select();
       document.execCommand("copy");
       this.copysuccess();
