@@ -159,7 +159,7 @@
           <S32 />
         </div>
 
-      <div class="site sitem-md-4">
+        <div class="site sitem-md-4">
           <kbd>Bảng thông báo cập nhật</kbd>
           <S33 />
         </div>
@@ -179,17 +179,13 @@
           <S36 />
         </div>
 
-            <div class="site sitem-md-4">
+        <div class="site sitem-md-4">
           <kbd>Tăng giảm số lượng</kbd>
           <S37 />
         </div>
-
-
-
       </div>
       <Like />
-<Love />
-
+      <Love />
 
       <div class="smain">
         <div class="sitem">
@@ -243,7 +239,6 @@ import S34 from "./components/S34.vue";
 import S35 from "./components/S35.vue";
 import S36 from "./components/S36.vue";
 import S37 from "./components/S37.vue";
-
 
 import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";

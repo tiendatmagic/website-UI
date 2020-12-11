@@ -18,7 +18,7 @@
           <textarea readonly id="tcss" name=""></textarea>
         </div>
 
-        <div id="javascript">
+        <div id="javascript" style="display:none">
           <h3>Code Javascript</h3>
           <button @click="copyjavascript()">Copy Javascript</button>
           <textarea readonly id="tjs" name=""></textarea>

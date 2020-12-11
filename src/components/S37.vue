@@ -61,6 +61,7 @@ export default {
 
 .amount {
   width: 100%;
+  max-width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;

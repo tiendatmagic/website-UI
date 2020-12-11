@@ -100,7 +100,7 @@ export default {
 
       document.getElementById("html").style.display = "none";
       document.getElementById("css").style.display = "none";
-            document.getElementById("javascript").style.display = 'block';
+      document.getElementById("javascript").style.display = "block";
     },
   },
 };
