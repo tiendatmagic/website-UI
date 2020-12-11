@@ -1,6 +1,6 @@
 <template>
   <div class="smainn">
-    <div class="alllove">
+    <div class="alllove" style="display:none;">
       <div class="alllovemain">
         <div class="number">
           <p>{{ nlove }}</p>
@@ -18,7 +18,7 @@
 export default {
   data() {
     return {
-      nlove: 0,
+      nlove: null,
     };
   },
   methods: {
@@ -49,6 +49,9 @@ export default {
   },
 
   mounted: function () {
+    setTimeout(() => {
+      document.getElementsByClassName("alllove")[0].style.display='block';
+    },3000)
     this.getnumlove();
     setInterval(() => {
       this.getnumlove();

@@ -1,6 +1,6 @@
 <template>
   <div class="smainn">
-    <div class="alllike">
+    <div class="alllike" style="display:none">
       <div class="alllikemain">
         <div class="number">
           <p>{{ nlike }}</p>
@@ -18,7 +18,7 @@
 export default {
   data() {
     return {
-      nlike: 0,
+      nlike: null,
     };
   },
   methods: {
@@ -49,6 +49,10 @@ export default {
   },
 
   mounted: function () {
+     setTimeout(() => {
+      document.getElementsByClassName("alllike")[0].style.display='block';
+    },3000)
+    
     this.getnumlike();
     setInterval(() => {
       this.getnumlike();

@@ -169,20 +169,32 @@
           <S34 />
         </div>
 
-        <div class="site sitem-md-4">
+        <div class="site sitem-md-6 sitem-lg-3">
           <kbd>Thông báo facebook</kbd>
           <S35 />
         </div>
 
-        <div class="site sitem-md-4">
+        <div class="site sitem-md-6 sitem-lg-4">
           <kbd>Bảng nhập số điện thoại</kbd>
           <S36 />
         </div>
 
-        <div class="site sitem-md-4">
+        <div class="site sitem-md-4 sitem-lg-2">
           <kbd>Tăng giảm số lượng</kbd>
           <S37 />
         </div>
+
+        <div class="site sitem-md-8 sitem-lg-3">
+          <kbd>Chiếc hộp thần bí :))</kbd>
+          <S38 />
+        </div>
+
+    <div class="site sitem-md-8 sitem-lg-3">
+          <kbd>Danh sách thứ</kbd>
+          <S39 />
+        </div>
+
+
       </div>
       <Like />
       <Love />
@@ -239,7 +251,8 @@ import S34 from "./components/S34.vue";
 import S35 from "./components/S35.vue";
 import S36 from "./components/S36.vue";
 import S37 from "./components/S37.vue";
-
+import S38 from "./components/S38.vue";
+import S39 from "./components/S39.vue";
 import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";
 import Modal from "./components/Modal.vue";
@@ -285,6 +298,8 @@ export default {
     S35,
     S36,
     S37,
+    S38,
+    S39,
     Like,
     Love,
     Modal,
