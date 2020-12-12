@@ -6,11 +6,258 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
 
+        body {
+            margin: 7px;
+        }
+
+        .page {
+            width: 400px;
+            background-color: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header-item {
+            width: 92%;
+            height: 90%;
+            background-color: #3F8CFF;
+            border-radius: 15px;
+            padding: 20px;
+            color: #fff;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .main-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .info {
+            width: 92%;
+            height: 90%;
+            display: grid;
+            grid-template-columns: auto auto;
+            border: 0.1px solid rgba(177, 177, 177, 0.473);
+            border-radius: 20px;
+            overflow: hidden;
+
+        }
+
+        .info-item {
+            width: 100%;
+            height: 100%;
+            border: 0.1px solid rgba(177, 177, 177, 0.473);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            line-height: 50px;
+        }
+
+        .info-items {
+            width: 100%;
+            height: 100%;
+        }
+
+
+
+
+        .icon {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+        }
+
+        .icon p {
+            font-size: 20px;
+            margin-left: 10px;
+        }
+
+        .icon i {
+            padding: 6px;
+            border-radius: 50%;
+            font-size: 10px;
+            color: #fff;
+        }
+
+        .info-item:nth-child(1) .info-items .icon i {
+            background-color: #6C5DD3;
+
+        }
+
+        .info-item:nth-child(2) .info-items .icon i {
+            background-color: #FFA2C0;
+
+        }
+
+        .info-item:nth-child(3) .info-items .icon i {
+            background-color: #3F8CFF;
+
+        }
+
+        .info-item:nth-child(4) .info-items .icon i {
+            background-color: #FF9D7F;
+
+        }
+
+
+
+
+        .number {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .process {
+            width: 100%;
+            height: 5px;
+        }
+
+        .info-item:nth-child(1) .info-items .process {
+            background-color: #6C5DD3;
+
+        }
+
+        .info-item:nth-child(2) .info-items .process {
+            background-color: #FFA2C0;
+
+        }
+
+        .info-item:nth-child(3) .info-items .process {
+            background-color: #3F8CFF;
+
+        }
+
+        .info-item:nth-child(4) .info-items .process {
+            background-color: #FF9D7F;
+
+        }
     </style>
 </head>
 
 <body>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css" />
+
+    <div class="page">
+        <div class="header">
+            <div class="header-item">
+                <div class="title">
+                    <b>Trang Tiến Đạt Magic</b>
+                </div>
+
+                <div class="img">
+                    <!-- <img src="https://raw.githubusercontent.com/tiendatmagic/website-UI/master/src/img/aILP3CD.png" alt=""> -->
+                </div>
+            </div>
+
+        </div>
+        <div class="main-info">
+
+
+            <div class="info">
+                <div class="info-item">
+                    <div class="info-items">
+
+
+                        <div class="icon">
+
+                            <i class="far fa-eye"></i>
+                            <p> Viewers</p>
+
+                        </div>
+
+                        <div class="number">
+                            <p> 98K </p>
+                        </div>
+
+                        <div class="process">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-items">
+
+
+                        <div class="icon">
+
+                            <i class="fas fa-fan"></i>
+                            <p> Followers</p>
+
+                        </div>
+
+                        <div class="number">
+                            <p> 1m </p>
+                        </div>
+
+                        <div class="process">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-items">
+
+
+                        <div class="icon">
+
+                            <i class="fas fa-ad"></i>
+                            <p> Ads</p>
+
+                        </div>
+
+                        <div class="number">
+                            <p> 27$ </p>
+                        </div>
+
+                        <div class="process">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-items">
+
+
+                        <div class="icon">
+
+                            <i class="fas fa-comment-dots"></i>
+                            <p> Videos</p>
+
+                        </div>
+
+                        <div class="number">
+                            <p> 16 </p>
+                        </div>
+
+                        <div class="process">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
 </body>
 
 </html>
