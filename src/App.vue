@@ -205,9 +205,16 @@
         </div>
 
         <div class="site sitem-md-8">
-          <kbd> Lịch hẹn</kbd>
+          <kbd> Bài viết story facebook</kbd>
           <S42 />
         </div>
+
+        <div class="site sitem-md-4">
+          <kbd> Bảng thống kê fanpage </kbd>
+          <S43 />
+        </div>
+
+
       </div>
       <Like />
       <Love />
@@ -269,6 +276,8 @@ import S39 from "./components/S39.vue";
 import S40 from "./components/S40.vue";
 import S41 from "./components/S41.vue";
 import S42 from "./components/S42.vue";
+import S43 from "./components/S43.vue";
+
 
 import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";
@@ -320,6 +329,7 @@ export default {
     S40,
     S41,
     S42,
+    S43,
     Like,
     Love,
     Modal,

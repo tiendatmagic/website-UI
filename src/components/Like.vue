@@ -45,6 +45,7 @@ export default {
           }
           this.nlike = Number(newlike);
         });
+        
     },
   },
 
@@ -56,7 +57,7 @@ export default {
     this.getnumlike();
     setInterval(() => {
       this.getnumlike();
-    }, 10000);
+    }, 3000);
   },
 };
 </script>

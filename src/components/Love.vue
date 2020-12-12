@@ -55,7 +55,7 @@ export default {
     this.getnumlove();
     setInterval(() => {
       this.getnumlove();
-    }, 10000);
+    }, 3000);
   },
 };
 </script>
