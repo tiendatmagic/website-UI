@@ -2,111 +2,113 @@
   <div class="smainn">
     <br />
     <div id="s42">
-   
-   
-   
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css" />
+      <link
+        rel="stylesheet"
+        href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css"
+      />
 
-    <div class="box">
+      <div class="box">
         <div class="title">
-            <b>Story facebook</b>
+          <b>Story facebook</b>
         </div>
 
         <div class="main">
-
-            <div class="people">
-                <div class="add">
-                    <i class="fas fa-plus"></i>
-                </div>
-
-                <div class="name">
-                    <p>Add notes </p>
-                </div>
+          <div class="people">
+            <div class="add">
+              <i class="fas fa-plus"></i>
             </div>
 
-            <div class="people">
-                <div class="icon">
-                    <div class="round">
-                        <i class="fas fa-chess-knight"></i>
-                    </div>
-                </div>
-                <div class="img">
-                    <img src="https://raw.githubusercontent.com/tiendatmagic/website-UI/master/src/img/aILP3CD.png"
-                        alt="">
-                </div>
+            <div class="name">
+              <p>Add notes</p>
+            </div>
+          </div>
 
-                <div class="name">
-                    <p>Tiến Đạt</p>
-                </div>
-                <div class="time">
-                    <p>14m ago</p>
-                </div>
+          <div class="people">
+            <div class="icon">
+              <div class="round">
+                <i class="fas fa-chess-knight"></i>
+              </div>
+            </div>
+            <div class="img">
+              <img
+                src="https://raw.githubusercontent.com/tiendatmagic/website-UI/master/src/img/aILP3CD.png"
+                alt=""
+              />
             </div>
 
-            <div class="people">
-                <div class="icon">
-                    <div class="round">
-                        <i class="fas fa-play-circle"></i>
-                    </div>
-                </div>
+            <div class="name">
+              <p>Tiến Đạt</p>
+            </div>
+            <div class="time">
+              <p>14m ago</p>
+            </div>
+          </div>
 
-                <div class="img">
-                    <img src="https://raw.githubusercontent.com/tiendatmagic/website-UI/master/src/img/aILP3CD.png"
-                        alt="">
-                </div>
-
-                <div class="name">
-                    <p>Tiến Đạt</p>
-                </div>
-                <div class="time">
-                    <p>14m ago</p>
-                </div>
+          <div class="people">
+            <div class="icon">
+              <div class="round">
+                <i class="fas fa-play-circle"></i>
+              </div>
             </div>
 
-            <div class="people">
-                <div class="icon">
-                    <div class="round">
-                        <i class="fab fa-instagram"></i>
-                    </div>
-                </div>
-                <div class="img">
-                    <img src="https://raw.githubusercontent.com/tiendatmagic/website-UI/master/src/img/aILP3CD.png"
-                        alt="">
-                </div>
-
-                <div class="name">
-                    <p>Tiến Đạt</p>
-                </div>
-                <div class="time">
-                    <p>14m ago</p>
-                </div>
+            <div class="img">
+              <img
+                src="https://raw.githubusercontent.com/tiendatmagic/website-UI/master/src/img/aILP3CD.png"
+                alt=""
+              />
             </div>
 
-            <div class="people">
-                <div class="icon">
-                    <div class="round">
-                        <i class="fab fa-youtube"></i>
-                    </div>
-                </div>
-                <div class="img">
-                    <img src="https://raw.githubusercontent.com/tiendatmagic/website-UI/master/src/img/aILP3CD.png"
-                        alt="">
-                </div>
+            <div class="name">
+              <p>Tiến Đạt</p>
+            </div>
+            <div class="time">
+              <p>14m ago</p>
+            </div>
+          </div>
 
-                <div class="name">
-                    <p>Tiến Đạt</p>
-                </div>
-                <div class="time">
-                    <p>14m ago</p>
-                </div>
+          <div class="people">
+            <div class="icon">
+              <div class="round">
+                <i class="fab fa-instagram"></i>
+              </div>
+            </div>
+            <div class="img">
+              <img
+                src="https://raw.githubusercontent.com/tiendatmagic/website-UI/master/src/img/aILP3CD.png"
+                alt=""
+              />
             </div>
 
+            <div class="name">
+              <p>Tiến Đạt</p>
+            </div>
+            <div class="time">
+              <p>14m ago</p>
+            </div>
+          </div>
+
+          <div class="people">
+            <div class="icon">
+              <div class="round">
+                <i class="fab fa-youtube"></i>
+              </div>
+            </div>
+            <div class="img">
+              <img
+                src="https://raw.githubusercontent.com/tiendatmagic/website-UI/master/src/img/aILP3CD.png"
+                alt=""
+              />
+            </div>
+
+            <div class="name">
+              <p>Tiến Đạt</p>
+            </div>
+            <div class="time">
+              <p>14m ago</p>
+            </div>
+          </div>
         </div>
-
-    </div>
-
-
-
+      </div>
     </div>
 
     <div class="buttonhtmlcss">
@@ -146,119 +148,121 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-        * {
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-        }
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 
-        .box {
-            width: 100%;
-            max-width: 800px;
-            border-radius: 20px;
-            padding: 20px;
-            font-family: Arial, Helvetica, sans-serif;
-            background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.795), rgba(255, 255, 255, 0.37));
-        }
+.box {
+  width: 100%;
+  border-radius: 20px;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(
+    to right,
+    #fff,
+    rgba(255, 255, 255, 0.795),
+    rgba(255, 255, 255, 0.37)
+  );
+  
+}
 
-        .title {
-            font-size: 20px;
-        }
+.title {
+  font-size: 20px;
+}
 
-        .main {
-            display: flex;
-            flex-wrap: wrap;
-            margin-top: 20px;
-            justify-content: space-around;
-
-        }
-
-        .people {
-            word-wrap: break-word;
-            text-align: center;
-            padding: 30px;
-            cursor: pointer;
-            position: relative;
-            transition: 0.3s ease-out;
-        }
-
-        .people:hover {
-            background-color: rgb(255, 255, 255);
-            box-shadow: -15px 10px 40px rgba(119, 119, 119, 0.288);
-            border-radius: 16px;
-            transition: 0.3s ease-out;
-        }
+.main {
+  display: flex;
+  justify-content: space-around;
 
 
-        .people img {
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
-            border: 2px solid #695ACF;
-            border-radius: 50%;
-            padding: 5px;
-        }
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
 
-        .people .name {
-            font-size: 17px;
-            font-weight: bold;
-            width: 80%;
-            margin: 0 auto;
-            margin-top: 10px;
-        }
+.people {
+  width: 125px;
+  word-wrap: break-word;
+  text-align: center;
+  padding: 30px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s ease-out;
+}
 
-        .people .time {
-            color: gray;
-            font-size: 15px;
-            margin-top: 10px;
-        }
+.people:hover {
+  background-color: rgb(255, 255, 255);
+  box-shadow: -15px 10px 40px rgba(119, 119, 119, 0.288);
+  border-radius: 16px;
+  transition: 0.3s ease-out;
+}
 
-        .people .add {
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
-            background-color: #695ACF;
-            margin: 0 auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+.people img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid #695acf;
+  border-radius: 50%;
+  padding: 5px;
+}
 
-        .people .add i {
-            color: rgba(255, 255, 255, 0.849);
-            font-size: 25px;
-        }
+.people .name {
+  font-size: 17px;
+  font-weight: bold;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
 
-        .people .icon .round {
-            width: 30px;
-            height: 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50%;
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            color: #fff;
-            
-        }
+.people .time {
+  color: gray;
+  font-size: 15px;
+  margin-top: 10px;
+}
 
-        .people:nth-child(2) .icon .round {
-            background-color: rgb(128, 255, 0);
-         
-        }
+.people .add {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #695acf;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-        .people:nth-child(3) .icon .round {
-            background-color: rgb(255, 103, 103);
-        }
+.people .add i {
+  color: rgba(255, 255, 255, 0.849);
+  font-size: 25px;
+}
 
-        .people:nth-child(4) .icon .round {
-            background-color: rgb(0, 198, 224);
-        }
+.people .icon .round {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+}
 
-        .people:nth-child(5) .icon .round {
-            background-color: rgb(255, 121, 44);
-        }
+.people:nth-child(2) .icon .round {
+  background-color: rgb(128, 255, 0);
+}
 
+.people:nth-child(3) .icon .round {
+  background-color: rgb(255, 103, 103);
+}
 
+.people:nth-child(4) .icon .round {
+  background-color: rgb(0, 198, 224);
+}
+
+.people:nth-child(5) .icon .round {
+  background-color: rgb(255, 121, 44);
+}
 </style>
