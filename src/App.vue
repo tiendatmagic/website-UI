@@ -204,12 +204,10 @@
           <S41 />
         </div>
 
-   <div class="site sitem-md-8">
+        <div class="site sitem-md-8">
           <kbd> Lịch hẹn</kbd>
           <S42 />
         </div>
-
-
       </div>
       <Like />
       <Love />
@@ -271,8 +269,6 @@ import S39 from "./components/S39.vue";
 import S40 from "./components/S40.vue";
 import S41 from "./components/S41.vue";
 import S42 from "./components/S42.vue";
-
-
 
 import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";
