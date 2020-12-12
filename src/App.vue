@@ -209,7 +209,7 @@
           <S42 />
         </div>
 
-        <div class="site sitem-md-4">
+        <div class="site sitem-lg-4 sitem-md-5">
           <kbd> Bảng thống kê fanpage </kbd>
           <S43 />
         </div>

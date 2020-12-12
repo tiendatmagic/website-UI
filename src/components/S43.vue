@@ -149,6 +149,7 @@ export default {
   background-color: #3f8cff;
   border-radius: 15px;
   padding: 20px;
+
   color: #fff;
   font-size: 20px;
   text-align: center;
@@ -208,7 +209,6 @@ export default {
   border: 0.1px solid rgba(177, 177, 177, 0.473);
   border-radius: 20px;
   overflow: hidden;
-
 }
 
 .info-item {
@@ -218,13 +218,12 @@ export default {
   display: flex;
   align-items: center;
   line-height: 50px;
- 
-
 }
 
 .info-items {
- margin: 0 auto;
- text-align: center;
+  padding: 20px;
+  text-align: center;
+  position: relative;
 }
 
 .icon {
