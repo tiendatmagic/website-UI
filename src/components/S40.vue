@@ -122,8 +122,7 @@ body {
 
 .box-group {
   width: 100%;
-  /* height: 250px; */
-  background-color: rgba(255, 255, 255, 0.336);
+  background-color: rgba(255, 255, 255, 0.534);
   border-radius: 20px;
   font-family: Arial, Helvetica, sans-serif;
   padding: 20px;
@@ -173,13 +172,32 @@ body {
   justify-content: space-around;
   margin-top: 20px;
   flex-wrap: wrap;
+
 }
 
 .people-item {
   display: flex;
-  width: 60px;
   word-break: break-all;
-  margin: 10px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: 0.3s ease-out;
+}
+
+.people-item:hover {
+  background-color: #8566ff;
+    box-shadow: -10px 5px 17px 0px rgba(0, 0, 0, 0.171);
+  
+}
+
+.people-item:hover .people p { 
+  color: #fff;
+}
+
+.people {
+  text-align: center;
 }
 
 .people img {

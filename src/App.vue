@@ -189,20 +189,27 @@
           <S38 />
         </div>
 
-        <div class="site sitem-md-6 sitem-lg-7">
+        <div class="site sitem-md-6 sitem-lg-6">
           <kbd>Danh sách các thứ</kbd>
           <S39 />
         </div>
 
-        <div class="site sitem-md-6 sitem-lg-5">
+        <div class="site sitem-md-6 sitem-lg-6">
           <kbd>Danh sách người thân</kbd>
           <S40 />
         </div>
 
-        <div class="site sitem-md-6 sitem-lg-5">
+        <div class="site sitem-md-4">
           <kbd> Lịch hẹn</kbd>
           <S41 />
         </div>
+
+   <div class="site sitem-md-8">
+          <kbd> Lịch hẹn</kbd>
+          <S42 />
+        </div>
+
+
       </div>
       <Like />
       <Love />
@@ -263,6 +270,9 @@ import S38 from "./components/S38.vue";
 import S39 from "./components/S39.vue";
 import S40 from "./components/S40.vue";
 import S41 from "./components/S41.vue";
+import S42 from "./components/S42.vue";
+
+
 
 import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";
@@ -313,6 +323,7 @@ export default {
     S39,
     S40,
     S41,
+    S42,
     Like,
     Love,
     Modal,
