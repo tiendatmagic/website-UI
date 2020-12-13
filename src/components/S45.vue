@@ -179,6 +179,7 @@ export default {
     .main .check input {
       width: 30px;
       height: 30px;
+      cursor: pointer;
 
     }
 
