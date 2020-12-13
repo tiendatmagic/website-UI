@@ -209,17 +209,20 @@
           <S42 />
         </div>
 
-        <div class="site sitem-lg-4 sitem-md-5">
+        <div class="site sitem-lg-4 sitem-md-6">
           <kbd> Bảng thống kê fanpage </kbd>
           <S43 />
         </div>
 
-   <div class="site sitem-lg-4 sitem-md-5">
+        <div class="site sitem-lg-4 sitem-md-6">
           <kbd> Form đăng nhập trong suốt </kbd>
           <S44 />
         </div>
 
-
+        <div class="site sitem-lg-4 sitem-md-6">
+          <kbd> Chọn tài khoản thanh toán </kbd>
+          <S45 />
+        </div>
       </div>
       <Like />
       <Love />
@@ -283,6 +286,7 @@ import S41 from "./components/S41.vue";
 import S42 from "./components/S42.vue";
 import S43 from "./components/S43.vue";
 import S44 from "./components/S44.vue";
+import S45 from "./components/S45.vue";
 
 import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";
@@ -336,6 +340,7 @@ export default {
     S42,
     S43,
     S44,
+    S45,
     Like,
     Love,
     Modal,
