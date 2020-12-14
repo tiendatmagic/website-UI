@@ -223,6 +223,12 @@
           <kbd> Chọn tài khoản thanh toán </kbd>
           <S45 />
         </div>
+
+        <div class="site sitem-lg-5 sitem-md-4">
+          <kbd> Chọn gói sử dụng </kbd>
+          <S46 />
+        </div>
+
       </div>
       <Like />
       <Love />
@@ -287,6 +293,8 @@ import S42 from "./components/S42.vue";
 import S43 from "./components/S43.vue";
 import S44 from "./components/S44.vue";
 import S45 from "./components/S45.vue";
+import S46 from "./components/S46.vue";
+
 
 import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";
@@ -341,6 +349,7 @@ export default {
     S43,
     S44,
     S45,
+    S46,
     Like,
     Love,
     Modal,

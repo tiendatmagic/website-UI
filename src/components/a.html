@@ -12,70 +12,113 @@
       box-sizing: border-box;
     }
 
-    body {
-      margin: 20px;
-    }
-
-    .package {
-      width: 250px;
-      height: 350px;
+    h1 {
+      font-size: 40px;
+      text-align: center;
+      font-weight: 100;
+      color: #ff0bb6;
       position: relative;
-      padding: 10px;
-      border: 2px solid blue;
+    }
+
+    .form {
+      width: 90%;
+      margin: 0 auto;
       border-radius: 20px;
+      background-color: #e6e6e6;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.637);
     }
 
-    .circle {
-      position: absolute;
-      top: -15px;
-      right: -15px;
-      padding: 10px;
-      background-color: blue;
-      color: #fff;
-      border-radius: 50%;
-
+    form {
+      width: 100%;
+      margin: 0 auto;
+      padding: 30px;
     }
 
-    .header {
-      display: flex;
-
+    .form-control {
+      text-align: left;
+      width: 100%;
+      height: 60px;
+      border-radius: 14px;
+      outline: none;      
+      border: none;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      text-indent: 60px;
+      font-size: 17px;
+      transition: 0.3s ease-out;
+      background-color: #dde1e7;
+      box-shadow: inset 2px 2px 2px #babecc,
+      inset -3px -3px 8px #fff;
     }
 
-    .header .logo {
-      padding: 10px;
-      width: 40px;
-      height: 40px;
+    button.login {
+      width: 70%;
+      height: 60px;
+
+      border: none;
+      outline: none;
+      border-radius: 30px;
+      margin: 0 auto;
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: rgb(0, 185, 231);
-      margin-left: 10px;
-      margin-right: 20px;
-      border-radius: 10px;
-      color: #fff;
-    }
-
-    .title {
-      font-size: 20px;
-    }
-
-    .main {
-      margin: 20px;
-      line-height: 40px;
-      font-size: 20px;
-    }
-
-    .button button {
-      width: 100%;
-      height: 40px;
-      background-color: rgb(75, 75, 255);
-      border-radius: 30px;
-      color: #fff;
-      outline: none;
-      border: none;
+      color: #000;
       cursor: pointer;
+      transition: 0.3s ease-out;
+      background-color: #dde1e7;
+      box-shadow: inset 2px 2px 2px #babecc,
+      inset -3px 6px 8px #fff;
+    } 
+
+    button span {
+      font-size: 19px;
+    }
+
+    .form-group i {
+      position: relative;
+      bottom: 55px;
+      left: 20px;
+      font-size: 30px;
+      pointer-events: none;
+    }
+
+    p {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    a.qmk {
+      text-decoration: none;
+      color: royalblue;
+    }
+
+    a.qmk:hover {
+      text-decoration: underline;
+    }
+
+    button.createaccount {
+      width: 70%;
+      height: 60px;
+      background-color: #36a420;
+      border: none;
+      outline: none;
+      border-radius: 20px;
       margin: 0 auto;
-      font-size: 17px;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: rgb(245, 245, 245);
+      cursor: pointer;
+      transition: 0.3s ease-out;
+    }
+
+    button.createaccount:hover {
+      background-color: #1ba500;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.514);
+      transition: 0.3s ease-out;
     }
   </style>
 </head>
@@ -83,48 +126,30 @@
 <body>
 
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css" />
-
-  <div class="package-group">
-    <div class="package">
-      <div class="circle">
-        <i class="fas fa-star"></i>
+  <div class="form">
+    <form action="javscript:voi(0);">
+      <h1>Đăng nhập</h1>
+      <div class="form-group">
+        <div><label for="email"> Email </label></div>
+        <div>
+          <input type="email" name="email" id="email" placeholder="vd: tiendatmagic@email.com" class="form-control" />
+        </div>
+        <i class="far fa-envelope"></i>
       </div>
-
-      <div class="header">
-        <div class="logo">
-
-          <i class="fas fa-star"></i>
+      <div class="form-group">
+        <div><label for="password">Mật khẩu</label></div>
+        <div>
+          <input type="password" name="password" id="password" placeholder="" class="form-control" />
         </div>
-        <div class="title">
-          <b>Simple Package</b>
-          <p>Rp 50.0000</p>
-        </div>
-
-
+        <i class="fas fa-lock"></i>
       </div>
+      <button class="login"><span>Đăng nhập</span></button>
+      <p>
+        <a href="#" class="qmk"> Quên mật khẩu </a>
+      </p>
 
-      <div class="main">
-        <div class="selectedcheck">
-          <input type="checkbox" name="package"> 14 Gb Internet
-        </div>
-
-        <div class="selectedcheck">
-          <input type="checkbox" name="package"> 14 Gb Internet
-        </div>
-
-        <div class="selectedcheck">
-          <input type="checkbox" name="package"> 14 Gb Internet
-        </div>
-
-      </div>
-
-      <div class="button">
-        <button> Selected </button>
-      </div>
-
-    </div>
+    </form>
   </div>
-
 </body>
 
 </html>
