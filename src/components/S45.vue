@@ -5,6 +5,7 @@
    
    
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css" />
+  
   <div class="box-group">
     <div class="box">
       <div class="title">
