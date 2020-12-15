@@ -159,7 +159,7 @@ export default {
   width: 40px;
   height: 40px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background-color: rgb(0, 185, 231);
   margin-left: 10px;
