@@ -25,7 +25,7 @@ export default {
 
       document.getElementById("thtml").innerHTML = a;
       document.getElementsByClassName("modal")[0].style.display = "block";
-      
+
       document.getElementById("html").style.display = "block";
       document.getElementById("css").style.display = "none";
       // document.getElementsByTagName("style")[0].classList.add("abc");
@@ -34,7 +34,7 @@ export default {
       var b = document.getElementsByTagName("style")[5].innerHTML;
       document.getElementById("tcss").innerHTML = b;
       document.getElementsByClassName("modal")[0].style.display = "block";
-      
+
       document.getElementById("html").style.display = "none";
       document.getElementById("css").style.display = "block";
     },
@@ -59,20 +59,17 @@ export default {
   border: none;
   margin: 5px;
   cursor: pointer;
-  
 }
 .button1 {
-  transition: 5s ease-out;
   background-image: linear-gradient(to top, purple, hotpink);
 }
 
 .button1:hover {
-   transition: 5s ease-out;
+ 
   background-image: linear-gradient(to bottom, purple, hotpink);
 }
 
 .button2 {
-  transition: 0.25s ease-out;
   background-image: linear-gradient(
     to right,
     rgb(255, 0, 0),
@@ -91,7 +88,6 @@ export default {
 }
 
 .button3 {
-  transition: 0.25s ease-out;
   background-image: linear-gradient(150deg, deeppink, pink);
 }
 
