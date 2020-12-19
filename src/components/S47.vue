@@ -2,9 +2,6 @@
   <div class="smainn">
     <br />
     <div id="s47">
-
-
-
       <link
         rel="stylesheet"
         href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css"
@@ -115,8 +112,6 @@
           </form>
         </div>
       </div>
-
-      
     </div>
 
     <div class="buttonhtmlcss">
@@ -166,7 +161,7 @@ export default {
   width: 100%;
   overflow: hidden;
   background-color: #f1f1f1;
-  border-radius: 20px;
+  border-radius: 30px;
 
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -256,10 +251,10 @@ export default {
 .formcard {
   width: 100%;
   margin-top: 20px;
-  margin-bottom: 20px;
   border-radius: 30px;
   background-color: #fff;
   padding: 20px;
+  
 }
 
 .form-input h5 {
@@ -271,9 +266,7 @@ export default {
   height: 40px;
   margin-top: 5px;
   margin-bottom: 20px;
-
   background-color: transparent;
-
   border: none;
   border-top: none;
   border-left: none;
@@ -315,6 +308,7 @@ export default {
 
 .form-footer {
   border-top: 1px solid gray;
+  
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 15px;
