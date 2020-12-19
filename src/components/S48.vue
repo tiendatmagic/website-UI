@@ -1,7 +1,17 @@
 <template>
   <div class="smainn">
     <br />
-    <div id="s47">
+    <div id="s48">
+
+
+
+
+  <div class="magic">
+    <h1>Tôi là Tiến Đạt Magic</h1>
+  </div>
+
+
+
 
 
     </div>
@@ -21,7 +31,7 @@
 export default {
   methods: {
     html() {
-      var a = document.getElementById("s46").innerHTML;
+      var a = document.getElementById("s48").innerHTML;
 
       document.getElementById("thtml").innerHTML = a;
       document.getElementsByClassName("modal")[0].style.display = "block";
@@ -30,7 +40,7 @@ export default {
       document.getElementById("css").style.display = "none";
     },
     css() {
-      var b = document.getElementsByTagName("style")[46].innerHTML;
+      var b = document.getElementsByTagName("style")[48].innerHTML;
       document.getElementById("tcss").innerHTML = b;
       document.getElementsByClassName("modal")[0].style.display = "block";
 
@@ -43,5 +53,38 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+
+
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+    .magic {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+
+    .magic h1 {
+      font-size: 2rem;
+      white-space: nowrap;
+      color: hotpink;
+      overflow: hidden;
+      border-right: 2px solid orangered;
+      animation: type  2s infinite;
+    }
+
+    @keyframes type {
+      from {
+        width: 0px;
+      }
+
+      to {
+        width: 60%;
+      }
+    }
 
 </style>

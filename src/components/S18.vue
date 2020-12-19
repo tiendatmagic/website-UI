@@ -2,39 +2,41 @@
   <div class="smainn">
     <br />
     <div id="s18">
-      <link
-        rel="stylesheet"
-        href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css"
-      />
-      <div class="dropdown">
-        <div class="dropdown-button">
-          <ul>
-            <li>
-              <p>Rê chuột vào đây</p>
 
-              <i class="fa fa-caret-down dropdown__caret"></i>
-            </li>
-          </ul>
-        </div>
 
-        <div class="dropdown-list">
-          <div class="triangle"></div>
-          <ul class="dropdown">
-            <li>
-              <p>HTML</p>
-              <i class="fab fa-affiliatetheme"></i>
-            </li>
-            <li>
-              <p>CSS</p>
-              <i class="fab fa-algolia"></i>
-            </li>
-            <li>
-              <p>JAVASCRIPT</p>
-              <i class="fas fa-ambulance"></i>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css" />
+  <div class="dropdown">
+    <div class="dropdown-button">
+      <ul>
+        <li>
+          <p>Rê chuột vào đây</p>
+
+          <i class="fa fa-caret-down dropdown__caret"></i>
+        </li>
+      </ul>
+    </div>
+
+    <div class="dropdown-list">
+      <ul class="dropdown">
+        <li class="triangle">
+          <p>HTML</p>
+          <i class="fab fa-html5"></i>
+        </li>
+        <li>
+          <p>CSS</p>
+          <i class="fab fa-css3-alt"></i>
+        </li>
+        <li>
+          <p>JAVASCRIPT</p>
+          <i class="fab fa-js-square"></i>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+
     </div>
     <div class="buttonhtmlcss">
       <button @click="html()" class="btn">
@@ -74,80 +76,93 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-div.dropdown {
-  width: 90%;
-  margin: 0 auto;
-  position: relative;
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-div.dropdown li {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  height: 58px;
-  background-color: hotpink;
-  width: 100%;
-  display: flex;
-  cursor: pointer;
-  justify-content: space-between;
-  padding-left: 30px;
-  padding-right: 30px;
-  align-items: center;
-  transition: 0.3s ease-out;
-  color: #fff;
-}
+    div.dropdown {
+      width: 90%;
+      margin: 0 auto;
+      position: relative;
+    }
 
-.dropdown-button li {
-  border-radius: 10px;
-}
+    div.dropdown li {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      height: 58px;
+      background-color: hotpink;
+      width: 100%;
+      display: flex;
+      cursor: pointer;
+      justify-content: space-between;
+      padding-left: 30px;
+      padding-right: 30px;
+      align-items: center;
+      transition: 0.3s ease-out;
+      color: #fff;
+    }
 
-div.dropdown:hover div.dropdown-list {
-  display: block;
-}
+    .dropdown-button li {
+      border-radius: 10px;
+    }
 
-div.dropdown-list {
-  display: none;
-  position: absolute;
-  right: 0px;
-  width: 90%;
-  z-index: 1;
-}
+    div.dropdown:hover div.dropdown-list {
+      display: block;
+    }
 
-ul.dropdown {
-  width: 100%;
-  filter: brightness(100%);
-}
+    div.dropdown-list {
+      display: none;
+      position: absolute;
+      right: 0px;
+      width: 90%;
+      z-index: 1;
+    }
 
-ul.dropdown li:nth-child(1) {
-  border-radius: 10px 10px 0px 0px;
-}
+    ul.dropdown {
+      width: 100%;
+      filter: brightness(100%);
+    }
 
-ul.dropdown li:nth-last-child(1) {
-  border-radius: 0px 0px 10px 10px;
-}
+    ul.dropdown li:nth-child(1) {
+      border-radius: 10px 10px 0px 0px;
+    }
 
-ul.dropdown li:hover {
-  filter: brightness(85%);
-  transition: 1s ease-out;
-}
+    ul.dropdown li:nth-last-child(1) {
+      border-radius: 0px 0px 10px 10px;
+    }
 
-.triangle {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin-top: 10px;
-  position: relative;
-  top: 5px;
-  left: 30px;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  border-bottom: 25px solid hotpink;
-}
+    ul.dropdown li:hover {
+      filter: brightness(85%);
+      transition: 1s ease-out;
+    }
+
+    ul.dropdown i {
+      font-size: 30px;
+    }
+
+    li.triangle {
+      margin-top: 30px;
+      position: relative;
+    }
+
+    li.triangle::before {
+      content: "";
+      position: absolute;
+      top: -40px;
+      left: 30px;
+      width: 0px;
+      height: 0px;
+      background-color: transparent;
+      border-top: 20px solid transparent;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-bottom: 20px solid hotpink;
+    }
+
+    
 </style>

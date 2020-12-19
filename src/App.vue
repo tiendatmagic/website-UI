@@ -233,6 +233,17 @@
           <kbd> Thanh toán thẻ Mastercard </kbd>
           <S47 />
         </div>
+
+         <div class="site sitem-lg-5 sitem-md-5">
+          <kbd> Hiệu ứng gõ chữ  </kbd>
+          <S48 />
+        </div>
+
+
+        <div class="site sitem-lg-5 sitem-md-5">
+          <kbd> Cảm xúc facebook </kbd>
+          <S49 />
+        </div>
       </div>
       <Like />
       <Love />
@@ -299,6 +310,11 @@ import S44 from "./components/S44.vue";
 import S45 from "./components/S45.vue";
 import S46 from "./components/S46.vue";
 import S47 from "./components/S47.vue";
+import S48 from "./components/S48.vue";
+import S49 from "./components/S49.vue";
+
+
+
 
 import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";
@@ -355,6 +371,8 @@ export default {
     S45,
     S46,
     S47,
+    S48,
+    S49,
     Like,
     Love,
     Modal,
