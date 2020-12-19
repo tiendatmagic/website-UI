@@ -1,9 +1,61 @@
 <template>
   <div class="smainn">
     <br />
-    <div id="s47">
+    <div id="s49">
+      <div class="react-facebook">
+        <div class="list">
+          <div class="list-icon">
+            <div class="icon">
+              <div class="name">
+                <p>Thích</p>
+              </div>
+              <img src="../img/react1.png" alt="" />
+            </div>
 
+            <div class="icon">
+              <div class="name">
+                <p>Yêu thích</p>
+              </div>
+              <img src="../img/react2.png" alt="" />
+            </div>
 
+            <div class="icon">
+              <div class="name">
+                <p>Thương thương</p>
+              </div>
+              <img src="../img/react3.png" alt="" />
+            </div>
+
+            <div class="icon">
+              <div class="name">
+                <p>Haha</p>
+              </div>
+              <img src="../img/react4.png" alt="" />
+            </div>
+
+            <div class="icon">
+              <div class="name">
+                <p>Wow</p>
+              </div>
+              <img src="../img/react5.png" alt="" />
+            </div>
+
+            <div class="icon">
+              <div class="name">
+                <p>Buồn</p>
+              </div>
+              <img src="../img/react6.png" alt="" />
+            </div>
+
+            <div class="icon">
+              <div class="name">
+                <p>Phẫn nộ</p>
+              </div>
+              <img src="../img/react7.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="buttonhtmlcss">
@@ -43,5 +95,55 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 
+.react-facebook {
+  width: 100%;
+
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 5px;
+  position: relative;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.26);
+}
+
+.list {
+  position: relative;
+}
+
+.list-icon {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+}
+
+.icon {
+  /* background-color: saddlebrown; */
+  cursor: pointer;
+  transition: 0.4s ease-out;
+}
+
+.icon:hover {
+  transform: translateY(-40%);
+  transition: 0.4s ease-out;
+}
+
+.icon:hover .name {
+  opacity: 1;
+}
+
+.icon .name {
+  opacity: 0;
+  position: absolute;
+  top: -40px;
+}
+
+.icon img {
+  width: 50px;
+}
 </style>

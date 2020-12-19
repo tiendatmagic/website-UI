@@ -83,7 +83,7 @@ export default {
       }
 
       to {
-        width: 60%;
+        width: 100%;
       }
     }
 

@@ -224,17 +224,17 @@
           <S45 />
         </div>
 
-        <div class="site sitem-lg-7 sitem-md-7">
+        <div class="site sitem-lg-5 sitem-md-4">
           <kbd> Chọn gói sử dụng </kbd>
           <S46 />
         </div>
 
-        <div class="site sitem-lg-5 sitem-md-5">
+        <div class="site sitem-lg-4 sitem-md-4">
           <kbd> Thanh toán thẻ Mastercard </kbd>
           <S47 />
         </div>
 
-         <div class="site sitem-lg-5 sitem-md-5">
+         <div class="site sitem-lg-3 sitem-md-3">
           <kbd> Hiệu ứng gõ chữ  </kbd>
           <S48 />
         </div>
