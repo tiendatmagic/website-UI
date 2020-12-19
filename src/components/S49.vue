@@ -9,49 +9,49 @@
               <div class="name">
                 <p>Thích</p>
               </div>
-              <img src="../img/react1.png" alt="" />
+              <img src="https://raw.githubusercontent.com/tiendatmagic/website-UI/master/src/img/react1.png" alt="" />
             </div>
 
             <div class="icon">
               <div class="name">
                 <p>Yêu thích</p>
               </div>
-              <img src="../img/react2.png" alt="" />
+              <img src="https://raw.githubusercontent.com/tiendatmagic/website-UI/master/src/img/react2.png" alt="" />
             </div>
 
             <div class="icon">
               <div class="name">
                 <p>Thương thương</p>
               </div>
-              <img src="../img/react3.png" alt="" />
+              <img src="https://raw.githubusercontent.com/tiendatmagic/website-UI/master/src/img/react3.png" alt="" />
             </div>
 
             <div class="icon">
               <div class="name">
                 <p>Haha</p>
               </div>
-              <img src="../img/react4.png" alt="" />
+              <img src="https://raw.githubusercontent.com/tiendatmagic/website-UI/master/src/img/react4.png" alt="" />
             </div>
 
             <div class="icon">
               <div class="name">
                 <p>Wow</p>
               </div>
-              <img src="../img/react5.png" alt="" />
+              <img src="https://raw.githubusercontent.com/tiendatmagic/website-UI/master/src/img/react5.png" alt="" />
             </div>
 
             <div class="icon">
               <div class="name">
                 <p>Buồn</p>
               </div>
-              <img src="../img/react6.png" alt="" />
+              <img src="https://raw.githubusercontent.com/tiendatmagic/website-UI/master/src/img/react6.png" alt="" />
             </div>
 
             <div class="icon">
               <div class="name">
                 <p>Phẫn nộ</p>
               </div>
-              <img src="../img/react7.png" alt="" />
+              <img src="https://raw.githubusercontent.com/tiendatmagic/website-UI/master/src/img/react7.png" alt="" />
             </div>
           </div>
         </div>
