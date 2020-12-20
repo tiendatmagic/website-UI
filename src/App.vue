@@ -245,7 +245,7 @@
         </div>
 
         <div class="site sitem-lg-5 sitem-md-5">
-          <kbd> Cảm xúc facebook </kbd>
+          <kbd> Thông tin thẻ sản phẩm </kbd>
           <S50 />
         </div>
 

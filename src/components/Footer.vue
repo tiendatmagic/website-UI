@@ -1,6 +1,6 @@
 <template>
   <div class="smainn">
-    <div id="s7">
+    <div id="footer">
       <p>
         © {{ year }} Copyright by Tiendatmagic - All Rights Reserved | Designed by
         Tiendatmagic
