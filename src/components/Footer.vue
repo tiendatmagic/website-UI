@@ -2,7 +2,7 @@
   <div class="smainn">
     <div id="s7">
       <p>
-        © 2020 Copyright by Tiendatmagic - All Rights Reserved | Designed by
+        © {{ year }} Copyright by Tiendatmagic - All Rights Reserved | Designed by
         Tiendatmagic
       </p>
       <p class="text-danger text-d">
@@ -18,6 +18,11 @@
 
 <script>
 export default {
+  data() {
+    return {
+      year: new Date().getFullYear(),
+    }
+  },
   methods: {
     html() {
       var a = document.getElementById("s7").innerHTML;

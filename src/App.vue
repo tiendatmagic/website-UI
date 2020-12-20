@@ -200,7 +200,7 @@
         </div>
 
         <div class="site sitem-md-4">
-          <kbd> Story facebook</kbd>
+          <kbd> Hiển thị lịch hẹn thời gian  </kbd>
           <S41 />
         </div>
 
@@ -234,16 +234,22 @@
           <S47 />
         </div>
 
-         <div class="site sitem-lg-3 sitem-md-3">
-          <kbd> Hiệu ứng gõ chữ  </kbd>
+        <div class="site sitem-lg-3 sitem-md-3">
+          <kbd> Hiệu ứng gõ chữ </kbd>
           <S48 />
         </div>
-
 
         <div class="site sitem-lg-5 sitem-md-5">
           <kbd> Cảm xúc facebook </kbd>
           <S49 />
         </div>
+
+        <div class="site sitem-lg-5 sitem-md-5">
+          <kbd> Cảm xúc facebook </kbd>
+          <S50 />
+        </div>
+
+
       </div>
       <Like />
       <Love />
@@ -312,7 +318,7 @@ import S46 from "./components/S46.vue";
 import S47 from "./components/S47.vue";
 import S48 from "./components/S48.vue";
 import S49 from "./components/S49.vue";
-
+import S50 from "./components/S50.vue";
 
 
 
@@ -373,6 +379,7 @@ export default {
     S47,
     S48,
     S49,
+    S50,
     Like,
     Love,
     Modal,

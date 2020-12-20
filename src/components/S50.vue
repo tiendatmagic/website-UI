@@ -1,7 +1,7 @@
 <template>
   <div class="smainn">
     <br />
-    <div id="s47">
+    <div id="s50">
 
 
     </div>
@@ -21,7 +21,7 @@
 export default {
   methods: {
     html() {
-      var a = document.getElementById("s46").innerHTML;
+      var a = document.getElementById("s50").innerHTML;
 
       document.getElementById("thtml").innerHTML = a;
       document.getElementsByClassName("modal")[0].style.display = "block";
@@ -30,7 +30,7 @@ export default {
       document.getElementById("css").style.display = "none";
     },
     css() {
-      var b = document.getElementsByTagName("style")[46].innerHTML;
+      var b = document.getElementsByTagName("style")[50].innerHTML;
       document.getElementById("tcss").innerHTML = b;
       document.getElementsByClassName("modal")[0].style.display = "block";
 
