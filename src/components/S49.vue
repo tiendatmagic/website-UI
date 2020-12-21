@@ -167,4 +167,10 @@ export default {
 .icon img {
   width: 50px;
 }
+
+@media only screen and (max-width: 400px) {
+  .icon img {
+    width: 35px;
+  }
+}
 </style>
