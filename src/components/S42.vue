@@ -165,7 +165,6 @@ export default {
     rgba(255, 255, 255, 0.795),
     rgba(255, 255, 255, 0.37)
   );
-  
 }
 
 .title {
@@ -175,7 +174,6 @@ export default {
 .main {
   display: flex;
   justify-content: space-around;
-
 
   flex-wrap: wrap;
   margin-top: 20px;

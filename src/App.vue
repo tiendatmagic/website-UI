@@ -248,6 +248,13 @@
           <kbd> Thông tin thẻ sản phẩm </kbd>
           <S50 />
         </div>
+
+         <div class="site sitem-lg-5 sitem-md-5">
+          <kbd> Thanh tìm kiếm</kbd>
+          <S51 />
+        </div>
+
+
       </div>
       <Like />
       <Love />
@@ -317,6 +324,8 @@ import S47 from "./components/S47.vue";
 import S48 from "./components/S48.vue";
 import S49 from "./components/S49.vue";
 import S50 from "./components/S50.vue";
+import S51 from "./components/S51.vue";
+
 
 import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";
@@ -376,6 +385,7 @@ export default {
     S48,
     S49,
     S50,
+    S51,
     Like,
     Love,
     Modal,
