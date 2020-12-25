@@ -200,7 +200,7 @@
         </div>
 
         <div class="site sitem-md-4">
-          <kbd> Hiển thị lịch hẹn thời gian  </kbd>
+          <kbd> Hiển thị lịch hẹn thời gian </kbd>
           <S41 />
         </div>
 
@@ -224,7 +224,7 @@
           <S45 />
         </div>
 
-        <div class="site sitem-lg-5 sitem-md-4">
+        <div class="site sitem-lg-4 sitem-md-4">
           <kbd> Chọn gói sử dụng </kbd>
           <S46 />
         </div>
@@ -234,7 +234,7 @@
           <S47 />
         </div>
 
-        <div class="site sitem-lg-3 sitem-md-3">
+        <div class="site sitem-lg-4 sitem-md-4">
           <kbd> Hiệu ứng gõ chữ </kbd>
           <S48 />
         </div>
@@ -248,8 +248,6 @@
           <kbd> Thông tin thẻ sản phẩm </kbd>
           <S50 />
         </div>
-
-
       </div>
       <Like />
       <Love />
@@ -319,8 +317,6 @@ import S47 from "./components/S47.vue";
 import S48 from "./components/S48.vue";
 import S49 from "./components/S49.vue";
 import S50 from "./components/S50.vue";
-
-
 
 import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";
@@ -426,6 +422,7 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body,

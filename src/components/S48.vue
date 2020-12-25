@@ -2,18 +2,9 @@
   <div class="smainn">
     <br />
     <div id="s48">
-
-
-
-
-  <div class="magic">
-    <h1>Tôi là Tiến Đạt Magic</h1>
-  </div>
-
-
-
-
-
+      <div class="magic">
+        <h1>Tôi là Tiến Đạt Magic</h1>
+      </div>
     </div>
 
     <div class="buttonhtmlcss">
@@ -53,38 +44,34 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 
+.magic {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
-    * {
-      margin: 0px;
-      padding: 0px;
-      box-sizing: border-box;
-    }
+.magic h1 {
+  font-size: 2rem;
+  white-space: nowrap;
+  color: hotpink;
+  overflow: hidden;
+  border-right: 2px solid orangered;
+  animation: type 2s infinite;
+}
 
-    .magic {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-    }
+@keyframes type {
+  from {
+    width: 0px;
+  }
 
-
-    .magic h1 {
-      font-size: 2rem;
-      white-space: nowrap;
-      color: hotpink;
-      overflow: hidden;
-      border-right: 2px solid orangered;
-      animation: type  2s infinite;
-    }
-
-    @keyframes type {
-      from {
-        width: 0px;
-      }
-
-      to {
-        width: 100%;
-      }
-    }
-
+  to {
+    width: 100%;
+  }
+}
 </style>

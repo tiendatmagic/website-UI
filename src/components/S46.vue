@@ -126,6 +126,7 @@ export default {
   width: 250px;
   position: relative;
   padding: 10px;
+  margin: 5px;
   border: 2px solid blue;
   border-radius: 20px;
   border: 2px solid rgb(173, 173, 173);
