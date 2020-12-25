@@ -193,7 +193,7 @@ export default {
 
 .people:hover {
   background-color: rgb(255, 255, 255);
-  box-shadow: -7px 10px 20px rgba(119, 119, 119, 0.185);
+  box-shadow: -7px 10px 20px rgba(155, 155, 155, 0.301);
   border-radius: 16px;
   transition: 0.3s ease-out;
 }

@@ -1,7 +1,9 @@
 <template>
   <div class="smainn">
     <div id="s14">
-      <p>TIENDATMAGIC</p>
+      <div class="main">
+        <p>TIENDATMAGIC</p>
+      </div>
     </div>
 
     <div class="buttonhtmlcss">
@@ -47,10 +49,12 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
+
 p {
   font-weight: bold;
-  font-size: 26px;
+  font-size: 45px;
   color: deeppink;
+  word-break: break-all;
 }
 
 @supports (-webkit-background-clip: text) {
