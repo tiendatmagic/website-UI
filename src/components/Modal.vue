@@ -18,14 +18,11 @@
           <textarea readonly id="tcss" name=""></textarea>
         </div>
 
-        <div id="javascript" style="display:none">
+        <div id="javascript" style="display: none">
           <h3>Code Javascript</h3>
           <button @click="copyjavascript()">Copy Javascript</button>
           <textarea readonly id="tjs" name=""></textarea>
         </div>
-
-
-
       </div>
     </div>
 
@@ -73,7 +70,7 @@ export default {
       this.copysuccess();
     },
 
-     copyjavascript: function () {
+    copyjavascript: function () {
       var copyText = document.getElementById("tjs");
       copyText.select();
       document.execCommand("copy");
@@ -92,7 +89,7 @@ export default {
         document
           .getElementsByClassName("alert-modal")[0]
           .setAttribute("style", "display: none");
-      }, 5000);
+      }, 5500);
     },
   },
 };
@@ -173,7 +170,7 @@ h3 {
   padding-bottom: 10px;
   font-family: Arial, Helvetica, sans-serif;
   box-shadow: 0px 5px 15px 0px rgba(110, 110, 110, 0.349);
-  animation: run 0.4s ease-out;
+  animation: run 0.5s ease-out, 2s fadeout 4.5s ease-out forwards;
   position: fixed;
   background-color: #fff;
   display: none;
@@ -195,7 +192,7 @@ h3 {
 }
 
 .alert-modal:nth-child(2) .alert-items {
-  border-left: 7px solid #f0a92e;
+  border-left: 7px solid #21a67a;
 }
 
 .alert-modal:nth-child(3) .alert-items {
@@ -209,7 +206,7 @@ h3 {
 
 .fa-exclamation-circle {
   font-size: 35px;
-  color: #f0a92e;
+  color: #65f02e;
 }
 
 .fa-check-circle {
@@ -227,7 +224,7 @@ h3 {
 .alert-items p {
   color: #8a8c92;
   font-size: 18px;
-  width: 90%;
+  width: 100%;
 }
 .alert-items i {
   margin: 12px;
@@ -236,12 +233,31 @@ h3 {
 
 @keyframes run {
   from {
-    width: 0%;
+    transform: translateX(120%);
     opacity: 0;
   }
   to {
-    width: 20%;
+    transform: translateX(0%);
     opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  25% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0.8;
+  }
+
+  80% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
   }
 }
 
