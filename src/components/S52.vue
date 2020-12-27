@@ -75,6 +75,7 @@ export default {
   overflow: hidden;
   cursor: pointer;
   transition: 0.2s ease-out;
+  margin: 0 auto;
 }
 
 .card:hover {
