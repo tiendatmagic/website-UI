@@ -124,6 +124,7 @@ export default {
 
 .react-facebook {
   width: 100%;
+  max-width: 600px;
   background-color: #fff;
   border-radius: 30px;
   padding: 5px;
