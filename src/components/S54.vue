@@ -16,10 +16,10 @@
             </div>
             <div class="status">
               <div class="wifi">
-                <img src="./images/wifi.png" alt="" />
+                <img src="https://raw.githubusercontent.com/tiendatmagic/drawiphoneX/master/images//wifi.png" alt="" />
               </div>
               <div class="battery">
-                <img src="./images/songpin.png" alt="" />
+                <img src="https://raw.githubusercontent.com/tiendatmagic/drawiphoneX/master/images//songpin.png" alt="" />
               </div>
             </div>
           </div>
@@ -27,7 +27,7 @@
           <div class="apps">
             <div class="app">
               <img
-                src="./images/calc.png"
+                src="https://raw.githubusercontent.com/tiendatmagic/drawiphoneX/master/images//calc.png"
                 alt=""
                 class="calculator"
                 width="66px"
@@ -36,13 +36,13 @@
             </div>
 
             <div class="app">
-              <img src="./images/clock.png" alt="" class="clock" width="66px" />
+              <img src="https://raw.githubusercontent.com/tiendatmagic/drawiphoneX/master/images//clock.png" alt="" class="clock" width="66px" />
               <p>Đồng hồ</p>
             </div>
 
             <div class="app">
               <img
-                src="./images/gdondep.png"
+                src="https://raw.githubusercontent.com/tiendatmagic/drawiphoneX/master/images//gdondep.png"
                 alt=""
                 class="gdondep"
                 width="66px"
@@ -52,7 +52,7 @@
 
             <div class="app">
               <img
-                src="./images/suckhoe.png"
+                src="https://raw.githubusercontent.com/tiendatmagic/drawiphoneX/master/images//suckhoe.png"
                 alt=""
                 class="suckhoe"
                 width="66px"
@@ -61,7 +61,7 @@
             </div>
 
             <div class="app">
-              <img src="./images/safari.png" alt="" class="" width="66px" />
+              <img src="https://raw.githubusercontent.com/tiendatmagic/drawiphoneX/master/images//safari.png" alt="" class="" width="66px" />
               <p>Safari</p>
             </div>
           </div>
@@ -69,7 +69,7 @@
           <div class="apps-footer">
             <div class="app">
               <img
-                src="./images/Messages.png"
+                src="https://raw.githubusercontent.com/tiendatmagic/drawiphoneX/master/images//Messages.png"
                 alt=""
                 class="message"
                 width="66px"
@@ -78,7 +78,7 @@
 
             <div class="app">
               <img
-                src="./images/app-store.png"
+                src="https://raw.githubusercontent.com/tiendatmagic/drawiphoneX/master/images//app-store.png"
                 alt=""
                 class="appstore"
                 width="66px"
@@ -87,7 +87,7 @@
 
             <div class="app">
               <img
-                src="./images/safari.png"
+                src="https://raw.githubusercontent.com/tiendatmagic/drawiphoneX/master/images//safari.png"
                 alt=""
                 class="safari"
                 width="66px"
@@ -95,7 +95,7 @@
             </div>
 
             <div class="app">
-              <img src="./images/mail.png" alt="" class="mail" width="66px" />
+              <img src="https://raw.githubusercontent.com/tiendatmagic/drawiphoneX/master/images//mail.png" alt="" class="mail" width="66px" />
             </div>
           </div>
         </div>
@@ -171,7 +171,7 @@ body {
   height: 97%;
   background-color: pink;
   border-radius: 50px;
-  background-image: url("./images/border.jpg");
+  background-image: url("https://raw.githubusercontent.com/tiendatmagic/drawiphoneX/master/images//border.jpg");
   background-size: 375px;
   position: relative;
 }
