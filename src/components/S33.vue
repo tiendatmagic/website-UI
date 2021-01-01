@@ -158,27 +158,28 @@ export default {
 .button-update {
   background-color: #00b1ff;
   color: rgb(248, 248, 248);
-
   border: none;
+  transition: 0.2s ease-out;
 }
 
 .button-notnow {
   color: #1b3550;
   background-color: rgba(245, 245, 245, 0.192);
   border: 2px solid #486581;
-  font-weight: 550;
+  transition: 0.2s ease-out;
 }
 
 .button-update:hover {
   color: #1b3550;
   background-color: rgba(245, 245, 245, 0.192);
   border: 2px solid #486581;
-  font-weight: 550;
+  transition: 0.2s ease-out;
 }
 
 .button-notnow:hover {
   background-color: #00b1ff;
   color: rgb(248, 248, 248);
   border: none;
+  transition: 0.2s ease-out;
 }
 </style>
