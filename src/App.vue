@@ -261,16 +261,21 @@
         </div>
 
             <div class="site sitem-lg-6 sitem-md-6">
-          <kbd> Thanh tìm kiếm đơn giản</kbd>
+          <kbd> Thanh tìm kiếm nâng cao</kbd>
           <S55 />
         </div>
 
-        <div class="site sitem-lg-5 sitem-md-5">
+        <div class="site sitem-lg-3 sitem-md-6">
           <kbd> Thẻ thông tin cá nhân</kbd>
           <S53 />
         </div>
 
-        <div class="site sitem-lg-7 sitem-md-7">
+        <div class="site sitem-lg-3 sitem-md-6">
+          <kbd> Thẻ thông tin cá nhân</kbd>
+          <S56 />
+        </div>
+
+        <div class="site sitem-lg-6 sitem-md-6">
           <kbd> Mô hình điện thoại IphoneX</kbd>
           <S54 />
         </div>
@@ -348,7 +353,7 @@ import S52 from "./components/S52.vue";
 import S53 from "./components/S53.vue";
 import S54 from "./components/S54.vue";
 import S55 from "./components/S55.vue";
-
+import S56 from "./components/S56.vue";
 
 
 
@@ -415,6 +420,7 @@ export default {
     S53,
     S54,
     S55,
+    S56,
 
     Like,
     Love,
