@@ -124,7 +124,6 @@ export default {
   text-align: center;
   margin-top: 20px;
   word-wrap: break-word;
-
 }
 
 .name-email p:nth-child(1) {

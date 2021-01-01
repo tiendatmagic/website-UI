@@ -1,6 +1,6 @@
 <template>
   <div class="smainn">
-    <br>
+    <br />
     <div id="s3">
       <div class="proccessbar">
         <div class="bar"></div>
@@ -25,7 +25,7 @@ export default {
 
       document.getElementById("thtml").innerHTML = a;
       document.getElementsByClassName("modal")[0].style.display = "block";
-      
+
       document.getElementById("html").style.display = "block";
       document.getElementById("css").style.display = "none";
       // document.getElementsByTagName("style")[0].classList.add("abc");
@@ -34,7 +34,7 @@ export default {
       var b = document.getElementsByTagName("style")[3].innerHTML;
       document.getElementById("tcss").innerHTML = b;
       document.getElementsByClassName("modal")[0].style.display = "block";
-      
+
       document.getElementById("html").style.display = "none";
       document.getElementById("css").style.display = "block";
     },
@@ -56,7 +56,7 @@ export default {
   background-color: rgb(255, 255, 255);
   border-radius: 50px;
   overflow: hidden;
-   border: 0.1px solid #eee;
+  border: 0.1px solid #eee;
 }
 .bar {
   width: 69%;

@@ -76,29 +76,22 @@ button.button {
   margin: 5px 5px auto auto;
   cursor: pointer;
   transition: 0.5 ease-out;
-
 }
 
 button.button:hover {
-transform: scale(1.05);
-transition: 0.5 ease-out;
-
+  transform: scale(1.05);
+  transition: 0.5 ease-out;
 }
 button.button i {
-
-font-size: 30px;
+  font-size: 30px;
 }
 .btn1 {
-  background-color: #3B5999;
+  background-color: #3b5999;
 }
 .btn2 {
-  background-color: #E4405F;
+  background-color: #e4405f;
 }
 .btn3 {
-  background-color: #55ACEE;
+  background-color: #55acee;
 }
-
-
-
-
 </style>

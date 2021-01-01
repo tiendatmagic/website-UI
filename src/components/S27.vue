@@ -2,7 +2,6 @@
   <div class="smainn">
     <br />
     <div id="s27">
-      
       <link
         rel="stylesheet"
         href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css"

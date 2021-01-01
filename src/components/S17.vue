@@ -25,7 +25,7 @@
       </div>
     </div>
 
-        <div class="buttonhtmlcss">
+    <div class="buttonhtmlcss">
       <button @click="html()" class="btn">
         <i class="fa fa-eye"></i> Xem HTML
       </button>

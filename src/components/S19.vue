@@ -177,7 +177,6 @@ h1 {
   color: rgba(255, 135, 36, 0.808);
 }
 
-
 .card-title {
   color: #000;
   font-weight: bold;

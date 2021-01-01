@@ -81,7 +81,6 @@ export default {
 
       document.getElementById("html").style.display = "block";
       document.getElementById("css").style.display = "none";
-      document.getElementById("javascript").style.display = "none";
     },
     css() {
       var b = document.getElementsByTagName("style")[30].innerHTML;
@@ -90,7 +89,6 @@ export default {
 
       document.getElementById("html").style.display = "none";
       document.getElementById("css").style.display = "block";
-      document.getElementById("javascript").style.display = "none";
     },
 
     js() {

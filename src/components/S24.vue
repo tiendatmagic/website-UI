@@ -97,7 +97,6 @@ export default {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  
 }
 
 hr {
@@ -130,14 +129,13 @@ hr {
   margin-left: 30px;
   margin-right: 30px;
   justify-content: center;
-  
 }
 
 .info img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-    background-color: pink;
+  background-color: pink;
 }
 .info:hover {
   background-color: #f2f2f2;

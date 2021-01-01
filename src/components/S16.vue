@@ -2,7 +2,10 @@
   <div class="smainn">
     <br />
     <div id="s16">
-      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css">
+      <link
+        rel="stylesheet"
+        href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css"
+      />
       <div class="bell">
         <div class="circle"></div>
         <i class="fas fa-bell"></i>

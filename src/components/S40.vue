@@ -129,7 +129,6 @@ body {
   padding-left: 30px;
   padding-right: 30px;
   box-shadow: 0px 5px 15px 0px rgba(110, 110, 110, 0.349);
-
 }
 
 .title h2 {
@@ -172,7 +171,6 @@ body {
   justify-content: space-around;
   margin-top: 20px;
   flex-wrap: wrap;
-
 }
 
 .people-item {
@@ -188,11 +186,10 @@ body {
 
 .people-item:hover {
   background-color: #8566ff;
-    box-shadow: -10px 5px 17px 0px rgba(0, 0, 0, 0.171);
-  
+  box-shadow: -10px 5px 17px 0px rgba(0, 0, 0, 0.171);
 }
 
-.people-item:hover .people p { 
+.people-item:hover .people p {
   color: #fff;
 }
 

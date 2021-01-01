@@ -26,9 +26,9 @@
               placeholder="Password"
             />
           </div>
-          <div class="rememberme">            
-            <input type="checkbox" class="checkremember" name="remember">
-            <p>Ghi nhớ </p>
+          <div class="rememberme">
+            <input type="checkbox" class="checkremember" name="remember" />
+            <p>Ghi nhớ</p>
           </div>
           <button type="submit" class="login"><span>Đăng nhập</span></button>
         </form>
@@ -114,12 +114,11 @@ export default {
   border: 1px solid #ced4da;
   border-radius: 8px;
   outline: none;
-
 }
 
 .form .rememberme {
-margin-top: 20px;
-margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   margin-right: 20px;
 }
 
