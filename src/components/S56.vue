@@ -126,10 +126,10 @@ export default {
   padding-bottom: 10px;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 0 60px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 40px 5px rgba(90, 90, 90, 0.2);
   position: relative;
-  margin-top: 40px;
   margin: 0 auto;
+  margin-top: 40px;
 }
 
 .img {
@@ -138,8 +138,8 @@ export default {
 }
 
 .img img {
-  width: 140px;
-  height: 140px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   border: 5px solid hotpink;
   box-shadow: 0 0 30px 5px rgba(255, 0, 119, 0.438);
@@ -225,7 +225,7 @@ export default {
 
 .button-group button {
   width: 50%;
-  height: 35px;
+  height: 40px;
   margin: 5px;
   background-color: #b82046;
   border-radius: 20px;
