@@ -67,7 +67,8 @@ export default {
 }
 
 .card {
-  width: 270px;
+  width: 100%;
+  max-width: 270px;
   text-align: center;
   border: 0.1px solid rgb(194, 194, 194);
   font-family: Arial, Helvetica, sans-serif;

@@ -239,24 +239,30 @@
           <S48 />
         </div>
 
-        <div class="site sitem-lg-5 sitem-md-5">
+        <div class="site sitem-lg-5 sitem-md-6">
           <kbd> Cảm xúc facebook </kbd>
           <S49 />
         </div>
 
-        <div class="site sitem-lg-4 sitem-md-4">
+        <div class="site sitem-lg-4 sitem-md-6">
           <kbd> Thông tin thẻ sản phẩm </kbd>
           <S50 />
         </div>
 
-        <div class="site sitem-lg-3 sitem-md-3">
+        <div class="site sitem-lg-3 sitem-md-5">
           <kbd> Thông tin sản phẩm</kbd>
           <S52 />
+         
         </div>
 
-        <div class="site sitem-lg-5 sitem-md-5">
-          <kbd> Thanh tìm kiếm</kbd>
+        <div class="site sitem-lg-6 sitem-md-6">
+          <kbd> Thanh tìm kiếm đơn giản</kbd>
           <S51 />
+        </div>
+
+            <div class="site sitem-lg-6 sitem-md-6">
+          <kbd> Thanh tìm kiếm đơn giản</kbd>
+          <S55 />
         </div>
 
         <div class="site sitem-lg-5 sitem-md-5">
@@ -264,7 +270,7 @@
           <S53 />
         </div>
 
-        <div class="site sitem-lg-6 sitem-md-6">
+        <div class="site sitem-lg-7 sitem-md-7">
           <kbd> Mô hình điện thoại IphoneX</kbd>
           <S54 />
         </div>
@@ -341,6 +347,10 @@ import S51 from "./components/S51.vue";
 import S52 from "./components/S52.vue";
 import S53 from "./components/S53.vue";
 import S54 from "./components/S54.vue";
+import S55 from "./components/S55.vue";
+
+
+
 
 import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";
@@ -404,6 +414,7 @@ export default {
     S52,
     S53,
     S54,
+    S55,
 
     Like,
     Love,
