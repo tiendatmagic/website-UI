@@ -51,6 +51,7 @@ export default {
   methods: {
     close() {
       document.getElementsByClassName("modal")[0].style.display = "none";
+     document.getElementById("javascript").style.display = "none";
     },
     closenoti() {
       document.getElementsByClassName("alert-modal")[0].style.display = "none";

@@ -17,17 +17,16 @@
       height: 100vh;
       margin-top: 20px;
       background-color: rgb(70, 187, 16);
-
     }
 
-    .box {
+    .screen-border {
       width: 100%;
-      max-width: 355px;
+      max-width: 350px;
       height: 680px;
       border-radius: 50px;
       background-color: green;
       margin: 0 auto;
-      box-shadow: 0px 0px 2px 7px #B6B2AB;
+      box-shadow: 0px 0px 2px 7px #b6b2ab;
       background-color: black;
       display: flex;
       justify-content: center;
@@ -39,10 +38,9 @@
       height: 97%;
       background-color: pink;
       border-radius: 50px;
-      background-image: url('./images/border.jpg');
+      background-image: url("https://raw.githubusercontent.com/tiendatmagic/drawiphoneX/master/images//border.jpg");
       background-size: 375px;
       position: relative;
-
     }
 
     .taitho {
@@ -71,10 +69,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-
-
     }
-
 
     .statusbar .status div {
       margin-left: 10px;
@@ -86,18 +81,16 @@
       margin-bottom: 3px;
       border-radius: 100px;
       background-color: green;
-      -webkit-box-shadow: 0px 0px 0px 2px #FFFFFF;
-      box-shadow: 0px 0px 0px 2px #FFFFFF;
+      -webkit-box-shadow: 0px 0px 0px 2px #ffffff;
+      box-shadow: 0px 0px 0px 2px #ffffff;
       display: flex;
       justify-content: center;
-
     }
 
     .apps {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-
     }
 
     .apps .app {
@@ -128,6 +121,7 @@
       top: 85px;
       left: -21px;
       border-radius: 10px 0px 0px 10px;
+      cursor: pointer;
     }
 
     .volume {
@@ -138,6 +132,7 @@
       top: 147px;
       left: -21px;
       border-radius: 10px 0px 0px 10px;
+      cursor: pointer;
     }
 
     .power {
@@ -148,14 +143,16 @@
       top: 150px;
       right: -22px;
       border-radius: 0px 10px 10px 0px;
+      cursor: pointer;
     }
   </style>
 </head>
 
 <body>
-  <div class="box">
-    <div class="screen">
 
+
+  <div class="screen-border">
+    <div class="screen">
       <div class="taitho"></div>
 
       <div class="setvolume"></div>
@@ -168,70 +165,71 @@
         </div>
         <div class="status">
           <div class="wifi">
-            <img src="./images/wifi.png" alt="">
+            <img src="https://raw.githubusercontent.com/tiendatmagic/drawiphoneX/master/images//wifi.png" alt="" />
           </div>
           <div class="battery">
-            <img src="./images/songpin.png" alt="">
+            <img src="https://raw.githubusercontent.com/tiendatmagic/drawiphoneX/master/images//songpin.png" alt="" />
           </div>
         </div>
       </div>
 
-
       <div class="apps">
         <div class="app">
-          <img src="./images/calc.png" alt="" class="calculator" width="66px">
-          <p> Máy tính</p>
+          <img src="https://raw.githubusercontent.com/tiendatmagic/drawiphoneX/master/images//calc.png" alt=""
+            class="calculator" width="66px" />
+          <p>Máy tính</p>
         </div>
 
         <div class="app">
-          <img src="./images/clock.png" alt="" class="clock" width="66px">
-          <p> Đồng hồ</p>
+          <img src="https://raw.githubusercontent.com/tiendatmagic/drawiphoneX/master/images//clock.png" alt=""
+            class="clock" width="66px" />
+          <p>Đồng hồ</p>
         </div>
 
         <div class="app">
-          <img src="./images/gdondep.png" alt="" class="gdondep" width="66px">
-          <p> Dọn dẹp</p>
+          <img src="https://raw.githubusercontent.com/tiendatmagic/drawiphoneX/master/images//gdondep.png" alt=""
+            class="gdondep" width="66px" />
+          <p>Dọn dẹp</p>
         </div>
 
         <div class="app">
-          <img src="./images/suckhoe.png" alt="" class="suckhoe" width="66px">
-          <p> Sức khỏe</p>
+          <img src="https://raw.githubusercontent.com/tiendatmagic/drawiphoneX/master/images//suckhoe.png" alt=""
+            class="suckhoe" width="66px" />
+          <p>Sức khỏe</p>
         </div>
 
         <div class="app">
-          <img src="./images/safari.png" alt="" class="" width="66px">
-          <p> Safari</p>
+          <img src="https://raw.githubusercontent.com/tiendatmagic/drawiphoneX/master/images//safari.png" alt=""
+            class="" width="66px" />
+          <p>Safari</p>
         </div>
-
-
-
       </div>
 
       <div class="apps-footer">
         <div class="app">
-          <img src="./images/Messages.png" alt="" class="message" width="66px">
-
+          <img src="https://raw.githubusercontent.com/tiendatmagic/drawiphoneX/master/images//Messages.png" alt=""
+            class="message" width="66px" />
         </div>
 
         <div class="app">
-          <img src="./images/app-store.png" alt="" class="appstore" width="66px">
-
+          <img src="https://raw.githubusercontent.com/tiendatmagic/drawiphoneX/master/images//app-store.png" alt=""
+            class="appstore" width="66px" />
         </div>
 
         <div class="app">
-          <img src="./images/safari.png" alt="" class="safari" width="66px">
-
+          <img src="https://raw.githubusercontent.com/tiendatmagic/drawiphoneX/master/images//safari.png" alt=""
+            class="safari" width="66px" />
         </div>
 
         <div class="app">
-          <img src="./images/mail.png" alt="" class="mail" width="66px">
-
+          <img src="https://raw.githubusercontent.com/tiendatmagic/drawiphoneX/master/images//mail.png" alt=""
+            class="mail" width="66px" />
         </div>
-
       </div>
-
     </div>
   </div>
+
+
 
 </body>
 

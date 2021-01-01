@@ -2,7 +2,7 @@
   <div class="smainn">
     <br />
     <div id="s54">
-      <div class="box">
+      <div class="screen-border">
         <div class="screen">
           <div class="taitho"></div>
 
@@ -16,10 +16,16 @@
             </div>
             <div class="status">
               <div class="wifi">
-                <img src="https://raw.githubusercontent.com/tiendatmagic/drawiphoneX/master/images//wifi.png" alt="" />
+                <img
+                  src="https://raw.githubusercontent.com/tiendatmagic/drawiphoneX/master/images//wifi.png"
+                  alt=""
+                />
               </div>
               <div class="battery">
-                <img src="https://raw.githubusercontent.com/tiendatmagic/drawiphoneX/master/images//songpin.png" alt="" />
+                <img
+                  src="https://raw.githubusercontent.com/tiendatmagic/drawiphoneX/master/images//songpin.png"
+                  alt=""
+                />
               </div>
             </div>
           </div>
@@ -36,7 +42,12 @@
             </div>
 
             <div class="app">
-              <img src="https://raw.githubusercontent.com/tiendatmagic/drawiphoneX/master/images//clock.png" alt="" class="clock" width="66px" />
+              <img
+                src="https://raw.githubusercontent.com/tiendatmagic/drawiphoneX/master/images//clock.png"
+                alt=""
+                class="clock"
+                width="66px"
+              />
               <p>Đồng hồ</p>
             </div>
 
@@ -61,7 +72,12 @@
             </div>
 
             <div class="app">
-              <img src="https://raw.githubusercontent.com/tiendatmagic/drawiphoneX/master/images//safari.png" alt="" class="" width="66px" />
+              <img
+                src="https://raw.githubusercontent.com/tiendatmagic/drawiphoneX/master/images//safari.png"
+                alt=""
+                class=""
+                width="66px"
+              />
               <p>Safari</p>
             </div>
           </div>
@@ -95,7 +111,12 @@
             </div>
 
             <div class="app">
-              <img src="https://raw.githubusercontent.com/tiendatmagic/drawiphoneX/master/images//mail.png" alt="" class="mail" width="66px" />
+              <img
+                src="https://raw.githubusercontent.com/tiendatmagic/drawiphoneX/master/images//mail.png"
+                alt=""
+                class="mail"
+                width="66px"
+              />
             </div>
           </div>
         </div>
@@ -145,19 +166,11 @@ export default {
   box-sizing: border-box;
 }
 
-body {
-  width: 100%;
-  height: 100vh;
-  margin-top: 20px;
-  background-color: rgb(70, 187, 16);
-}
-
-.box {
+.screen-border {
   width: 100%;
   max-width: 350px;
   height: 680px;
   border-radius: 50px;
-  background-color: green;
   margin: 0 auto;
   box-shadow: 0px 0px 2px 7px #b6b2ab;
   background-color: black;
