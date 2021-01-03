@@ -111,7 +111,6 @@ export default {
   width: 100%;
   max-width: 280px;
   height: 430px;
-  background-color: aqua;
   border-radius: 8px;
   overflow: hidden;
   font-family: Arial, Helvetica, sans-serif;
@@ -180,6 +179,7 @@ export default {
   border-radius: 10px;
   cursor: pointer;
   font-size: 17px;
+  color: #d5696b;
   transition: 0.5s ease-out;
 }
 
