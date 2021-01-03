@@ -13,205 +13,195 @@
     }
 
     body {
-      background-color: rgb(158, 105, 255);
+      width: 100%;
       height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
+      background-color: rgba(205, 92, 92, 0.74);
     }
 
     .profilecard {
-      width: 300px;
-      padding-bottom: 10px;
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 0 60px 5px rgba(0, 0, 0, 0.2);
-      position: relative;
+      width: 100%;
+      max-width: 280px;
+      height: 430px;
+      background-color: aqua;
+      border-radius: 8px;
+      overflow: hidden;
+      font-family: Arial, Helvetica, sans-serif;
+      box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.2);
     }
 
-    .img {
-      transform: translateY(-50%);
-      height: 80px;
+    .profilecard .up {
+      height: 70%;
+      background-color: #2C3A4A;
     }
+
+
+    .profilecard .down {
+      height: 30%;
+      background-color: #fff;
+    }
+
 
     .img img {
       width: 100px;
       height: 100px;
+      display: block;
       border-radius: 50%;
-      border: 5px solid hotpink;
-      box-shadow: 0 0 50px 5px rgba(255, 0, 119, 0.651);
       position: relative;
+      top: 30px;
       margin: 0 auto;
-
-      display: flex;
-
+      border: 5px solid hotpink;
     }
 
     .info {
+      margin-top: 40px;
       text-align: center;
-      line-height: 30px;
     }
 
-    .name {
-      font-size: 20px;
-      color: rgb(179, 4, 91);
+    .info .name {
+      font-size: 22px;
+      color: #fff;
     }
 
-    .job,
-    .location {
-      color: rgb(78, 80, 87);
-    }
-
-    .infodata {
-      color: rgb(78, 80, 87);
-      display: flex;
-      justify-content: space-evenly;
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    .infodata b {
-      font-size: 20px;
+    .info .job {
+      color: #D5696B;
     }
 
     .social {
       display: flex;
-      justify-content: space-evenly;
-      margin-top: 15px;
+      justify-content: center;
     }
 
     .social div {
-      padding: 10px;
-      background-color: pink;
-      border-radius: 50%;
-      display: flex;
-      width: 40px;
-      height: 40px;
-      justify-content: center;
-      align-items: center;
+      padding: 15px;
       color: #fff;
       cursor: pointer;
+      transition: 0.3s ease-out;
+    }
+
+    .social div:hover {
+      color: #D5696B;
 
     }
 
-    .social .youtube {
-      background-image: linear-gradient(45deg, #ff000088, #ff0000);
-    }
-
-    .social .linkedin {
-      background-image: linear-gradient(45deg, #0e76a888, #0e76a8);
-    }
-
-    .social .instagram {
-      background-image: linear-gradient(45deg, #e6683ccc 25%, #dc2743 50%, #bc1888 100%);
-    }
-
-    .social .github {
-      background-image: linear-gradient(45deg, #33333388, #333333);
-    }
-
-    .button-group {
-      text-align: center;
-      align-items: center;
-      margin-top: 20px;
-    }
-
-    .button-group button {
+    .buttoncontact button {
       width: 50%;
-      height: 35px;
-      margin: 5px;
-      background-color: #B82046;
-      border-radius: 20px;
-      color: #fff;
-      font-weight: bold;
-      border: none;
+      height: 40px;
+      background-color: transparent;
+      border: 3px solid #D5696B;
       outline: none;
-      box-shadow: 0 0 10px 2px rgba(255, 0, 119, 0.288);
+      border-radius: 10px;
       cursor: pointer;
+      transition: 0.5s ease-out;
+    }
+
+    .buttoncontact button:hover {
+      background-color: #F07368;
+      border: 3px solid #F07368;
+      color: #fff;
+    }
+
+    .down {
+      display: flex;
+      align-items: center;
+    }
+
+    .down .data {
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+      text-align: center;
+    }
+
+    .data b {
+      font-size: 23px;
+      color: #2C3A4A;
+    }
+
+    .data p {
+      color: #F07368;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+
+    .data .border {
+      width: 0.1px;
+
+      background-color: #000;
     }
   </style>
 </head>
 
 <body>
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css" />
-
-
-
   <div class="profilecard">
-    <div class="img">
-      <img src="https://raw.githubusercontent.com/tiendatmagic/website-UI/master/src/img/aILP3CD.png" alt="">
-    </div>
 
-    <div class="info">
-
-      <div class="name">
-        <b>Tiến Đạt Magic</b>
+    <div class="up">
+      <div class="img">
+        <img src="https://raw.githubusercontent.com/tiendatmagic/website-UI/master/src/img/aILP3CD.png" alt="" />
       </div>
+      <div class="info">
+        <div class="name">
+          <b>Tiến Đạt Magic</b>
+        </div>
+        <div class="job">
+          <p>Front end, UX/UI Developer</p>
+        </div>
 
-      <div class="job">
-        <p>
-          <i class="fas fa-star"></i>
-          <span>
-            Front end, UX/UI Developer
-          </span>
-        </p>
-      </div>
 
-      <div class="location">
-        <p>
-          <i class="fas fa-map-marker-alt"></i>
-          <span>
-            Nha Trang, Khánh Hòa
-          </span>
-        </p>
-      </div>
+        <div class="social">
+          <div class="facebook">
+            <i class="fab fa-facebook-f"></i>
+          </div>
+          <div class="twitter">
+            <i class="fab fa-twitter"></i>
+          </div>
+          <div class="github">
+            <i class="fab fa-github"></i>
+          </div>
+          <div class="youtube">
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
 
-    </div>
+        <div class="buttoncontact">
+          <button>Contact Me</button>
+        </div>
 
-    <div class="infodata">
-
-      <div class="post">
-        <b>336</b>
-        <p>Posts</p>
-      </div>
-
-      <div class="likes">
-        <b>4300</b>
-        <p>Likes</p>
-      </div>
-
-      <div class="works">
-        <b>87</b>
-        <p>Works</p>
       </div>
     </div>
 
-    <div class="social">
-      <div class="youtube">
-        <i class="fab fa-youtube"></i>
-      </div>
+    <div class="down">
+      <div class="data">
 
-      <div class="linkedin">
-        <i class="fab fa-linkedin-in"></i>
-      </div>
+        <div class="posts">
+          <b>120</b>
+          <p>Posts</p>
+        </div>
+        <div class="border">
 
-      <div class="instagram">
-        <i class="fab fa-instagram"></i>
-      </div>
+        </div>
+        <div class="following">
+          <b>320</b>
+          <p>Following</p>
+        </div>
+        <div class="border">
 
-      <div class="github">
-        <i class="fab fa-github"></i>
+        </div>
+        <div class="follower">
+          <b>500K</b>
+          <p>Follower</p>
+        </div>
+
+
       </div>
     </div>
-
-    <div class="button-group">
-      <button>FOLLOW</button>
-      <button>MESSAGE</button>
-    </div>
-
-
-
   </div>
+
 </body>
 
 </html>
