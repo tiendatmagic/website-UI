@@ -100,6 +100,7 @@ h1 {
 
 .form {
   width: 100%;
+  max-width: 500px;
   margin: 0 auto;
   border-radius: 20px;
   background-color: rgb(252, 252, 252);

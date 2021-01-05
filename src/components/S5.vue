@@ -59,13 +59,15 @@ export default {
   border: none;
   margin: 5px;
   cursor: pointer;
-}
-.button1 {
-  background-image: linear-gradient(to top, purple, hotpink);
+  background-size: 200%;
+  transition: 0.5s ease-out;
 }
 
-.button1:hover {
-  background-image: linear-gradient(to bottom, purple, hotpink);
+.gradient:hover {
+  background-position: right;
+}
+.button1 {
+  background-image: linear-gradient(to left, purple, hotpink, purple);
 }
 
 .button2 {
@@ -77,20 +79,7 @@ export default {
   );
 }
 
-.button2:hover {
-  background-image: linear-gradient(
-    to left,
-    rgb(255, 0, 0),
-    rgb(241, 158, 2),
-    rgb(255, 238, 0)
-  );
-}
-
 .button3 {
-  background-image: linear-gradient(150deg, deeppink, pink);
-}
-
-.button3:hover {
-  background-image: linear-gradient(-150deg, deeppink, pink);
+  background-image: linear-gradient(150deg, deeppink, pink,deeppink);
 }
 </style>

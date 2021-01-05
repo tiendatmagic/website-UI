@@ -144,6 +144,7 @@ h1 {
 
 form {
   width: 100%;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -206,7 +207,6 @@ form {
   background-color: #f5f1ff;
   border: none;
   margin-top: 10px;
-  margin-bottom: 10px;
   text-indent: 30px;
   display: flex;
   margin: 0 auto;
@@ -254,7 +254,7 @@ form {
 }
 
 button.signupp {
-  background-image: linear-gradient(to bottom, #ff1d75, #ff7b46);
+  background-image: linear-gradient(to left, #ff1d75, #f8c32f, #ff1d75);
   width: 90%;
   height: 58px;
   border-radius: 20px;
@@ -263,18 +263,15 @@ button.signupp {
   outline: none;
   border: none;
   box-shadow: 0 10px 20px -5px #ff0bb6;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
   margin: 0 auto;
   cursor: pointer;
+  background-size: 200%;
+  transition: 0.5s ease-out;
 }
 
 button.signupp:hover {
-  background-image: linear-gradient(to bottom, #ff7b46, #ff1d75);
-
-  box-shadow: 0px 10px 20px -5px #ff0b80;
-  transition: 0.25s ease-out;
+  background-position: right;
 }
 
 @media only screen and (max-width: 770px) {
