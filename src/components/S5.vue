@@ -80,6 +80,6 @@ export default {
 }
 
 .button3 {
-  background-image: linear-gradient(150deg, deeppink, pink,deeppink);
+  background-image: linear-gradient(150deg, deeppink, pink, deeppink);
 }
 </style>

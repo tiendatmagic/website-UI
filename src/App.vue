@@ -278,9 +278,14 @@
           <kbd> Mô hình điện thoại IphoneX</kbd>
           <S54 />
         </div>
-        <div class="site sitem-lg-3 sitem-md-3">
+        <div class="site sitem-lg-4 sitem-md-4">
           <kbd> Thẻ thông tin cá nhân</kbd>
           <S57 />
+        </div>
+
+        <div class="site sitem-lg-5 sitem-md-5">
+          <kbd> Khung tìm kiếm</kbd>
+          <S58 />
         </div>
       </div>
       <Like />
@@ -358,6 +363,7 @@ import S54 from "./components/S54.vue";
 import S55 from "./components/S55.vue";
 import S56 from "./components/S56.vue";
 import S57 from "./components/S57.vue";
+import S58 from "./components/S58.vue";
 
 import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";
@@ -424,6 +430,7 @@ export default {
     S55,
     S56,
     S57,
+    S58,
 
     Like,
     Love,
