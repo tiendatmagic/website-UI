@@ -262,7 +262,7 @@ button.signupp {
   color: #fff;
   outline: none;
   border: none;
-  box-shadow: 0 10px 20px -5px #ff0bb6;
+  box-shadow: 0 10px 20px -5px #ff1d75;
   display: block;
   margin: 0 auto;
   cursor: pointer;
