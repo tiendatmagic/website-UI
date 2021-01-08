@@ -288,10 +288,17 @@
           <S58 />
         </div>
 
-        <div class="site sitem-lg-3 sitem-md-4">
+        <div class="site sitem-lg-3 sitem-md-5">
           <kbd> Thẻ thông tin cá nhân gradient</kbd>
           <S59 />
         </div>
+
+         <div class="site sitem-lg-5 sitem-md-7">
+          <kbd> Thẻ thông tin cá nhân gradient</kbd>
+          <S60 />
+        </div>
+
+
       </div>
       <Like />
       <Love />
@@ -370,6 +377,8 @@ import S56 from "./components/S56.vue";
 import S57 from "./components/S57.vue";
 import S58 from "./components/S58.vue";
 import S59 from "./components/S59.vue";
+import S60 from "./components/S60.vue";
+
 
 import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";
@@ -438,6 +447,7 @@ export default {
     S57,
     S58,
     S59,
+    S60,
 
     Like,
     Love,
