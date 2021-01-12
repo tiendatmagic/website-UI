@@ -294,7 +294,7 @@
         </div>
 
         <div class="site sitem-lg-4 sitem-md-7">
-          <kbd> Thẻ thông tin cá nhân gradient</kbd>
+          <kbd> Form đăng nhập design by Văn Cảnh</kbd>
           <S60 />
         </div>
 
@@ -303,11 +303,15 @@
           <S61 />
         </div>
 
-          <div class="site sitem-lg-4 sitem-md-6">
-          <kbd> Thẻ thông tin cá nhân 3D</kbd>
-          <S62/>
+        <div class="site sitem-lg-4 sitem-md-6">
+          <kbd> Thẻ thông tin sản phẩm</kbd>
+          <S62 />
         </div>
 
+ <div class="site sitem-lg-4 sitem-md-6">
+          <kbd> Thẻ thông tin sản phẩm</kbd>
+          <S63 />
+        </div>
 
       </div>
       <Like />
@@ -390,8 +394,7 @@ import S59 from "./components/S59.vue";
 import S60 from "./components/S60.vue";
 import S61 from "./components/S61.vue";
 import S62 from "./components/S62.vue";
-
-
+import S63 from "./components/S63.vue";
 
 
 import Like from "./components/Like.vue";
@@ -464,6 +467,7 @@ export default {
     S60,
     S61,
     S62,
+    S63,
     Like,
     Love,
     Modal,
