@@ -313,11 +313,10 @@
           <S63 />
         </div>
 
-<div class="site sitem-lg-3 sitem-md-6">
+        <div class="site sitem-lg-3 sitem-md-6">
           <kbd> Lựa chọn sản phẩm</kbd>
           <S64 />
         </div>
-
       </div>
       <Like />
       <Love />
@@ -401,7 +400,6 @@ import S61 from "./components/S61.vue";
 import S62 from "./components/S62.vue";
 import S63 from "./components/S63.vue";
 import S64 from "./components/S64.vue";
-
 
 import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";
