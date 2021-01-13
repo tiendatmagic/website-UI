@@ -25,11 +25,11 @@
             </div>
 
             <div class="selectedcheck">
-              <input type="checkbox" checked name="package" /> 14 Gb Internet
+              <input type="checkbox" checked name="package" /> 15 Gb Internet
             </div>
 
             <div class="selectedcheck">
-              <input type="checkbox" checked name="package" /> 14 Gb Internet
+              <input type="checkbox" checked name="package" /> 16 Gb Internet
             </div>
           </div>
 
@@ -47,8 +47,8 @@
               <i class="fas fa-star"></i>
             </div>
             <div class="title">
-              <b>Simple Package</b>
-              <p>Rp 50.0000</p>
+              <b>Pro Package</b>
+              <p>Rp 100.0000</p>
             </div>
           </div>
 
@@ -58,11 +58,11 @@
             </div>
 
             <div class="selectedcheck">
-              <input type="checkbox" checked name="package" /> 14 Gb Internet
+              <input type="checkbox" checked name="package" /> 15 Gb Internet
             </div>
 
             <div class="selectedcheck">
-              <input type="checkbox" checked name="package" /> 14 Gb Internet
+              <input type="checkbox" checked name="package" /> 16 Gb Internet
             </div>
           </div>
 
@@ -123,7 +123,8 @@ export default {
 }
 
 .package {
-  width: 250px;
+  width: 100%;
+  max-width: 350px;
   position: relative;
   padding: 10px;
   margin: 5px;
@@ -200,7 +201,7 @@ export default {
 .selectedcheck {
   width: 90%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
