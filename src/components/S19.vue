@@ -108,7 +108,6 @@ export default {
   box-sizing: border-box;
 }
 
-
 h1 {
   text-align: center;
   color: purple;
