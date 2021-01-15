@@ -108,9 +108,6 @@ export default {
   box-sizing: border-box;
 }
 
-body {
-  background-color: #f2f2f2;
-}
 
 h1 {
   text-align: center;
@@ -119,6 +116,7 @@ h1 {
 .card {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card-item {

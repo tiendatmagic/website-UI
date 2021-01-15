@@ -327,6 +327,15 @@
           <kbd> Bảng thông tin cá nhân</kbd>
           <S66 />
         </div>
+
+        <div class="site sitem-lg-4 sitem-md-6">
+          <kbd> Hiệu ứng lật dọc</kbd>
+          <S67 />
+        </div>
+
+
+
+
       </div>
       <Like />
       <Love />
@@ -412,6 +421,9 @@ import S63 from "./components/S63.vue";
 import S64 from "./components/S64.vue";
 import S65 from "./components/S65.vue";
 import S66 from "./components/S66.vue";
+import S67 from "./components/S67.vue";
+
+
 
 import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";
@@ -487,6 +499,7 @@ export default {
     S64,
     S65,
     S66,
+    S67,
     Like,
     Love,
     Modal,
