@@ -334,5 +334,6 @@ export default {
   color: #fff;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 </style>

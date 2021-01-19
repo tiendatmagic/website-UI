@@ -58,7 +58,7 @@
           </div>
           <div class="signup">
             <p>Không có bất kỳ tài khoản nào?</p>
-            <p>ĐĂNG KÝ</p>
+            <a href="###">ĐĂNG KÝ</a>
           </div>
         </form>
       </div>
@@ -239,9 +239,10 @@ export default {
   margin-top: 20px;
 }
 
-.signup p:nth-child(2) {
+.signup a {
   color: #1fcc79;
   font-weight: bold;
   margin-top: 5px;
+  text-decoration: none;
 }
 </style>

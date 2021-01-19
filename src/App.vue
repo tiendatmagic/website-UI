@@ -333,9 +333,15 @@
           <S67 />
         </div>
 
+        <div class="site sitem-lg-4 sitem-md-6">
+          <kbd> Bảng lựa chọn gói</kbd>
+          <S68 />
+        </div>
 
-
-
+        <div class="site sitem-lg-4 sitem-md-6">
+          <kbd> Đồng hồ thời gian phản chiếu</kbd>
+          <S69 />
+        </div>
       </div>
       <Like />
       <Love />
@@ -423,7 +429,8 @@ import S65 from "./components/S65.vue";
 import S66 from "./components/S66.vue";
 import S67 from "./components/S67.vue";
 
-
+import S68 from "./components/S68.vue";
+import S69 from "./components/S69.vue";
 
 import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";
@@ -500,6 +507,8 @@ export default {
     S65,
     S66,
     S67,
+    S68,
+    S69,
     Like,
     Love,
     Modal,

@@ -4,17 +4,138 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-
+  <title>Document</title>\
   <style>
+    * {
 
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+
+    }
+
+    body {
+      display: flex;
+      width: 100%;
+      height: 100vh;
+      justify-content: center;
+
+      align-items: center;
+      background-color: #000;
+    }
+
+    .datetime {
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+
+      color: #fff;
+    }
+
+    .hours,
+    .minutes,
+    .seconds {
+      width: 30%;
+      max-width: 200px;
+      height: 150px;
+
+      -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+    }
+
+    .top {
+      height: 75%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 50px;
+    }
+
+    .top.blue {
+      background-color: #2295F6;
+    }
+
+    .bottom {
+      height: 25%;
+      background-color: #1679CF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+
+    }
+
+    .bottom.blue {
+      background-color: #1679CF;
+      border-top: 2.5px solid #0e4c83;
+
+    }
+
+    .top.pink {
+      background-color: #FE006B;
+    }
+
+    .bottom.pink {
+      background-color: #d10057;
+      border-top: 2.5px solid #8a033b;
+    }
   </style>
 </head>
 
 <body>
 
- 
+  <div class="datetime">
 
+    <div class="hours">
+
+      <div class="top blue">
+        <p class="hour">00</p>
+      </div>
+      <div class="bottom blue">
+        <p>Hours</p>
+      </div>
+    </div>
+
+    <div class="minutes">
+      <div class="top blue">
+        <p class="minute">00</p>
+      </div>
+      <div class="bottom blue">
+        <p>Minutes</p>
+      </div>
+    </div>
+
+    <div class="seconds">
+      <div class="top pink ">
+        <p class="second">00</p>
+      </div>
+      <div class="bottom pink">
+        <p>Seconds</p>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script>
+
+
+
+
+    setInterval(() => {
+      var day = new Date();
+      var hours = day.getHours();
+      var minutes = day.getMinutes();
+      var seconds = day.getSeconds();
+      document.getElementsByClassName("hour")[0].innerText = hours;
+      document.getElementsByClassName("minute")[0].innerText = minutes;
+      document.getElementsByClassName("second")[0].innerText = seconds;
+
+    }, 1000);
+
+
+  </script>
 </body>
 
 </html>
