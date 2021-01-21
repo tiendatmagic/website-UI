@@ -342,6 +342,13 @@
           <kbd> Đồng hồ thời gian phản chiếu</kbd>
           <S69 />
         </div>
+
+           <div class="site sitem-lg-4 sitem-md-6">
+          <kbd> Đồng hồ thời gian phản chiếu</kbd>
+          <S70 />
+        </div>
+
+
       </div>
       <Like />
       <Love />
@@ -431,6 +438,8 @@ import S67 from "./components/S67.vue";
 
 import S68 from "./components/S68.vue";
 import S69 from "./components/S69.vue";
+import S70 from "./components/S70.vue";
+
 
 import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";
@@ -509,6 +518,7 @@ export default {
     S67,
     S68,
     S69,
+    S70,
     Like,
     Love,
     Modal,
