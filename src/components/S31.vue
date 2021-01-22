@@ -76,12 +76,7 @@ export default {
   width: 100%;
   padding: 10px;
   border-radius: 60px 0px 60px 0px;
-  background-image: linear-gradient(
-    rgba(212, 0, 255, 0.705), 
-    rgba(255, 0, 255, 0.705),    
-    rgb(252, 5, 157),
-    rgb(255, 95, 95)
-  );
+ background-image: linear-gradient(to right, #f40076, #df98fa);
   overflow: hidden;
 }
 
