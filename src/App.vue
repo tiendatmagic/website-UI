@@ -1,7 +1,11 @@
 <template>
   <div id="app">
+     <div class="loader">
+        <img src="./img/loader.gif" alt="Loading..." />
+    </div>   
+    
     <div class="container-fluid">
-      <h1>
+      <h1 @click="load">
         Chào mừng các bạn đã đến với web thư viện Front end của Tiendatmagic
       </h1>
       <input
@@ -343,12 +347,10 @@
           <S69 />
         </div>
 
-           <div class="site sitem-lg-4 sitem-md-6">
-          <kbd> Đồng hồ thời gian phản chiếu</kbd>
+        <div class="site sitem-lg-4 sitem-md-6">
+          <kbd> Bảng lựa chọn gói </kbd>
           <S70 />
         </div>
-
-
       </div>
       <Like />
       <Love />
@@ -440,11 +442,11 @@ import S68 from "./components/S68.vue";
 import S69 from "./components/S69.vue";
 import S70 from "./components/S70.vue";
 
-
 import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";
 import Modal from "./components/Modal.vue";
 import Footer from "./components/Footer.vue";
+// import reload from './reload.js';
 export default {
   title: "Foo Page",
   name: "App",
@@ -524,7 +526,17 @@ export default {
     Modal,
     Footer,
   },
+  mounted: function () {
+    setTimeout(() => {
+  this.load();
+    }, 2000)
+  },
   methods: {
+    load: function () {
+      const loader = document.querySelector(".loader");
+      loader.className += " hidden"; //
+    },
+    
     myFunction: function () {
       var input, filter, smain, div, td, i, txtValue;
       input = document.getElementById("myInput");
@@ -626,4 +638,39 @@ kbd {
   box-shadow: 0px 0px 7px 0px palevioletred;
   transition: 0.3s ease-out;
 }
+
+//
+
+
+        .loader {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.loader.hidden {
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+
+
+
+
 </style>

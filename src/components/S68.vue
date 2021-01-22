@@ -85,7 +85,7 @@ export default {
 
 .table {
   width: 100%;
-  max-width: 350px;
+  max-width: 320px;
   height: 350px;
   margin: 0 auto;
   background-color: #f2f1f2;
