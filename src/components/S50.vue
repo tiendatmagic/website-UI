@@ -2,7 +2,6 @@
   <div class="smainn">
     <br />
     <div id="s50">
-
       <link
         rel="stylesheet"
         href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css"
@@ -66,8 +65,6 @@
           </div>
         </div>
       </div>
-
-      
     </div>
 
     <div class="buttonhtmlcss">
@@ -116,11 +113,12 @@ export default {
 .card-group {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .card {
   width: 180px;
-
+  margin: 5px;
   border-radius: 20px;
   padding: 20px;
 }

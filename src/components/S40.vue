@@ -126,8 +126,6 @@ body {
   border-radius: 20px;
   font-family: Arial, Helvetica, sans-serif;
   padding: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
   box-shadow: 0px 5px 15px 0px rgba(110, 110, 110, 0.349);
 }
 
@@ -177,7 +175,7 @@ body {
   display: flex;
   word-break: break-all;
   background-color: #fff;
-  padding: 15px;
+  padding: 10px;
   border-radius: 15px;
   cursor: pointer;
   margin-bottom: 20px;

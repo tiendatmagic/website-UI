@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-     <div class="loader">
-        <img src="./img/loader.gif" alt="Loading..." />
-    </div>   
-    
+    <div class="loader">
+      <img src="./img/loader.gif" alt="Loading..." />
+    </div>
+
     <div class="container-fluid">
       <h1 @click="load">
         Chào mừng các bạn đã đến với web thư viện Front end của Tiendatmagic
@@ -355,6 +355,7 @@
       <Like />
       <Love />
 
+      <Up />
       <div class="smain">
         <div class="sitem">
           <Footer />
@@ -444,6 +445,7 @@ import S70 from "./components/S70.vue";
 
 import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";
+import Up from "./components/Up.vue";
 import Modal from "./components/Modal.vue";
 import Footer from "./components/Footer.vue";
 // import reload from './reload.js';
@@ -523,21 +525,22 @@ export default {
     S70,
     Like,
     Love,
+    Up,
     Modal,
     Footer,
   },
-  mounted: function () {
+  mounted: function() {
     setTimeout(() => {
-  this.load();
-    }, 2000)
+      this.load();
+    }, 2000);
   },
   methods: {
-    load: function () {
+    load: function() {
       const loader = document.querySelector(".loader");
       loader.className += " hidden"; //
     },
-    
-    myFunction: function () {
+
+    myFunction: function() {
       var input, filter, smain, div, td, i, txtValue;
       input = document.getElementById("myInput");
       filter = input.value.toUpperCase();
@@ -577,6 +580,7 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -641,36 +645,28 @@ kbd {
 
 //
 
-
-        .loader {
-    position: fixed;
-    z-index: 99;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.loader {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
 .loader.hidden {
-    animation: fadeOut 1s;
-    animation-fill-mode: forwards;
+  animation: fadeOut 1s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes fadeOut {
-    100% {
-        opacity: 0;
-        visibility: hidden;
-    }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
-
-
-
-
-
-
 </style>
