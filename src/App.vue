@@ -1,7 +1,10 @@
 <template>
   <div id="app">
     <div class="loader">
-      <img src="./img/loader.gif" alt="Loading..." />
+      <img
+        src="https://raw.githubusercontent.com/tiendatmagic/website-UI/master/src/img/loader.gif"
+        alt="Loading..."
+      />
     </div>
 
     <div class="container-fluid">
