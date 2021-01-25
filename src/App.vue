@@ -354,6 +354,11 @@
           <kbd> Bảng lựa chọn gói </kbd>
           <S70 />
         </div>
+
+        <div class="site sitem-lg-4 sitem-md-6">
+          <kbd> Hiệu ứng Blog Posts </kbd>
+          <S71 />
+        </div>
       </div>
       <Like />
       <Love />
@@ -446,6 +451,8 @@ import S68 from "./components/S68.vue";
 import S69 from "./components/S69.vue";
 import S70 from "./components/S70.vue";
 
+import S71 from "./components/S71.vue";
+
 import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";
 import Up from "./components/Up.vue";
@@ -526,6 +533,7 @@ export default {
     S68,
     S69,
     S70,
+    S71,
     Like,
     Love,
     Up,

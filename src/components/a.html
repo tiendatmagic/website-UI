@@ -1,17 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: gray;
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+      .blogposts {
+        cursor: pointer;
+      }
+      .imagepost {
+        width: 100%;
+        height: 250px;
+        margin: 0 auto;
+        transform: translateY(20px);
+        transition: 0.5s ease-out;
+      }
+      .imagepost img {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+      }
+      .mainpost {
+        margin: 0 auto;
+        padding: 15px;
+        width: 90%;
+        border-radius: 8px;
+        transform: translateY(-20px);
+        justify-content: center;
+        background-color: #e0dfe1cc;
+        transition: 0.5s ease-out;
+      }
+      .blogposts:hover .imagepost {
+        transform: translateY(50px);
+      }
 
-  <style>
- 
-  </style>
-</head>
+      .blogposts:hover .mainpost {
+        transform: translateY(-50px);
+      }
 
-<body>
-</body>
+      .mainpost .content {
+        font-weight: 550;
+      }
+      .mainpost .datetime {
+        margin-top: 10px;
+        color: #ff5f02;
+        font-style: italic;
+      }
+    </style>
+  </head>
 
+  <body>
+    <div class="blogposts">
+      <div class="imagepost">
+        <img
+          src="
+        https://raw.githubusercontent.com/tiendatmagic/website-UI/master/src/img/aILP3CD.png
+        "
+          alt=""
+        />
+      </div>
+
+      <div class="mainpost">
+        <div class="content">
+          <p>
+            Dẫu biết ngày mai có ra sao, dù ra sao cũng chẳng sao
+          </p>
+        </div>
+        <div class="datetime">
+          <p>
+            Mon 25, 2021
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
