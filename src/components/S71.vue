@@ -42,7 +42,7 @@
 export default {
   methods: {
     html() {
-      var a = document.getElementById("s53").innerHTML;
+      var a = document.getElementById("s71").innerHTML;
 
       document.getElementById("thtml").innerHTML = a;
       document.getElementsByClassName("modal")[0].style.display = "block";
@@ -51,7 +51,7 @@ export default {
       document.getElementById("css").style.display = "none";
     },
     css() {
-      var b = document.getElementsByTagName("style")[53].innerHTML;
+      var b = document.getElementsByTagName("style")[71].innerHTML;
       document.getElementById("tcss").innerHTML = b;
       document.getElementsByClassName("modal")[0].style.display = "block";
 
