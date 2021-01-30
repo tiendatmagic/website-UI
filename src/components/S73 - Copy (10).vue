@@ -1,10 +1,7 @@
 <template>
   <div class="smainn">
     <br />
-    <div id="s52">
-
-
-    </div>
+    <div id="s73"></div>
 
     <div class="buttonhtmlcss">
       <button @click="html()" class="btn">
@@ -21,7 +18,7 @@
 export default {
   methods: {
     html() {
-      var a = document.getElementById("s53").innerHTML;
+      var a = document.getElementById("s73").innerHTML;
 
       document.getElementById("thtml").innerHTML = a;
       document.getElementsByClassName("modal")[0].style.display = "block";
@@ -30,7 +27,7 @@ export default {
       document.getElementById("css").style.display = "none";
     },
     css() {
-      var b = document.getElementsByTagName("style")[53].innerHTML;
+      var b = document.getElementsByTagName("style")[73].innerHTML;
       document.getElementById("tcss").innerHTML = b;
       document.getElementsByClassName("modal")[0].style.display = "block";
 
@@ -42,6 +39,4 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>

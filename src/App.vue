@@ -364,6 +364,11 @@
           <kbd> Bài viết Pepsi </kbd>
           <S72 />
         </div>
+
+        <div class="site sitem-lg-4 sitem-md-6">
+          <kbd> Hiệu ứng sản phẩm lon coca</kbd>
+          <S73 />
+        </div>
       </div>
       <Like />
       <Love />
@@ -458,6 +463,7 @@ import S70 from "./components/S70.vue";
 
 import S71 from "./components/S71.vue";
 import S72 from "./components/S72.vue";
+import S73 from "./components/S73.vue";
 
 import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";
@@ -541,6 +547,7 @@ export default {
     S70,
     S71,
     S72,
+    S73,
     Like,
     Love,
     Up,

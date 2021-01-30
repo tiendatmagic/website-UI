@@ -7,13 +7,13 @@
         <div class="circle"></div>
         <div class="content">
           <h2>
-            Pepsi COla
+            Pepsi Cola
           </h2>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing
+            Dẫu biết ngày mai có ra sao, dù ra sao cũng chẳng sao
           </p>
-          <a href="#">Buy Now</a>
+          <button>Buy Now</button>
         </div>
         <img src="../img/can-real-sugar-reg.png" alt="" />
       </div>
@@ -62,18 +62,11 @@ export default {
   box-sizing: border-box;
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-
 .card {
   position: relative;
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   height: 350px;
-  /* background: #ccc; */
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -88,7 +81,6 @@ body {
   height: 100%;
   border-radius: 20px;
   overflow: hidden;
-
   background: #d83133;
   clip-path: circle(120px at center);
   transition: 0.5s;
@@ -141,17 +133,18 @@ body {
   color: #fff;
 }
 
-.card .content a {
+.card .content button {
   position: relative;
   color: #fff;
   padding: 10px 20px;
   border-radius: 10px;
+  border: none;
+  outline: none;
   background: #fff;
   color: #111;
   margin-top: 10px;
-  display: inline-block;
-  text-decoration: none;
   font-weight: 700;
+  cursor: pointer;
 }
 
 @media (max-width: 991px) {
