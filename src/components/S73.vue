@@ -6,7 +6,10 @@
         <div class="main">
           <div class="header">
             <div class="img">
-              <img src="../img/can-real-sugar-reg.png" alt="" />
+              <img
+                src="https://raw.githubusercontent.com/tiendatmagic/website-UI/master/src/img/can-real-sugar-reg.png"
+                alt=""
+              />
             </div>
             <div class="name">
               <b>

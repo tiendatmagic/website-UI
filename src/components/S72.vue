@@ -15,7 +15,10 @@
           </p>
           <button>Buy Now</button>
         </div>
-        <img src="../img/can-real-sugar-reg.png" alt="" />
+        <img
+          src="https://raw.githubusercontent.com/tiendatmagic/website-UI/master/src/img/can-real-sugar-reg.png"
+          alt=""
+        />
       </div>
     </div>
 
