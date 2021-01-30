@@ -1,25 +1,21 @@
 <template>
   <div class="smainn">
     <br />
-    <br />
+
     <div id="s72">
-      <div class="pepsi">
-        <div class="pepsis">
-          <div class="content">
-            <h2>
-              PEPSI COCA
-            </h2>
-            <div class="main">
-              <span>
-                Dẫu biết ngày mai có ra sao, dù ra sao cũng chẳng sao. Hãy uống
-                Pepsi ahihi 😁
-              </span>
-            </div>
-          </div>
+      <div class="card">
+        <div class="circle"></div>
+        <div class="content">
+          <h2>
+            Pepsi COla
+          </h2>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing
+          </p>
+          <a href="#">Buy Now</a>
         </div>
-        <div class="image">
-          <img src="../img/can-real-sugar-reg.png" alt="" />
-        </div>
+        <img src="../img/can-real-sugar-reg.png" alt="" />
       </div>
     </div>
 
@@ -66,69 +62,125 @@ export default {
   box-sizing: border-box;
 }
 
-.pepsi {
-  width: 100%;
-  max-width: 200px;
-  padding: 30px;
-  margin: 0 auto;
-  background-color: #c50000;
-  border-radius: 50%;
-  height: 200px;
-  position: relative;
-  transition: 0.3s ease-out;
-}
-.pepsi:hover {
-  width: 100%;
-  max-width: 550px;
-  padding: 20px;
-  background-color: #015db5;
-  border-radius: 20px;
-}
-.pepsi:hover .image img {
-  transform: scale(1.3);
-}
-.pepsis {
+body {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  position: relative;
+  width: 600px;
+  height: 350px;
+  /* background: #ccc; */
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.card .circle {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  border-radius: 20px;
   overflow: hidden;
-}
-.pepsis .content {
-  width: 50%;
-  color: #fff;
-  display: block;
+
+  background: #d83133;
+  clip-path: circle(120px at center);
+  transition: 0.5s;
 }
 
-.image {
+.card:hover .circle {
+  background-color: #0065c3;
+  clip-path: circle(400px at center);
+}
+
+.card img {
   position: absolute;
-  top: 0px;
-  right: 0px;
-  transform: translateY(-10%) translateX(-17%);
-}
-.image img {
-  width: 100%;
-  max-width: 150px;
-  transition: 0.3s ease-out;
-}
-.main span {
-  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 300px;
+  pointer-events: none;
+  transition: 0.5s;
 }
 
-@media only screen and (max-width: 600px) {
-  .pepsi {
-    width: 165px;
-    height: 165px;
+.card:hover img {
+  left: 72%;
+  height: 500px;
+}
+
+.card .content {
+  position: relative;
+  width: 50%;
+  left: 20%;
+  padding: 20px 20px 20px 40px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.card:hover .content {
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.card .content h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2em;
+  line-height: 1em;
+  margin-bottom: 5px;
+}
+.card .content p {
+  color: #fff;
+}
+
+.card .content a {
+  position: relative;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #fff;
+  color: #111;
+  margin-top: 10px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+@media (max-width: 991px) {
+  .card {
+    width: auto;
+    max-width: 350px;
+    align-items: flex-start;
+    margin: 10px;
   }
 
-  .image img {
+  .card:hover {
+    height: 600px;
+  }
+
+  .card .content {
     width: 100%;
-    max-width: 110px;
+    left: 0;
+    padding: 30px;
   }
-  .image {
-    transform: translateY(-10%) translateX(-25%);
+  .card:hover img {
+    top: 70%;
+    left: 50%;
+    height: 300px;
   }
-  .pepsi:hover .image img {
-    transform: scale(1.1);
+}
+
+@media (max-width: 420px) {
+  .card .content {
+    padding: 20px;
   }
 }
 </style>

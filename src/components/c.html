@@ -1,154 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .card {
+        position: relative;
+        width: 600px;
+        height: 350px;
+        /* background: #ccc; */
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        transition: 0.5s;
+      }
+
+      .card .circle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+
+        background: #d83133;
+        clip-path: circle(120px at center);
+        transition: 0.5s;
+      }
+
+      .card:hover .circle {
+        background-color: #0065c3;
+        clip-path: circle(400px at center);
+      }
+
+      .card img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 300px;
+        pointer-events: none;
+        transition: 0.5s;
+      }
+
+      .card:hover img {
+        left: 72%;
+        height: 500px;
+      }
+
+      .card .content {
+        position: relative;
+        width: 50%;
+        left: 20%;
+        padding: 20px 20px 20px 40px;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.5s;
+      }
+
+      .card:hover .content {
+        left: 0;
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .card .content h2 {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 2em;
+        line-height: 1em;
+        margin-bottom: 5px;
+      }
+      .card .content p {
+        color: #fff;
+      }
+
+      .card .content a {
+        position: relative;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 10px;
+        background: #fff;
+        color: #111;
+        margin-top: 10px;
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      @media (max-width: 991px) {
+        .card {
+          width: auto;
+          max-width: 350px;
+          align-items: flex-start;
+          margin: 10px;
         }
 
-        h1 {
-            font-size: 40px;
-            text-align: center;
-            font-weight: 100;
-            color: #ff0bb6;
-            position: relative;
+        .card:hover {
+          height: 600px;
         }
 
-        .form {
-            width: 100%;
-            margin: 0 auto;
-            border-radius: 20px;
-            background-color: #fcfcfc;
-            box-shadow: 0 2px 40px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+        .card .content {
+          width: 100%;
+          left: 0;
+          padding: 30px;
         }
+        .card:hover img {
+          top: 70%;
+          left: 50%;
+          height: 300px;
+        }
+      }
 
-        form {
-            width: 100%;
-            margin: 0 auto;
-            padding: 30px 5%;
+      @media (max-width: 420px) {
+        .card .content {
+          padding: 20px;
         }
-
-        .form-control {
-            text-align: left;
-            width: 100%;
-            height: 60px;
-            border-radius: 14px;
-            outline: none;
-            background-color: #f5f1ff;
-            border: none;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            text-indent: 60px;
-            font-size: 17px;
-            transition: 0.3s ease-out;
-        }
-
-        .form-control:focus {
-            border: 1px solid royalblue;
-            box-shadow: 0px 0px 7px 0px royalblue;
-            transition: 0.3s ease-out;
-        }
-
-        button.login {
-            width: 70%;
-            height: 60px;
-            background-color: royalblue;
-            border: none;
-            outline: none;
-            border-radius: 20px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: whitesmoke;
-            cursor: pointer;
-            transition: 0.3s ease-out;
-        }
-
-        button.login:hover {
-            background-color: #0339db;
-            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.514);
-            transition: 0.3s ease-out;
-        }
-
-        button span {
-            font-size: 19px;
-        }
-
-        .form-group i {
-            position: relative;
-            bottom: 55px;
-            left: 20px;
-            font-size: 30px;
-            pointer-events: none;
-        }
-
-        p {
-            text-align: center;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-
-        a.qmk {
-            text-decoration: none;
-            color: royalblue;
-        }
-
-        a.qmk:hover {
-            text-decoration: underline;
-        }
-
-        button.createaccount {
-            width: 70%;
-            height: 60px;
-            background-color: #36a420;
-            border: none;
-            outline: none;
-            border-radius: 20px;
-            margin: 0 auto;
-            margin-top: 30px;
-            margin-bottom: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: whitesmoke;
-            cursor: pointer;
-            transition: 0.3s ease-out;
-        }
-
-        button.createaccount:hover {
-            background-color: #1ba500;
-            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.514);
-            transition: 0.3s ease-out;
-        }
+      }
     </style>
-</head>
+  </head>
+  <body>
+    <div class="card">
+      <div class="circle"></div>
+      <div class="content">
+        <h2>
+          Pepsi COla
+        </h2>
 
-<body>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css">
-    <div class="form">
-        <form action="javscript:voi(0);">
-            <h1>Đăng nhập</h1>
-            <div class="form-group">
-                <div><label for="email"> Email </label></div>
-                <div><input type="email" name="email" id="email" placeholder="vd: tiendatmagic@email.com"
-                        class="form-control"></div><i class="far fa-envelope"></i>
-            </div>
-            <div class="form-group">
-                <div><label for="password">Mật khẩu</label></div>
-                <div><input type="password" name="password" id="password" placeholder="" class="form-control"></div><i
-                    class="fas fa-lock"></i>
-            </div><button class="login"><span>Đăng nhập</span></button>
-            <p><a href="#" class="qmk"> Quên mật khẩu </a></p>
-            <hr><button class="createaccount"><span>Tạo tài khoản mới</span></button>
-        </form>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing
+        </p>
+        <a href="#">Buy Now</a>
+      </div>
+      <img src="../img/can-real-sugar-reg.png" alt="" />
     </div>
-</body>
-
+  </body>
 </html>
