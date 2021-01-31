@@ -83,7 +83,6 @@ export default {
 }
 
 .title h2 {
-  width: 60%;
   margin: 0 auto;
   font-size: 35px;
   letter-spacing: 3px;

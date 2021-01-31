@@ -22,7 +22,7 @@ export default {
     };
   },
   methods: {
-    numlike: function () {
+    numlike: function() {
       this.nlike += 1;
       this.$http
         .put(
@@ -34,7 +34,9 @@ export default {
 
     getnumlike() {
       this.$http
-        .get("https://tiendatmagicuidesign-default-rtdb.firebaseio.com/numberlike.json")
+        .get(
+          "https://tiendatmagicuidesign-default-rtdb.firebaseio.com/numberlike.json"
+        )
         .then((response) => {
           return response.json();
         })
@@ -45,15 +47,14 @@ export default {
           }
           this.nlike = Number(newlike);
         });
-        
     },
   },
 
-  mounted: function () {
-     setTimeout(() => {
-      document.getElementsByClassName("alllike")[0].style.display='block';
-    },3000)
-    
+  mounted: function() {
+    setTimeout(() => {
+      document.getElementsByClassName("alllike")[0].style.display = "block";
+    }, 3000);
+
     this.getnumlike();
     setInterval(() => {
       this.getnumlike();
@@ -65,7 +66,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .alllike {
-  
   text-align: center;
   display: flex;
   justify-content: center;
@@ -77,8 +77,8 @@ export default {
 }
 
 .like {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   background-color: rgba(255, 255, 255, 0.877);
   box-shadow: 0px 5px 10px 0px rgba(131, 131, 131, 0.349);
   display: flex;

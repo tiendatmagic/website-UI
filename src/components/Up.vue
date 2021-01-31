@@ -33,8 +33,8 @@ export default {};
 }
 
 .up {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   background-color: rgba(255, 255, 255, 0.808);
   box-shadow: 0px 5px 10px 0px rgba(131, 131, 131, 0.349);
   display: flex;

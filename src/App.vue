@@ -20,18 +20,22 @@
       />
 
       <div class="smain" id="smain">
-        <div class="site sitem-lg-4">
-          <kbd>Form đăng nhập</kbd>
-          <S1 />
+        <div class="site sitem-lg-3">
+          <Donate />
         </div>
-        <div class="site sitem-lg-8">
+
+        <div class="site sitem-lg-2">
+          <kbd>Hiệu ứng ping</kbd>
+          <S8 />
+        </div>
+        <div class="site sitem-lg-7">
           <kbd>Form đăng ký</kbd>
           <S2 />
         </div>
 
         <div class="site sitem-md-4">
-          <kbd>Thanh bar</kbd>
-          <S3 />
+          <kbd>Form đăng nhập</kbd>
+          <S1 />
         </div>
 
         <div class="site sitem-md-4">
@@ -53,8 +57,8 @@
           <S7 />
         </div>
         <div class="site sitem-lg-3 sitem-md-6 sitem-sm-6">
-          <kbd>Hiệu ứng ping</kbd>
-          <S8 />
+          <kbd>Thanh bar</kbd>
+          <S3 />
         </div>
         <div class="site sitem-md-3">
           <kbd>Hiệu ứng button co dãn</kbd>
@@ -465,6 +469,7 @@ import S71 from "./components/S71.vue";
 import S72 from "./components/S72.vue";
 import S73 from "./components/S73.vue";
 
+import Donate from "./components/Donate.vue";
 import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";
 import Up from "./components/Up.vue";
@@ -548,6 +553,7 @@ export default {
     S71,
     S72,
     S73,
+    Donate,
     Like,
     Love,
     Up,
@@ -615,13 +621,17 @@ html {
   height: 100%;
   position: relative;
 }
+
 h1 {
   text-align: center;
   color: deeppink;
 }
 kbd {
   font-size: 17px;
+  font-weight: bold;
+  font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
 }
 .buttonhtmlcss {
   display: flex;

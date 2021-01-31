@@ -95,7 +95,8 @@ export default {
 }
 
 .card {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   height: 400px;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.2);

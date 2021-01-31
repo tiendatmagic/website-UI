@@ -1,15 +1,18 @@
 <template>
   <div class="smainn">
     <br />
-    <div id="s73"></div>
-
-    <div class="buttonhtmlcss">
-      <button @click="html()" class="btn">
-        <i class="fa fa-eye"></i> Xem HTML
-      </button>
-      <button @click="css()" class="btn">
-        <i class="fa fa-eye"></i> Xem CSS
-      </button>
+    <div id="sdonate">
+      <div class="donate">
+        <div class="item">
+          Donate:
+        </div>
+        <div class="item">
+          <img src="../img/logo-momo.jpg" alt="" />
+        </div>
+        <div class="item">
+          0901980543
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -39,4 +42,33 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.donate {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  background-color: #ae2170;
+  // padding: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.donate .item {
+  margin: 10px;
+}
+
+.donate img {
+  width: 60px;
+}
+</style>

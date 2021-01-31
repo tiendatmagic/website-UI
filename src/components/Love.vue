@@ -22,7 +22,7 @@ export default {
     };
   },
   methods: {
-    numlove: function () {
+    numlove: function() {
       this.nlove += 1;
       this.$http
         .put(
@@ -34,7 +34,9 @@ export default {
 
     getnumlove() {
       this.$http
-        .get("https://tiendatmagicuidesign-default-rtdb.firebaseio.com/numberlove.json")
+        .get(
+          "https://tiendatmagicuidesign-default-rtdb.firebaseio.com/numberlove.json"
+        )
         .then((response) => {
           return response.json();
         })
@@ -48,10 +50,10 @@ export default {
     },
   },
 
-  mounted: function () {
+  mounted: function() {
     setTimeout(() => {
-      document.getElementsByClassName("alllove")[0].style.display='block';
-    },3000)
+      document.getElementsByClassName("alllove")[0].style.display = "block";
+    }, 3000);
     this.getnumlove();
     setInterval(() => {
       this.getnumlove();
@@ -63,7 +65,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .alllove {
-  
   text-align: center;
   display: flex;
   justify-content: center;
@@ -75,8 +76,8 @@ export default {
 }
 
 .love {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   background-color: rgba(255, 255, 255, 0.877);
   box-shadow: 0px 5px 10px 0px rgba(131, 131, 131, 0.349);
   display: flex;

@@ -12,7 +12,7 @@
           <input type="text" class="searchinput" placeholder="Type to search" />
         </div>
 
-        <a href="#" class="search-btn">
+        <a href="###" class="search-btn">
           <i class="fas fa-search"></i>
         </a>
       </div>
