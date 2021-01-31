@@ -7,7 +7,10 @@
           Donate:
         </div>
         <div class="item">
-          <img src="../img/logo-momo.jpg" alt="" />
+          <img
+            src="https://raw.githubusercontent.com/tiendatmagic/website-UI/master/src/img/logo-momo.jpg"
+            alt=""
+          />
         </div>
         <div class="item">
           0901980543
@@ -54,7 +57,6 @@ export default {
   width: 100%;
   flex-wrap: wrap;
   background-color: #ae2170;
-  // padding: 10px;
   justify-content: flex-start;
   align-items: center;
   color: #fff;
