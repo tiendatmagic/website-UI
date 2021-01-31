@@ -108,7 +108,7 @@ export default {
 .img {
   width: 150px;
   margin: 0 auto;
-  transform: scale(0.7);
+  transform: scale(0.7) translateY(30%);
   transition: 0.5s ease-out;
 }
 .img img {
@@ -187,7 +187,7 @@ export default {
 }
 
 .card:hover .img {
-  transform: rotateZ(-45deg);
+  transform: rotateZ(-45deg) translateY(-10%);
 }
 
 .card:hover .main {
