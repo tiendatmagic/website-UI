@@ -61,7 +61,7 @@ export default {
   align-items: center;
   color: #fff;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 auto;
   margin-bottom: 20px;

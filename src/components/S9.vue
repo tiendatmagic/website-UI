@@ -57,7 +57,8 @@ button.button {
   outline: none;
   border: none;
   border-radius: 10px;
-  margin-left: 30%;
+  margin: 0 auto;
+  display: block;
   transition: 0.3s ease-out;
   color: #fff;
   cursor: pointer;

@@ -33,17 +33,17 @@
           <S2 />
         </div>
 
-        <div class="site sitem-md-4">
+        <div class="site sitem-lg-4">
           <kbd>Form đăng nhập</kbd>
           <S1 />
         </div>
 
-        <div class="site sitem-md-4">
+        <div class="site sitem-lg-4 sitem-md-6">
           <kbd>Hiệu ứng Input focus</kbd>
           <S4 />
         </div>
 
-        <div class="site sitem-md-4">
+        <div class="site sitem-lg-4 sitem-md-6">
           <kbd>Gradient Button</kbd>
           <S5 />
         </div>
@@ -60,40 +60,40 @@
           <kbd>Thanh bar</kbd>
           <S3 />
         </div>
-        <div class="site sitem-md-3">
+        <div class="site sitem-lg-3 sitem-md-4">
           <kbd>Hiệu ứng button co dãn</kbd>
           <S9 />
         </div>
 
-        <div class="site sitem-md-4">
+        <div class="site sitem-lg-4 sitem-md-8">
           <kbd>Bảng modal</kbd>
           <S10 />
         </div>
 
-        <div class="site sitem-md-3">
+        <div class="site sitem-lg-3 sitem-md-6">
           <kbd>Button mạng xã hội</kbd>
           <S11 />
         </div>
 
-        <div class="site sitem-md-2">
+        <div class="site sitem-lg-2 sitem-md-6">
           <kbd>Button mạng xã hội 2</kbd>
           <S12 />
         </div>
 
-        <div class="site sitem-md-3">
+        <div class="site sitem-lg-3 sitem-md-6">
           <kbd>Thanh bar loading</kbd>
           <S13 />
         </div>
-        <div class="site sitem-md-3">
+        <div class="site sitem-lg-3 sitem-md-6">
           <kbd>Chữ Gradient</kbd>
           <S14 />
         </div>
-        <div class="site sitem-md-4">
+        <div class="site sitem-lg-4 sitem-md-8">
           <kbd>Thẻ ATM Vietcombank</kbd>
           <S15 />
         </div>
 
-        <div class="site sitem-md-2">
+        <div class="site sitem-lg-2 sitem-md-4">
           <kbd>Chuông thông báo</kbd>
           <S16 />
         </div>
@@ -373,6 +373,11 @@
           <kbd> Hiệu ứng sản phẩm lon coca</kbd>
           <S73 />
         </div>
+
+        <div class="site sitem-lg-4 sitem-md-6">
+          <kbd> Máy tính bỏ túi</kbd>
+          <S74 />
+        </div>
       </div>
       <Like />
       <Love />
@@ -468,6 +473,7 @@ import S70 from "./components/S70.vue";
 import S71 from "./components/S71.vue";
 import S72 from "./components/S72.vue";
 import S73 from "./components/S73.vue";
+import S74 from "./components/S74.vue";
 
 import Donate from "./components/Donate.vue";
 import Like from "./components/Like.vue";
@@ -553,6 +559,7 @@ export default {
     S71,
     S72,
     S73,
+    S74,
     Donate,
     Like,
     Love,
