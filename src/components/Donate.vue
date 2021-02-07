@@ -54,7 +54,6 @@ export default {
 
 .donate {
   display: flex;
-  width: 100%;
   flex-wrap: wrap;
   background-color: #ae2170;
   justify-content: flex-start;
@@ -64,10 +63,11 @@ export default {
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 auto;
+  padding: 10px;
   margin-bottom: 20px;
 }
 .donate .item {
-  margin: 10px;
+  margin: 5px;
 }
 
 .donate img {

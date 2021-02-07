@@ -78,10 +78,6 @@ button.button {
   transition: 0.5 ease-out;
 }
 
-button.button:hover {
-  transform: scale(1.05);
-  transition: 0.5 ease-out;
-}
 button.button i {
   font-size: 30px;
 }

@@ -20,11 +20,11 @@
       />
 
       <div class="smain" id="smain">
-        <div class="site sitem-lg-3">
+        <div class="site sitem-lg-3 sitem-md-6">
           <Donate />
         </div>
 
-        <div class="site sitem-lg-2">
+        <div class="site sitem-lg-2 sitem-md-6">
           <kbd>Hiệu ứng ping</kbd>
           <S8 />
         </div>
@@ -378,6 +378,10 @@
           <kbd> Máy tính bỏ túi</kbd>
           <S74 />
         </div>
+        <div class="site sitem-lg-5 sitem-md-6">
+          <kbd> Hiệu ứng bài viết trong suốt</kbd>
+          <S75 />
+        </div>
       </div>
       <Like />
       <Love />
@@ -474,7 +478,7 @@ import S71 from "./components/S71.vue";
 import S72 from "./components/S72.vue";
 import S73 from "./components/S73.vue";
 import S74 from "./components/S74.vue";
-
+import S75 from "./components/S75.vue";
 import Donate from "./components/Donate.vue";
 import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";
@@ -560,6 +564,7 @@ export default {
     S72,
     S73,
     S74,
+    S75,
     Donate,
     Like,
     Love,

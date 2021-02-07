@@ -144,7 +144,7 @@ h1 {
 
 form {
   width: 100%;
-  max-width: 1000px;
+
   margin: 0 auto;
 }
 
@@ -274,7 +274,11 @@ button.signupp:hover {
   background-position: right;
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 1200px) {
+  form {
+    width: 100%;
+    max-width: 500px;
+  }
   .signup {
     background-color: #fff;
     border: none;
