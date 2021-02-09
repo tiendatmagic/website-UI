@@ -77,21 +77,26 @@ export default {
   justify-content: center;
   align-items: center;
   position: relative;
+  transition: 0.5s ease-out;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .content {
   width: 70%;
   margin: 0 auto;
 }
+
 .content h2 {
   color: #e40303;
   font-size: 28px;
 }
+
 .content p {
   font-size: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 .content button {
   width: 100px;
   height: 35px;
@@ -116,17 +121,38 @@ export default {
   position: absolute;
   top: 0px;
   left: 0px;
+
   transition: 0.5s ease-out;
 }
+
 .card:hover .image {
-  transform: translateX(-50%) translateY(20%);
-  width: 150px;
-  height: 150px;
+  transform: translateX(-50%) translateY(25%);
+  width: 130px;
+  height: 130px;
 }
 
 .image img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
+}
+
+@media only screen and (max-width: 660px) {
+  .card {
+    width: 90%;
+    height: 300px;
+  }
+
+  .image {
+    height: 300px;
+  }
+
+  .card:hover .image {
+    transform: translateX(-50%) translateY(-50%);
+    width: 130px;
+    height: 130px;
+    top: 0px;
+    left: 50%;
+  }
 }
 </style>
