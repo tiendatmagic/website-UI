@@ -12,7 +12,7 @@
             MONTHLY
             <h3>NEWSLETTER</h3>
           </h2>
-          <p>Dẫu biết ngày mai có ra sao, dù ra sao cũng chẳng sao</p>
+          <p>Ngày mai chẳng biết ra sao nữa. Mà có ra sao cũng chẳng sao</p>
         </div>
         <div class="search">
           <input type="text" placeholder="Enter your email address" />

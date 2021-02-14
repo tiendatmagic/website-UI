@@ -15,7 +15,7 @@
         <div class="mainpost">
           <div class="content">
             <p>
-              Dẫu biết ngày mai có ra sao, dù ra sao cũng chẳng sao
+              Ngày mai chẳng biết ra sao nữa, mà có ra sao cũng chẳng sao
             </p>
           </div>
           <div class="datetime">
