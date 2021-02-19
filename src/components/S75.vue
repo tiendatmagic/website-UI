@@ -14,7 +14,7 @@
             Design
           </h2>
           <p>
-            Dẫu biết ngày mai có ra sao, dù ra sao cũng chẳng sao
+            Ngày mai chẳng biết ra sao nữa. Mà có ra sao cũng chẳng sao
           </p>
           <button>
             Read More
