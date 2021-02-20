@@ -11,13 +11,13 @@
                 alt=""
               />
             </div>
+          </div>
+          <div class="content">
             <div class="name">
               <b>
                 Lon cocacola
               </b>
             </div>
-          </div>
-          <div class="content">
             <div class="size">
               <p>
                 Size:
@@ -109,7 +109,7 @@ export default {
 .img {
   width: 150px;
   margin: 0 auto;
-  transform: scale(0.7) translateY(30%);
+  transform: scale(0.7) translateY(-10%);
   transition: 0.5s ease-out;
 }
 .img img {
@@ -117,7 +117,7 @@ export default {
 }
 
 .name {
-  color: #fff;
+  color: red;
   font-size: 25px;
 }
 .size,
@@ -174,7 +174,6 @@ export default {
   cursor: pointer;
 }
 .main {
-  transform: translateY(-15%);
   width: 100%;
   height: 100%;
   padding: 20px;
@@ -184,18 +183,20 @@ export default {
 .main .content {
   visibility: hidden;
   opacity: 0;
+  transform: translateY(-40%);
   transition: 0.5s ease-out;
 }
 
 .card:hover .img {
-  transform: rotateZ(-45deg) translateY(-10%);
+  transform: rotateZ(-45deg) translateY(0%);
 }
 
 .card:hover .main {
   transform: translateY(-30%);
 }
 
-.card:hover .content {
+.card:hover .main .content {
+  transform: translateY(10%);
   visibility: visible;
   opacity: 1;
 }
