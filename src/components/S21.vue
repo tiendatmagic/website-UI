@@ -81,19 +81,19 @@ export default {
 
 .avatar img {
   position: absolute;
-  width: 70px;
-  height: 70px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   border: 3px solid #fff;
   background-color: pink;
 }
 
-P {
+p {
   text-align: center;
   text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 30px;
-  margin-top: 40px;
+  font-size: 27px;
+  margin-top: 60px;
   margin-bottom: 20px;
 }
 
@@ -102,7 +102,7 @@ input {
   display: flex;
   margin: 0 auto;
   text-align: left;
-  height: 60px;
+  height: 50px;
   border-radius: 14px;
   outline: none;
   background-color: #e5e5e5;
