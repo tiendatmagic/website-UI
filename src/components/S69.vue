@@ -85,13 +85,25 @@ export default {
       document.getElementById("css").style.display = "none";
       document.getElementById("javascript").style.display = "block";
     },
+
+    getdatetime() {
+      this.hour = new Date().getHours();
+      this.minute = new Date().getMinutes();
+      this.second = new Date().getSeconds();
+    },
   },
   data() {
     return {
-      hour: new Date().getHours(),
-      minute: new Date().getMinutes(),
-      second: new Date().getSeconds(),
+      hour: null,
+      minute: null,
+      second: null,
     };
+  },
+
+  mounted: function() {
+    setInterval(() => {
+      this.getdatetime();
+    }, 1000);
   },
 };
 </script>

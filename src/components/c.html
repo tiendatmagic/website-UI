@@ -6,129 +6,184 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      * {
+      *[data-v-1bd55410] {
         margin: 0px;
         padding: 0px;
         box-sizing: border-box;
       }
 
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      body[data-v-1bd55410] {
         width: 100%;
         height: 100vh;
-      }
-
-      .box {
-        width: 100%;
-        max-width: 300px;
-        margin: 0 auto;
-        text-align: center;
-        background-color: #fff;
-        overflow: hidden;
-        border-radius: 8px;
-        padding: 20px;
-        font-family: Arial, Helvetica, sans-serif;
-        transition: 0.5s ease-out;
-      }
-
-      .number {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        /* box-shadow: 0 0 0 0 #e91e63; */
-        box-shadow: 0 0 0 100px #e91e63 0 0 0 100px red;
-        margin: 0 auto;
+        background-color: white;
         display: flex;
-        font-size: 30px;
-        color: #fff;
-        font-weight: bold;
         justify-content: center;
         align-items: center;
-        background-color: #e91e63;
-        transition: 0.5s ease-out;
-        z-index: 1;
+      }
+
+      .box[data-v-1bd55410] {
+        width: 100%;
+        height: 400px;
+        background-color: rgba(102, 51, 153, 0.363);
+        border-radius: 20px;
+      }
+
+      .button-group[data-v-1bd55410] {
+        display: flex;
+        justify-content: center;
         position: relative;
-        overflow: hidden;
+        top: 50px;
       }
 
-      .number::after {
-        content: "";
-        width: 40%;
-        height: 100%;
-        /* border-radius: 50%; */
-        /* box-shadow: 0 0 0 0 #e91e63; */
-        box-shadow: 0 0 0 10px red;
-
-        background-color: red;
-        transition: 0.5s ease-out;
-        z-index: 1;
-        position: absolute;
-        top: 0px;
-        left: 0px;
+      .boxtime-group[data-v-1bd55410] {
+        display: flex;
+        width: 100%;
+        height: 90%;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5 ease-out;
       }
 
-      .number::before {
-        content: "";
-        width: 40%;
-        height: 100%;
-        /* border-radius: 50%; */
-
-        /* box-shadow: 0 0 0 0 #e91e63; */
-        box-shadow: 0 0 0 10px yellow;
-
-        background-color: yellow;
-        transition: 0.5s ease-out;
-        z-index: 1;
-        position: absolute;
-        top: 0px;
-        right: 0px;
-      }
-
-      .box:hover .number {
-        box-shadow: 0 0 0 400px #e91e63;
-      }
-      .box:hover {
-        color: #fff;
-      }
-      .read-more button {
-        padding: 10px;
-        border-radius: 6px;
-        border: none;
+      .button-group button[data-v-1bd55410] {
+        width: 200px;
+        border-radius: 10px;
         outline: none;
-        margin: 0 auto;
-        display: block;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-weight: bold;
-        box-shadow: 1px 2px 4px rgb(131, 130, 130);
+        border: none;
+        height: 50px;
+        background-color: #584dd0;
+        color: #fff;
         cursor: pointer;
+        transform: scale(1);
+        cursor: pointer;
+        box-shadow: 0 10px 20px -5px #584dd0;
+        transition: 0.25s ease-out;
+        margin-left: 20px;
+        margin-right: 20px;
       }
-      .name {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-weight: bold;
-        font-size: 22px;
+
+      .button-group button[data-v-1bd55410]:hover {
+        transform: scale(1.08);
+        transition: 0.5 ease-out;
+      }
+
+      .boxtime[data-v-1bd55410] {
+        width: 90%;
+        height: 200px;
+        background-color: rgba(255, 0, 85, 0.356);
+        border-radius: 12px;
+      }
+
+      .boxtime-item[data-v-1bd55410] {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .s1[data-v-1bd55410] {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        font-size: 20px;
+        color: red;
+      }
+
+      .s2[data-v-1bd55410] {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 50px;
+        color: red;
+      }
+
+      .alert[data-v-1bd55410] {
+        display: none;
+        width: 30%;
+        height: 60px;
+        background-color: rgba(234, 2, 255, 0.61);
+        color: #fff;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        border-radius: 10px;
       }
     </style>
   </head>
+
   <body>
-    <div class="box">
-      <div class="number">
-        <p>01</p>
+    <div data-v-1bd55410="" class="box">
+      <div data-v-1bd55410="" class="button-group">
+        <button data-v-1bd55410="" class="start">Start</button
+        ><button data-v-1bd55410="" class="pause">Pause</button>
       </div>
-      <div class="name">
-        <p>Service name</p>
+      <div data-v-1bd55410="" class="boxtime-group">
+        <div data-v-1bd55410="" class="boxtime">
+          <div data-v-1bd55410="" class="boxtime-item">
+            <div data-v-1bd55410="" class="s1">
+              <span data-v-1bd55410="">Giờ</span
+              ><span data-v-1bd55410="">Phút</span
+              ><span data-v-1bd55410="">Giây</span>
+            </div>
+            <div data-v-1bd55410="" class="s2">
+              <span data-v-1bd55410="" class="gio">22</span
+              ><span data-v-1bd55410=""> : </span
+              ><span data-v-1bd55410="" class="phut">33</span
+              ><span data-v-1bd55410=""> : </span
+              ><span data-v-1bd55410="" class="giay">31</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="content">
-        <p>
-          Ngày mai chẳng biết ra sao nữa, dù có ra sao cũng chẳng sao
-        </p>
-      </div>
-      <div class="read-more">
-        <button>Read More</button>
+      <div data-v-1bd55410="" class="alert">
+        <p data-v-1bd55410="" class="alertt"></p>
       </div>
     </div>
+
+    <script>
+      var time;
+      var action = 1;
+      function timeplay() {
+        time = setInterval(function() {
+          var day = new Date();
+          document.getElementsByClassName("gio")[0].innerHTML = day.getHours();
+          document.getElementsByClassName(
+            "phut"
+          )[0].innerHTML = day.getMinutes();
+          document.getElementsByClassName(
+            "giay"
+          )[0].innerHTML = day.getSeconds();
+        }, 1000);
+      }
+      document
+        .getElementsByClassName("start")[0]
+        .addEventListener("click", function() {
+          if (action === 0) {
+            timeplay();
+            document.getElementsByClassName("alert")[0].style.display = "flex";
+            document.getElementsByClassName("alertt")[0].innerText =
+              "Thời gian tiếp tục";
+            setTimeout(function() {
+              document.getElementsByClassName("alert")[0].style.display =
+                "none";
+            }, 3000);
+            action = 1;
+          }
+        });
+      document
+        .getElementsByClassName("pause")[0]
+        .addEventListener("click", function() {
+          clearInterval(time);
+          document.getElementsByClassName("alert")[0].style.display = "flex";
+          document.getElementsByClassName("alertt")[0].innerText =
+            "Thời gian dừng lại";
+          setInterval(function() {
+            document.getElementsByClassName("alert")[0].style.display = "none";
+          }, 3000);
+          action = 0;
+        });
+      timeplay();
+    </script>
   </body>
 </html>

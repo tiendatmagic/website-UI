@@ -18,11 +18,11 @@
               </div>
 
               <div class="s2">
-                <span class="gio">1</span>
+                <span class="gio">{{ hour }}</span>
                 <span> : </span>
-                <span class="phut">2</span>
+                <span class="phut">{{ minute }}</span>
                 <span> : </span>
-                <span class="giay">3</span>
+                <span class="giay">{{ second }}</span>
               </div>
             </div>
           </div>
@@ -35,25 +35,23 @@
     </div>
     <code style="display: none">
       var time; var action = 1; function timeplay() { time =
-      setInterval(function () { var day = new Date();
+      setInterval(function() { var day = new Date();
       document.getElementsByClassName("gio")[0].innerHTML = day.getHours();
-      document.getElementsByClassName("phut")[0].innerHTML = day.getMinutes();
-      document.getElementsByClassName("giay")[0].innerHTML = day.getSeconds();
-      }, 1000) }
-      document.getElementsByClassName("start")[0].addEventListener("click",
-      function () { if (action === 0) { timeplay();
-      document.getElementsByClassName("alert")[0].style.display = 'flex';
+      document.getElementsByClassName( "phut" )[0].innerHTML = day.getMinutes();
+      document.getElementsByClassName( "giay" )[0].innerHTML = day.getSeconds();
+      }, 1000); } document .getElementsByClassName("start")[0]
+      .addEventListener("click", function() { if (action === 0) { timeplay();
+      document.getElementsByClassName("alert")[0].style.display = "flex";
       document.getElementsByClassName("alertt")[0].innerText = "Thời gian tiếp
-      tục"; setTimeout(function () {
-      document.getElementsByClassName("alert")[0].style.display = 'none'; },
-      3000) action = 1; } });
-      document.getElementsByClassName("pause")[0].addEventListener("click",
-      function () { clearInterval(time);
-      document.getElementsByClassName("alert")[0].style.display = 'flex';
+      tục"; setTimeout(function() {
+      document.getElementsByClassName("alert")[0].style.display = "none"; },
+      3000); action = 1; } }); document .getElementsByClassName("pause")[0]
+      .addEventListener("click", function() { clearInterval(time);
+      document.getElementsByClassName("alert")[0].style.display = "flex";
       document.getElementsByClassName("alertt")[0].innerText = "Thời gian dừng
-      lại"; setTimeout(function () {
-      document.getElementsByClassName("alert")[0].style.display = 'none'; },
-      3000) action = 0; }); timeplay();
+      lại"; setInterval(function() {
+      document.getElementsByClassName("alert")[0].style.display = "none"; },
+      3000); action = 0; }); timeplay();
     </code>
 
     <div class="buttonhtmlcss">
@@ -100,10 +98,27 @@ export default {
       document.getElementById("css").style.display = "none";
       document.getElementById("javascript").style.display = "block";
     },
+    getdatetime() {
+      this.hour = new Date().getHours();
+      this.minute = new Date().getMinutes();
+      this.second = new Date().getSeconds();
+    },
+  },
+
+  data() {
+    return {
+      hour: null,
+      minute: null,
+      second: null,
+    };
+  },
+  mounted: function() {
+    setInterval(() => {
+      this.getdatetime();
+    }, 1000);
   },
 };
 </script>
-
 
 <style scoped lang="scss">
 * {
