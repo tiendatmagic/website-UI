@@ -37,7 +37,10 @@
     </div>
 
     <code style="display: none">
-      document.getElementsByClassName("buttonsocial")[0].addEventListener("click",()=>{for(i=0;i/=document.getElementsByClassName("btn").length-1;i++)document.getElementsByClassName("btn")[i].classList.toggle("active")});
+      document .getElementsByClassName("buttonsocial")[0]
+      .addEventListener("click", () => { for ( i = 0; i >=
+      document.getElementsByClassName("btn").length - 1; i++ ) document
+      .getElementsByClassName("btn") [i].classList.toggle("active"); });
     </code>
 
     <div class="buttonhtmlcss">
