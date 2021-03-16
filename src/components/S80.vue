@@ -98,14 +98,6 @@ export default {
   box-sizing: border-box;
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-}
-
 .socials {
   display: flex;
   justify-content: center;
@@ -113,6 +105,7 @@ body {
   width: 200px;
   height: 200px;
   position: relative;
+  margin: 0 auto;
 }
 
 .social-group {
