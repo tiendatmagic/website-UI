@@ -33,29 +33,32 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
         position: relative;
         top: 0;
         left: 0;
       }
       .buttonsocial {
-        width: 90px;
-        height: 90px;
+        width: 80px;
+        height: 80px;
         position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 22px;
-        color: #fff;
         border-radius: 50%;
         cursor: pointer;
         transition: 0.2s ease-out;
-        background-color: aqua;
+        background-color: #fff;
+        box-shadow: 2px 3px 0px 0px #fff, 3px 3px 5px #ceced1;
         z-index: 1;
       }
+      .buttonsocial:hover {
+        transform: scale(1.1);
+      }
+
       .social-group div {
-        width: 90px;
-        height: 90px;
+        width: 80px;
+        height: 80px;
         position: absolute;
         display: flex;
         justify-content: center;
@@ -64,57 +67,66 @@
         color: #fff;
         border-radius: 50%;
         cursor: pointer;
+        box-shadow: 0px 0px 0px 0px #fff, 3px 3px 5px #ceced1;
         transition: 0.2s ease-out;
       }
 
-      .social-group .facebook {
+      .social-group .facebook.active {
         background-color: red;
-      }
-
-      .social-group .twitter {
-        background-color: orange;
-      }
-
-      .social-group .instagram {
-        background-color: yellow;
-      }
-
-      .social-group .youtube {
-        background-color: blue;
-      }
-
-      .social-group .github {
-        background-color: aqua;
-      }
-      .social-group .linkedin {
-        background-color: rgb(0, 255, 149);
-      }
-      /* .social-group:hover .facebook {
         transform: translateY(-150%);
-        position: absolute;
+        transition-delay: 0.2s;
+      }
+      .social-group .facebook:hover {
+        background-color: #fff;
+        color: red;
       }
 
-      .social-group:hover .twitter {
+      .social-group .twitter.active {
+        background-color: orange;
         transform: translateX(120%) translateY(-70%);
-        position: absolute;
+        transition-delay: 0.3s;
+      }
+      .social-group .twitter:hover {
+        background-color: #fff;
+        color: orange;
       }
 
-      .social-group:hover .instagram {
+      .social-group .instagram.active {
+        background-color: yellow;
         transform: translateX(120%) translateY(70%);
-        position: absolute;
+        transition-delay: 0.4s;
       }
-      .social-group:hover .youtube {
+      .social-group .instagram:hover {
+        background-color: #fff;
+        color: yellow;
+      }
+      .social-group .youtube.active {
+        background-color: blue;
         transform: translateY(150%);
-        position: absolute;
+        transition-delay: 0.5s;
       }
-      .social-group:hover .github {
+      .social-group .youtube:hover {
+        background-color: #fff;
+        color: blue;
+      }
+      .social-group .github.active {
+        background-color: aqua;
         transform: translateX(-120%) translateY(70%);
-        position: absolute;
+        transition-delay: 0.6s;
       }
-      .social-group:hover .linkedin {
+      .social-group .github:hover {
+        background-color: #fff;
+        color: aqua;
+      }
+      .social-group .linkedin.active {
+        background-color: rgb(0, 255, 149);
         transform: translateX(-120%) translateY(-70%);
-        position: absolute;
-      } */
+        transition-delay: 0.7s;
+      }
+      .social-group .linkedin:hover {
+        background-color: #fff;
+        color: rgb(0, 255, 149);
+      }
     </style>
   </head>
 
@@ -124,76 +136,45 @@
       href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css"
     />
     <div class="socials">
-      <div class="buttonsocial"></div>
+      <div class="buttonsocial">
+        <i class="fas fa-bars"></i>
+      </div>
       <div class="social-group">
-        <div class="facebook">
+        <div class="facebook btn">
           <i class="fab fa-facebook-f"></i>
         </div>
 
-        <div class="twitter">
+        <div class="twitter btn">
           <i class="fab fa-twitter"></i>
         </div>
 
-        <div class="instagram">
+        <div class="instagram btn">
           <i class="fab fa-instagram"></i>
         </div>
-        <div class="youtube">
+        <div class="youtube btn">
           <i class="fab fa-youtube"></i>
         </div>
 
-        <div class="github">
+        <div class="github btn">
           <i class="fab fa-github"></i>
         </div>
-        <div class="linkedin">
+        <div class="linkedin btn">
           <i class="fab fa-linkedin"></i>
         </div>
       </div>
     </div>
-
     <script>
       document
         .getElementsByClassName("buttonsocial")[0]
-        .addEventListener("mouseover", function() {
-          this.classList.add("active");
-          document.getElementsByClassName("facebook")[0].style.transform =
-            "translateY(-150%)";
-          document.getElementsByClassName("facebook")[0].style.position =
-            "absolute";
-
-          document.getElementsByClassName("twitter")[0].style.transform =
-            "translateX(120%) translateY(-70%)";
-
-          document.getElementsByClassName("twitter")[0].style.position =
-            "absolute";
-
-          document.getElementsByClassName("instagram")[0].style.transform =
-            "translateX(120%) translateY(70%)";
-
-          document.getElementsByClassName("instagram")[0].style.position =
-            "absolute";
-
-          document.getElementsByClassName("youtube")[0].style.transform =
-            "translateY(150%)";
-
-          document.getElementsByClassName("youtube")[0].style.position =
-            "absolute";
-
-          document.getElementsByClassName("github")[0].style.transform =
-            "translateX(-120%) translateY(70%)";
-
-          document.getElementsByClassName("github")[0].style.position =
-            "absolute";
-
-          document.getElementsByClassName("linkedin")[0].style.transform =
-            "translateX(-120%) translateY(-70%)";
-          document.getElementsByClassName("linkedin")[0].style.position =
-            "absolute";
-        });
-
-      document
-        .getElementsByClassName("buttonsocial")[0]
-        .addEventListener("click", function() {
-          alert("OK");
+        .addEventListener("click", () => {
+          for (
+            i = 0;
+            i <= document.getElementsByClassName("btn").length - 1;
+            i++
+          )
+            document
+              .getElementsByClassName("btn")
+              [i].classList.toggle("active");
         });
     </script>
   </body>

@@ -398,6 +398,11 @@
           <kbd> Box service name</kbd>
           <S79 />
         </div>
+
+        <div class="site sitem-lg-4 sitem-md-6">
+          <kbd> Vòng tròn nút mạng xã hội</kbd>
+          <S80 />
+        </div>
       </div>
       <Like />
       <Love />
@@ -499,6 +504,7 @@ import S76 from "./components/S76.vue";
 import S77 from "./components/S77.vue";
 import S78 from "./components/S78.vue";
 import S79 from "./components/S79.vue";
+import S80 from "./components/S80.vue";
 
 import Donate from "./components/Donate.vue";
 import Like from "./components/Like.vue";
@@ -590,6 +596,7 @@ export default {
     S77,
     S78,
     S79,
+    S80,
     Donate,
     Like,
     Love,
