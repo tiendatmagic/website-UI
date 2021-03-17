@@ -7,29 +7,29 @@
         href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css"
       />
       <div class="socials">
-        <div class="buttonsocial">
+        <div class="buttonsocial" @click="btn">
           <i class="fas fa-bars"></i>
         </div>
         <div class="social-group">
-          <div class="facebook">
+          <div class="bfacebook">
             <i class="fab fa-facebook-f"></i>
           </div>
 
-          <div class="twitter">
+          <div class="btwitter">
             <i class="fab fa-twitter"></i>
           </div>
 
-          <div class="instagram">
+          <div class="binstagram">
             <i class="fab fa-instagram"></i>
           </div>
-          <div class="youtube">
+          <div class="byoutube">
             <i class="fab fa-youtube"></i>
           </div>
 
-          <div class="github">
+          <div class="bgithub">
             <i class="fab fa-github"></i>
           </div>
-          <div class="linkedin">
+          <div class="blinkedin">
             <i class="fab fa-linkedin"></i>
           </div>
         </div>
@@ -60,6 +60,25 @@
 <script>
 export default {
   methods: {
+    btn() {
+      document
+        .getElementsByClassName("bfacebook")[0]
+        .classList.toggle("active");
+
+      document.getElementsByClassName("btwitter")[0].classList.toggle("active");
+
+      document
+        .getElementsByClassName("binstagram")[0]
+        .classList.toggle("active");
+
+      document.getElementsByClassName("byoutube")[0].classList.toggle("active");
+
+      document.getElementsByClassName("bgithub")[0].classList.toggle("active");
+
+      document
+        .getElementsByClassName("blinkedin")[0]
+        .classList.toggle("active");
+    },
     html() {
       var a = document.getElementById("s80").innerHTML;
 
@@ -129,7 +148,7 @@ export default {
   transition: 0.2s ease-out;
   background-color: #fff;
   box-shadow: 2px 3px 0px 0px #fff, 3px 3px 5px #ceced1;
-  z-index: 1;
+  z-index: 2;
 }
 .buttonsocial:hover {
   transform: scale(1.1);
@@ -147,62 +166,63 @@ export default {
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0px 0px 0px 0px #fff, 3px 3px 5px #ceced1;
+  z-index: 1;
   transition: 0.2s ease-out;
 }
 
-.social-group .facebook.active {
+.social-group .bfacebook.active {
   background-color: red;
   transform: translateY(-150%);
   transition-delay: 0.2s;
 }
-.social-group .facebook:hover {
+.social-group .bfacebook:hover {
   background-color: #fff;
   color: red;
 }
 
-.social-group .twitter.active {
+.social-group .btwitter.active {
   background-color: orange;
   transform: translateX(120%) translateY(-70%);
   transition-delay: 0.3s;
 }
-.social-group .twitter:hover {
+.social-group .btwitter:hover {
   background-color: #fff;
   color: orange;
 }
 
-.social-group .instagram.active {
+.social-group .binstagram.active {
   background-color: yellow;
   transform: translateX(120%) translateY(70%);
   transition-delay: 0.4s;
 }
-.social-group .instagram:hover {
+.social-group .binstagram:hover {
   background-color: #fff;
   color: yellow;
 }
-.social-group .youtube.active {
+.social-group .byoutube.active {
   background-color: blue;
   transform: translateY(150%);
   transition-delay: 0.5s;
 }
-.social-group .youtube:hover {
+.social-group .byoutube:hover {
   background-color: #fff;
   color: blue;
 }
-.social-group .github.active {
+.social-group .bgithub.active {
   background-color: aqua;
   transform: translateX(-120%) translateY(70%);
   transition-delay: 0.6s;
 }
-.social-group .github:hover {
+.social-group .bgithub:hover {
   background-color: #fff;
   color: aqua;
 }
-.social-group .linkedin.active {
+.social-group .blinkedin.active {
   background-color: rgb(0, 255, 149);
   transform: translateX(-120%) translateY(-70%);
   transition-delay: 0.7s;
 }
-.social-group .linkedin:hover {
+.social-group .blinkedin:hover {
   background-color: #fff;
   color: rgb(0, 255, 149);
 }
