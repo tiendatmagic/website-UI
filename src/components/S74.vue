@@ -2,31 +2,47 @@
   <div class="smainn">
     <br />
     <div id="s74">
-      <div class="calculator">
-        <div class="screen"></div>
+
+    <div class="calculator">
+      <form name="calculator">
+        <input type="text" id="display" value="" />
+
         <div class="line"></div>
         <div class="keyboard">
-          <div class="button-item hot">AC</div>
-          <div class="button-item hot">+/-</div>
-          <div class="button-item hot">%</div>
-          <div class="button-item hot">/</div>
-          <div class="button-item">7</div>
-          <div class="button-item">8</div>
-          <div class="button-item">9</div>
-          <div class="button-item hot">*</div>
-          <div class="button-item">4</div>
-          <div class="button-item">5</div>
-          <div class="button-item">6</div>
-          <div class="button-item hot">-</div>
-          <div class="button-item">1</div>
-          <div class="button-item">2</div>
-          <div class="button-item">3</div>
-          <div class="button-item hot">+</div>
-          <div class="button-item">0</div>
-          <div class="button-item">.</div>
-          <div class="button-item result">=</div>
+          <div class="button-item hot" onclick="display.value=''">AC</div>
+          <div
+            class="button-item hot"
+            onclick="display.value=display.value.substr(0, display.value.length-1)"
+          >
+            --
+          </div>
+          <div class="button-item hot" onclick="display.value+='%'">%</div>
+          <div class="button-item hot" onclick="display.value+='/'">/</div>
+          <div class="button-item" onclick="display.value+='7'">7</div>
+          <div class="button-item" onclick="display.value+='8'">8</div>
+          <div class="button-item" onclick="display.value+='9'">9</div>
+          <div class="button-item hot" onclick="display.value+='*'">*</div>
+          <div class="button-item" onclick="display.value+='4'">4</div>
+          <div class="button-item" onclick="display.value+='5'">5</div>
+          <div class="button-item" onclick="display.value+='6'">6</div>
+          <div class="button-item hot" onclick="display.value+='-'">-</div>
+          <div class="button-item" onclick="display.value+='1'">1</div>
+          <div class="button-item" onclick="display.value+='2'">2</div>
+          <div class="button-item" onclick="display.value+='3'">3</div>
+          <div class="button-item hot" onclick="display.value+='+'">+</div>
+          <div class="button-item" onclick="display.value+='0'">0</div>
+          <div class="button-item" onclick="display.value+='.'">.</div>
+          <div
+            class="button-item result"
+            onclick="display.value=eval(display.value)"
+          >
+            =
+          </div>
         </div>
-      </div>
+      </form>
+    </div>
+
+
     </div>
 
     <div class="buttonhtmlcss">
@@ -66,6 +82,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+
 * {
   margin: 0px;
   padding: 0px;
@@ -82,14 +99,17 @@ export default {
   font-size: 25px;
   margin: 0 auto;
 }
-.screen {
+#display {
+  width: 100%;
   height: 200px;
-  display: flex;
   justify-content: center;
   align-items: center;
+  text-align: left;
   color: #fff;
-  word-break: break-word;
+  word-wrap: break-word;
   font-size: 30px;
+  background-color: #141414;
+  border: none;
 }
 .line {
   width: 95%;
@@ -117,14 +137,16 @@ export default {
   color: #fff;
 }
 .hot {
-  color: #c4541a;
+  color: #ff0099;
 }
 .hot:active {
-  color: #862d00;
+  color: #920058;
 }
 .result {
-  background-color: #ff5500;
+  background-color: #ff0099;
   transform: scale(0.8);
   border-radius: 25px;
 }
+
+
 </style>
