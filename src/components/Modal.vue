@@ -57,28 +57,28 @@ export default {
       document.getElementsByClassName("alert-modal")[0].style.display = "none";
     },
 
-    copyhtml: function() {
+    copyhtml: function () {
       var copyText = document.getElementById("thtml");
       copyText.select();
       document.execCommand("copy");
       this.copysuccess();
     },
 
-    copycss: function() {
+    copycss: function () {
       var copyText = document.getElementById("tcss");
       copyText.select();
       document.execCommand("copy");
       this.copysuccess();
     },
 
-    copyjavascript: function() {
+    copyjavascript: function () {
       var copyText = document.getElementById("tjs");
       copyText.select();
       document.execCommand("copy");
       this.copysuccess();
     },
 
-    copysuccess: function() {
+    copysuccess: function () {
       document
         .getElementsByClassName("alert-modal")[0]
         .setAttribute("style", "display: none");
@@ -86,7 +86,7 @@ export default {
         .getElementsByClassName("alert-modal")[0]
         .setAttribute("style", "display: flex");
 
-      setTimeout(function() {
+      setTimeout(function () {
         document
           .getElementsByClassName("alert-modal")[0]
           .setAttribute("style", "display: none");

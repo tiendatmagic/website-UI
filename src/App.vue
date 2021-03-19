@@ -403,6 +403,13 @@
           <kbd> Vòng tròn nút mạng xã hội</kbd>
           <S80 />
         </div>
+
+  <div class="site sitem-lg-4 sitem-md-6">
+          <kbd> Thanh menu dọc</kbd>
+          <S81 />
+        </div>
+
+
       </div>
       <Like />
       <Love />
@@ -505,6 +512,7 @@ import S77 from "./components/S77.vue";
 import S78 from "./components/S78.vue";
 import S79 from "./components/S79.vue";
 import S80 from "./components/S80.vue";
+import S81 from "./components/S81.vue";
 
 import Donate from "./components/Donate.vue";
 import Like from "./components/Like.vue";
@@ -512,7 +520,6 @@ import Love from "./components/Love.vue";
 import Up from "./components/Up.vue";
 import Modal from "./components/Modal.vue";
 import Footer from "./components/Footer.vue";
-// import reload from './reload.js';
 export default {
   title: "Foo Page",
   name: "App",
@@ -597,6 +604,7 @@ export default {
     S78,
     S79,
     S80,
+    S81,
     Donate,
     Like,
     Love,

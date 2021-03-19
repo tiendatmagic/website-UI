@@ -66,8 +66,7 @@ h3 {
 
 .modal-notifications {
   width: 100%;
-  height: 300px;
-  background-color: rgb(250, 250, 250);
+  background-color: #fafafa;
   border-radius: 20px;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.377);
   margin: 0 auto;
