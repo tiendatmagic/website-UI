@@ -7,12 +7,14 @@
         href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css"
       />
       <div class="modal-notifications">
-        <div class="close-notifications" style="">
-          <i class="far fa-times-circle"></i>
+        <div class="header">
+          <div class="close-notifications">
+            <i class="far fa-times-circle"></i>
+          </div>
         </div>
 
         <div id="content-notifications">
-          <h3>Đây là modal</h3>
+          <p>Đây là modal</p>
         </div>
       </div>
     </div>
@@ -55,13 +57,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
-}
-
-h3 {
-  color: deeppink;
 }
 
 .modal-notifications {
@@ -69,14 +67,34 @@ h3 {
   background-color: #fafafa;
   border-radius: 20px;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.377);
+  overflow: hidden;
   margin: 0 auto;
 }
-.modal-notifications h3 {
+.modal-notifications p {
+  color: deeppink;
+  font-size: 20px;
+}
+.modal-notifications .header {
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#content-notifications {
+  width: 100%;
   height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  overflow-y: scroll;
+}
+
+#content-notifications::-webkit-scrollbar {
+  width: 5px;
+}
+
+#content-notifications::-webkit-scrollbar-thumb {
+  background: deeppink;
 }
 
 .close-notifications {
