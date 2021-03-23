@@ -1,178 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      * {
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-      }
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100vh;
-      }
 
-      .card {
-        width: 100%;
-        max-width: 300px;
-        height: 400px;
-        border-radius: 10px;
-        background: rgba(255, 255, 255, 0.2);
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-        text-align: center;
-        margin: 0 auto;
-        transition: 0.5s ease-out;
-      }
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
 
-      .img {
-        width: 150px;
-        margin: 0 auto;
-        transform: scale(0.7) translateY(30%);
-        transition: 0.5s ease-out;
-      }
-      .img img {
-        width: 100%;
-      }
+    }
 
-      .name {
-        color: #fff;
-        font-size: 25px;
-      }
-      .size,
-      .color {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 10px;
-      }
-      .size .sizes {
-        width: 25px;
-        height: 25px;
-        color: #706f70;
+    body {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-        background-color: rgb(245, 245, 245);
-        border-radius: 7px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 10px;
-        cursor: pointer;
-      }
-      .color .colors {
-        width: 23px;
-        height: 23px;
-        border-radius: 50%;
-        display: flex;
-        border: 3px solid #fff;
-        justify-content: center;
-        align-items: center;
-        margin-left: 10px;
-        cursor: pointer;
-      }
-      .color .colors:nth-child(2) {
-        background-color: #96dc2a;
-      }
-      .color .colors:nth-child(3) {
-        background-color: #04a8f9;
-      }
-      .color .colors:nth-child(4) {
-        background-color: #ce1a53;
-      }
 
-      .button button {
-        padding: 10px;
-        background-color: #fff;
-        border: none;
-        outline: none;
-        width: 120px;
-        height: 40px;
-        border-radius: 30px;
-        font-weight: bold;
-        color: #706f70;
-        cursor: pointer;
-      }
-      .main {
-        transform: translateY(-15%);
-        width: 100%;
-        height: 100%;
-        padding: 20px;
-        transition: 0.4s ease-out;
-      }
 
-      .main .content {
-        visibility: hidden;
-        opacity: 0;
-        transition: 0.5s ease-out;
-      }
+    .social-group {
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-      .card:hover .img {
-        transform: rotateZ(-45deg) translateY(-10%);
-      }
+    .socials {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-      .card:hover .main {
-        transform: translateY(-30%);
-      }
 
-      .card:hover .content {
-        visibility: visible;
-        opacity: 1;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="card">
-      <div class="main">
-        <div class="header">
-          <div class="img">
-            <img
-              src="https://raw.githubusercontent.com/tiendatmagic/website-UI/master/src/img/can-real-sugar-reg.png"
-              alt=""
-            />
-          </div>
+    .social-group .name {
+      background-color: royalblue;
+      text-align: center;
+      font-weight: bold;
+      border-radius: 20px;
+      color: #fff;
+      transform: translateY(0%);
+      opacity: 0;
+      font-size: 23px;
+      padding: 20px;
+      margin: 0 auto;
+      transition: 0.2s ease-out;
+
+    }
+
+    .social-group .name::after {
+      content: "";
+      position: absolute;
+      top: 99%;
+      left: 42%;
+      width: 0;
+      height: 0;
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+      border-top: 12px solid royalblue;
+
+    }
+
+    .social-group .icon {
+      background-color: #fff;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .social-group .socials:hover .name {
+      opacity: 1;
+      transform: translateY(-50%);
+    }
+  </style>
+</head>
+
+<body>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css" />
+
+  <div class="social-group">
+    <div class="socials">
+      <div class="facebook">
+        <div class="name">
+          <span>
+            Facebook
+          </span>
         </div>
-        <div class="content">
-          <div class="name">
-            <b style="color: red;">
-              Lon cocacola
-            </b>
-          </div>
-          <div class="size">
-            <p>
-              Size:
-            </p>
-            <div class="sizes">
-              7
-            </div>
-            <div class="sizes">
-              8
-            </div>
-            <div class="sizes">
-              9
-            </div>
-            <div class="sizes">
-              10
-            </div>
-          </div>
-          <div class="color">
-            <p>
-              Colors:
-            </p>
-            <div class="colors"></div>
-            <div class="colors"></div>
-            <div class="colors"></div>
-          </div>
-          <div class="button">
-            <button>BUY NOW</button>
-          </div>
+        <div class="icon">
+          <i class="fab fa-facebook-f"></i>
         </div>
       </div>
     </div>
-  </body>
+
+    <div class="socials">
+      <div class="twitter">
+        <div class="name">
+          <span>
+            Twitter
+          </span>
+        </div>
+        <div class="icon">
+          <i class="fab fa-twitter"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="socials">
+      <div class="instagram">
+        <div class="name">
+          <span>
+            Instagram
+          </span>
+        </div>
+        <div class="icon">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="socials">
+      <div class="github">
+        <div class="name">
+          <span>
+            Github
+          </span>
+        </div>
+        <div class="icon">
+          <i class="fab fa-github"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="socials">
+      <div class="youtube">
+        <div class="name">
+          <span>
+            Youtube
+          </span>
+        </div>
+        <div class="icon">
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+</body>
+
 </html>

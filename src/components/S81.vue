@@ -178,7 +178,7 @@ export default {
   left: 0px;
   color: #363333;
   font-size: 28px;
-  transition: 0.2s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .sidebar .icon2 {
@@ -187,14 +187,14 @@ export default {
   left: 0px;
   color: #3f93ea;
   font-size: 28px;
-  transition: 0.2s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .sidebar .name {
   position: absolute;
   top: 10px;
-  left: 40px;
-  transition: 0.2s ease-in-out;
+  left: 50px;
+  transition: 0.3s ease-in-out;
 }
 
 .sidebar .name a {
@@ -208,8 +208,8 @@ export default {
 .sidebar .name2 {
   position: absolute;
   top: -50px;
-  left: 40px;
-  transition: 0.2s ease-in-out;
+  left: 50px;
+  transition: 0.3s ease-in-out;
 }
 
 .sidebar .dots {
@@ -220,7 +220,7 @@ export default {
   position: absolute;
   top: 15px;
   right: 0px;
-  transition: 0.2s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .sidebar ul li:hover .icon {
@@ -235,12 +235,12 @@ export default {
 
 .sidebar ul li:hover .name {
   top: 50px;
-  left: 40px;
+  left: 50px;
 }
 
 .sidebar ul li:hover .name2 {
   top: 10px;
-  left: 40px;
+  left: 50px;
 }
 
 .sidebar ul li:hover .dots {
