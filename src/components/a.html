@@ -27,35 +27,45 @@
       align-items: center;
       font-family: Arial, Helvetica, sans-serif;
       width: 100%;
-      max-width: 900px;
+      max-width: 700px;
       flex-wrap: wrap;
     }
 
     .social-group .name {
       background-color: royalblue;
+      border-radius: 30px;
       text-align: center;
-      font-weight: bold;
-      border-radius: 20px;
-      color: #fff;
-      transform: translateY(0%);
+      width: 140px;
+      height: 50px;
+      display: block;
       opacity: 0;
+      transform: translateY(-60%);
+      color: #fff;
+      transition: 0.2s ease-out;
+    }
+
+    .name p {
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      display: flex;
       font-size: 23px;
-      padding: 20px;
-      margin: 0 auto;
-      transition: 0.3s ease-out;
+      justify-content: center;
+      align-items: center;
     }
 
     .social-group .name::after {
       content: "";
       position: relative;
-      top: 32px;
+      bottom: 1px;
       display: block;
       margin: 0 auto;
       width: 0;
       height: 0;
       border-left: 12px solid transparent;
       border-right: 12px solid transparent;
-      border-top: 12px solid #3c5996;
+      border-top: 12px solid transparent;
+      transition: 0.3s ease-in-out;
     }
 
     .social-group .icon {
@@ -66,6 +76,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      font-size: 27px;
       margin: 0 auto;
       box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
       transition: 0.3s ease-out;
@@ -73,7 +84,7 @@
 
     .social-group .socials:hover .name {
       opacity: 1;
-      transform: translateY(-150%);
+      transform: translateY(-190%);
       transition-delay: 0.2s;
     }
 
@@ -143,7 +154,6 @@
     }
 
     .socials {
-
       width: 80px;
       height: 80px;
       border-radius: 50%;
@@ -152,6 +162,7 @@
       align-items: center;
       position: relative;
       margin: 0 auto;
+      cursor: pointer;
 
       /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); */
     }
@@ -168,9 +179,9 @@
   <div class="social-group">
     <div class="facebook socials">
       <div class="name">
-        <span>
+        <p>
           Facebook
-        </span>
+        </p>
       </div>
       <div class="icon">
         <i class="fab fa-facebook-f"></i>
@@ -179,9 +190,9 @@
 
     <div class="twitter socials">
       <div class="name">
-        <span>
+        <p>
           Twitter
-        </span>
+        </p>
       </div>
       <div class="icon">
         <i class="fab fa-twitter"></i>
@@ -190,9 +201,9 @@
 
     <div class="instagram socials">
       <div class="name">
-        <span>
+        <p>
           Instagram
-        </span>
+        </p>
       </div>
       <div class="icon">
         <i class="fab fa-instagram"></i>
@@ -201,9 +212,9 @@
 
     <div class="github socials">
       <div class="name">
-        <span>
+        <p>
           Github
-        </span>
+        </p>
       </div>
       <div class="icon">
         <i class="fab fa-github"></i>
@@ -212,9 +223,9 @@
 
     <div class="youtube socials">
       <div class="name">
-        <span>
+        <p>
           Youtube
-        </span>
+        </p>
       </div>
       <div class="icon">
         <i class="fab fa-youtube"></i>
