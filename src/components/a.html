@@ -2,16 +2,15 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <style>
     * {
-      margin: 0px;
+      margin: 0;
       padding: 0px;
       box-sizing: border-box;
-
     }
 
     body {
@@ -22,21 +21,15 @@
       align-items: center;
     }
 
-
-
     .social-group {
       display: flex;
-      width: 100%;
       justify-content: space-evenly;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .socials {
-      display: flex;
-      justify-content: center;
       align-items: center;
+      font-family: Arial, Helvetica, sans-serif;
+      width: 100%;
+      max-width: 900px;
+      flex-wrap: wrap;
     }
-
 
     .social-group .name {
       background-color: royalblue;
@@ -49,21 +42,20 @@
       font-size: 23px;
       padding: 20px;
       margin: 0 auto;
-      transition: 0.2s ease-out;
-
+      transition: 0.3s ease-out;
     }
 
     .social-group .name::after {
       content: "";
-      position: absolute;
-      top: 99%;
-      left: 42%;
+      position: relative;
+      top: 32px;
+      display: block;
+      margin: 0 auto;
       width: 0;
       height: 0;
       border-left: 12px solid transparent;
       border-right: 12px solid transparent;
-      border-top: 12px solid royalblue;
-
+      border-top: 12px solid #3c5996;
     }
 
     .social-group .icon {
@@ -76,11 +68,96 @@
       align-items: center;
       margin: 0 auto;
       box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+      transition: 0.3s ease-out;
     }
 
     .social-group .socials:hover .name {
       opacity: 1;
-      transform: translateY(-50%);
+      transform: translateY(-150%);
+      transition-delay: 0.2s;
+    }
+
+    .social-group .facebook:hover .name {
+      background-color: #3c5996;
+    }
+
+    .social-group .facebook:hover .name::after {
+      border-top: 12px solid #3c5996;
+    }
+
+    .social-group .facebook:hover .icon {
+      background-color: #3c5996;
+      color: #fff;
+    }
+
+    .social-group .twitter:hover .name {
+      background-color: #47c0f1;
+    }
+
+    .social-group .twitter:hover .name::after {
+      border-top: 12px solid #47c0f1;
+    }
+
+    .social-group .twitter:hover .icon {
+      background-color: #47c0f1;
+      color: #fff;
+    }
+
+    .social-group .instagram:hover .name {
+      background-color: #df306a;
+    }
+
+    .social-group .instagram:hover .name::after {
+      border-top: 12px solid #df306a;
+    }
+
+    .social-group .instagram:hover .icon {
+      background-color: #df306a;
+      color: #fff;
+    }
+
+    .social-group .github:hover .name {
+      background-color: #343334;
+    }
+
+    .social-group .github:hover .name::after {
+      border-top: 12px solid #343334;
+    }
+
+    .social-group .github:hover .icon {
+      background-color: #343334;
+      color: #fff;
+    }
+
+    .social-group .youtube:hover .name {
+      background-color: #e0453c;
+    }
+
+    .social-group .youtube:hover .name::after {
+      border-top: 12px solid #e0453c;
+    }
+
+    .social-group .youtube:hover .icon {
+      background-color: #e0453c;
+      color: #fff;
+    }
+
+    .socials {
+
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin: 0 auto;
+
+      /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); */
+    }
+
+    .name {
+      position: absolute;
     }
   </style>
 </head>
@@ -89,75 +166,61 @@
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css" />
 
   <div class="social-group">
-    <div class="socials">
-      <div class="facebook">
-        <div class="name">
-          <span>
-            Facebook
-          </span>
-        </div>
-        <div class="icon">
-          <i class="fab fa-facebook-f"></i>
-        </div>
+    <div class="facebook socials">
+      <div class="name">
+        <span>
+          Facebook
+        </span>
+      </div>
+      <div class="icon">
+        <i class="fab fa-facebook-f"></i>
       </div>
     </div>
 
-    <div class="socials">
-      <div class="twitter">
-        <div class="name">
-          <span>
-            Twitter
-          </span>
-        </div>
-        <div class="icon">
-          <i class="fab fa-twitter"></i>
-        </div>
+    <div class="twitter socials">
+      <div class="name">
+        <span>
+          Twitter
+        </span>
+      </div>
+      <div class="icon">
+        <i class="fab fa-twitter"></i>
       </div>
     </div>
 
-    <div class="socials">
-      <div class="instagram">
-        <div class="name">
-          <span>
-            Instagram
-          </span>
-        </div>
-        <div class="icon">
-          <i class="fab fa-instagram"></i>
-        </div>
+    <div class="instagram socials">
+      <div class="name">
+        <span>
+          Instagram
+        </span>
+      </div>
+      <div class="icon">
+        <i class="fab fa-instagram"></i>
       </div>
     </div>
 
-    <div class="socials">
-      <div class="github">
-        <div class="name">
-          <span>
-            Github
-          </span>
-        </div>
-        <div class="icon">
-          <i class="fab fa-github"></i>
-        </div>
+    <div class="github socials">
+      <div class="name">
+        <span>
+          Github
+        </span>
+      </div>
+      <div class="icon">
+        <i class="fab fa-github"></i>
       </div>
     </div>
 
-    <div class="socials">
-      <div class="youtube">
-        <div class="name">
-          <span>
-            Youtube
-          </span>
-        </div>
-        <div class="icon">
-          <i class="fab fa-youtube"></i>
-        </div>
+    <div class="youtube socials">
+      <div class="name">
+        <span>
+          Youtube
+        </span>
+      </div>
+      <div class="icon">
+        <i class="fab fa-youtube"></i>
       </div>
     </div>
-
-
   </div>
-
-
 </body>
 
 </html>
