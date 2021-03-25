@@ -83,34 +83,33 @@ export default {
   box-sizing: border-box;
 }
 
-.smainn {
-  overflow: hidden;
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-group {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  flex-wrap: wrap;
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
   max-width: 700px;
-
-  overflow: hidden;
-  background-color: #47c0f1;
+  flex-wrap: wrap;
 }
 
 .socials {
   width: 70px;
   height: 70px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  // margin: 20px;
-  // overflow: hidden;
+  margin: 20px;
+  overflow: hidden;
   border-radius: 50%;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
+  justify-content: center;
   cursor: pointer;
 }
 
@@ -121,11 +120,7 @@ export default {
   height: 50px;
   opacity: 0;
   transform: translateY(-60%);
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-  position: relative;
+  position: absolute;
   transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 

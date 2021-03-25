@@ -33,19 +33,22 @@
       .socials {
         width: 70px;
         height: 70px;
-        margin: 20px;
+
         border-radius: 50%;
         display: flex;
         justify-content: center;
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
         cursor: pointer;
+        position: relative;
       }
 
       .social-group .name {
         background-color: royalblue;
         border-radius: 30px;
-        width: 140px;
-        height: 50px;
+
+        word-wrap: break-word;
+        overflow: hidden;
+
         opacity: 0;
         transform: translateY(-60%);
         position: absolute;
@@ -76,14 +79,14 @@
       }
 
       .social-group .icon {
-        width: 100%;
-        height: 100%;
         border-radius: 50%;
         display: flex;
+
         justify-content: center;
         align-items: center;
         font-size: 27px;
-
+        position: absolute;
+        top: 20px;
         transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
       }
 
@@ -105,7 +108,7 @@
         border-top: 12px solid #3c5996;
       }
 
-      .social-group .facebook:hover .icon {
+      .social-group .facebook:hover {
         background-color: #3c5996;
       }
 
@@ -117,7 +120,7 @@
         border-top: 12px solid #47c0f1;
       }
 
-      .social-group .twitter:hover .icon {
+      .social-group .twitter:hover {
         background-color: #47c0f1;
       }
 
@@ -129,7 +132,7 @@
         border-top: 12px solid #df306a;
       }
 
-      .social-group .instagram:hover .icon {
+      .social-group .instagram:hover {
         background-color: #df306a;
       }
 
@@ -141,7 +144,7 @@
         border-top: 12px solid #343334;
       }
 
-      .social-group .github:hover .icon {
+      .social-group .github:hover {
         background-color: #343334;
       }
 
@@ -153,7 +156,7 @@
         border-top: 12px solid #e0453c;
       }
 
-      .social-group .youtube:hover .icon {
+      .social-group .youtube:hover {
         background-color: #e0453c;
       }
     </style>
