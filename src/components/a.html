@@ -30,6 +30,17 @@
         flex-wrap: wrap;
       }
 
+      .socials {
+        width: 70px;
+        height: 70px;
+        margin: 20px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+      }
+
       .social-group .name {
         background-color: royalblue;
         border-radius: 30px;
@@ -65,15 +76,14 @@
       }
 
       .social-group .icon {
-        background-color: #fff;
-        width: 70px;
-        height: 70px;
+        width: 100%;
+        height: 100%;
         border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 27px;
-        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+
         transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
       }
 
@@ -145,15 +155,6 @@
 
       .social-group .youtube:hover .icon {
         background-color: #e0453c;
-      }
-
-      .socials {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        cursor: pointer;
       }
     </style>
   </head>
