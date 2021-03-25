@@ -404,12 +404,14 @@
           <S80 />
         </div>
 
-  <div class="site sitem-lg-4 sitem-md-6">
+        <div class="site sitem-lg-4 sitem-md-6">
           <kbd> Thanh menu dọc</kbd>
           <S81 />
         </div>
-
-
+        <div class="site sitem-lg-4 sitem-md-6">
+          <kbd> Hiệu ứng nút mạng xã hội</kbd>
+          <S82 />
+        </div>
       </div>
       <Like />
       <Love />
@@ -513,6 +515,7 @@ import S78 from "./components/S78.vue";
 import S79 from "./components/S79.vue";
 import S80 from "./components/S80.vue";
 import S81 from "./components/S81.vue";
+import S82 from "./components/S82.vue";
 
 import Donate from "./components/Donate.vue";
 import Like from "./components/Like.vue";
@@ -605,6 +608,7 @@ export default {
     S79,
     S80,
     S81,
+    S82,
     Donate,
     Like,
     Love,
@@ -612,18 +616,18 @@ export default {
     Modal,
     Footer,
   },
-  mounted: function() {
+  mounted: function () {
     setTimeout(() => {
       this.load();
     }, 2000);
   },
   methods: {
-    load: function() {
+    load: function () {
       const loader = document.querySelector(".loader");
       loader.className += " hidden"; //
     },
 
-    myFunction: function() {
+    myFunction: function () {
       var input, filter, smain, div, td, i, txtValue;
       input = document.getElementById("myInput");
       filter = input.value.toUpperCase();

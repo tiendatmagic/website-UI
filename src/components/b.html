@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 100%;
+      height: 100vh;
+      background-color: gray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .social-group {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      /* background-color: aqua; */
+      width: 100%;
+      max-width: 700px;
+      flex-wrap: wrap;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .icon {
+      /* background-color: blue; */
+      text-align: center;
+      margin: 0 auto;
+      text-align: center;
+
+    }
+
+    .icon .name {
+      color: #fff;
+      padding: 10px;
+      transform: translateY(00%);
+      background-color: brown;
+      transition: 0.3s ease-out;
+      width: 120px;
+      margin: 0 auto;
+
+    }
+
+    .icon .name::after {
+      content: "";
+      position: relative;
+      top: 20px;
+      bottom: 1px;
+      display: block;
+      margin: 0 auto;
+      width: 0;
+      height: 0;
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+      border-top: 12px solid red;
+      transition: 0.3s ease-in-out;
+    }
+
+    /*
+    .social-group .name::after {
+      content: "";
+      position: relative;
+      bottom: 1px;
+      display: block;
+      margin: 0 auto;
+      width: 0;
+      height: 0;
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+      border-top: 12px solid transparent;
+      transition: 0.3s ease-in-out;
+    } */
+
+    .icon span {
+      background-color: #fff;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 27px;
+      margin: 0 auto;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+      transition: 0.3s ease-out;
+    }
+
+    .icon:hover .name {
+      transform: translateY(-100%);
+    }
+  </style>
+</head>
+
+<body>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css" />
+  <div class="social-group">
+    <div class="icon facebook">
+      <div class="name">
+        Facebook
+      </div>
+      <span><i class="fab fa-facebook-f"></i></span>
+    </div>
+    <div class="icon twitter">
+      <div class="name">
+        Twitter
+      </div>
+      <span><i class="fab fa-twitter"></i></span>
+    </div>
+    <div class="icon instagram">
+      <div class="name">
+        Instagram
+      </div>
+      <span><i class="fab fa-instagram"></i></span>
+    </div>
+    <div class="icon github">
+      <div class="name">
+        Github
+      </div>
+      <span><i class="fab fa-github"></i></span>
+    </div>
+    <div class="icon youtube">
+      <div class="name">
+        YouTubesssssssssssssssss
+      </div>
+      <span><i class="fab fa-youtube"></i></span>
+    </div>
+  </div>
+</body>
+
+</html>

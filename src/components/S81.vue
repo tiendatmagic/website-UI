@@ -150,7 +150,8 @@ export default {
 }
 
 .sidebar {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   background-color: #fff;
   border-radius: 20px;
   padding: 0px 30px;
