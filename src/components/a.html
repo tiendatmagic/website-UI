@@ -7,197 +7,151 @@
     <title>Document</title>
     <style>
       * {
-        margin: 0;
+        margin: 0px;
         padding: 0px;
         box-sizing: border-box;
       }
 
       body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
         height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        background-color: orange;
       }
 
-      .social-group {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+      .menu {
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
         font-family: Arial, Helvetica, sans-serif;
-        width: 100%;
-        max-width: 700px;
-        flex-wrap: wrap;
       }
 
-      .socials {
+      .menu li {
+        list-style: none;
         width: 70px;
-        height: 70px;
-
-        border-radius: 50%;
+        height: 60px;
+        border-radius: 20px;
+        border: 4px solid #fff;
         display: flex;
-        justify-content: center;
-        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-        cursor: pointer;
-        position: relative;
-      }
-
-      .social-group .name {
-        background-color: royalblue;
-        border-radius: 30px;
-
-        word-wrap: break-word;
-        overflow: hidden;
-
-        opacity: 0;
-        transform: translateY(-60%);
-        position: absolute;
-        transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-      }
-
-      .name p {
-        text-align: center;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        font-size: 23px;
         justify-content: center;
         align-items: center;
-      }
-
-      .social-group .name::after {
-        content: "";
         position: relative;
-        bottom: 1px;
-        display: block;
-        margin: 0 auto;
-        width: 0;
-        height: 0;
-        border-left: 12px solid transparent;
-        border-right: 12px solid transparent;
-        transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+      .menu li:hover {
+        background-color: #0076fe;
       }
 
-      .social-group .icon {
-        border-radius: 50%;
-        display: flex;
-
-        justify-content: center;
-        align-items: center;
-        font-size: 27px;
-        position: absolute;
-        top: 20px;
-        transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-      }
-
-      .social-group .socials:hover {
+      .menu li:hover .icon {
         color: #fff;
       }
+      .menu li a {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .menu li .icon {
+        position: absolute;
+        color: #0076fe;
+        font-size: 25px;
+        z-index: 2;
+      }
 
-      .social-group .socials:hover .name {
+      .menu li .title {
+        position: absolute;
+        top: 5px;
+        left: 60px;
+        padding: 10px;
+        visibility: hidden;
         opacity: 1;
-        transform: translateY(-160%);
-        transition-delay: 0.2s;
-      }
+        border-radius: 10px;
+        background-color: #fff;
+        color: #0076fe;
+        font-weight: bold;
+        font-size: 17px;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
 
-      .social-group .facebook .name {
-        background-color: #3c5996;
+        transition: 0.2s ease-out;
       }
-
-      .social-group .facebook .name::after {
-        border-top: 12px solid #3c5996;
+      .menu li .title::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 10px;
+        left: -19px;
+        border-left: 10px solid transparent;
+        border-right: 10px solid #fff;
+        border-bottom: 10px solid transparent;
+        border-top: 10px solid transparent;
       }
-
-      .social-group .facebook:hover {
-        background-color: #3c5996;
-      }
-
-      .social-group .twitter .name {
-        background-color: #47c0f1;
-      }
-
-      .social-group .twitter .name::after {
-        border-top: 12px solid #47c0f1;
-      }
-
-      .social-group .twitter:hover {
-        background-color: #47c0f1;
-      }
-
-      .social-group .instagram .name {
-        background-color: #df306a;
-      }
-
-      .social-group .instagram .name::after {
-        border-top: 12px solid #df306a;
-      }
-
-      .social-group .instagram:hover {
-        background-color: #df306a;
-      }
-
-      .social-group .github .name {
-        background-color: #343334;
-      }
-
-      .social-group .github .name::after {
-        border-top: 12px solid #343334;
-      }
-
-      .social-group .github:hover {
-        background-color: #343334;
-      }
-
-      .social-group .youtube .name {
-        background-color: #e0453c;
-      }
-
-      .social-group .youtube .name::after {
-        border-top: 12px solid #e0453c;
-      }
-
-      .social-group .youtube:hover {
-        background-color: #e0453c;
+      .menu li:hover .title {
+        opacity: 1;
+        visibility: visible;
+        left: 85px;
       }
     </style>
   </head>
-
   <body>
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css"
     />
-    <div class="social-group">
-      <div class="facebook socials">
-        <div class="name">
-          <p>Facebook</p>
-        </div>
-        <div class="icon"><i class="fab fa-facebook-f"></i></div>
-      </div>
-      <div class="twitter socials">
-        <div class="name">
-          <p>Twitter</p>
-        </div>
-        <div class="icon"><i class="fab fa-twitter"></i></div>
-      </div>
-      <div class="instagram socials">
-        <div class="name">
-          <p>Instagram</p>
-        </div>
-        <div class="icon"><i class="fab fa-instagram"></i></div>
-      </div>
-      <div class="github socials">
-        <div class="name">
-          <p>Github</p>
-        </div>
-        <div class="icon"><i class="fab fa-github"></i></div>
-      </div>
-      <div class="youtube socials">
-        <div class="name">
-          <p>Youtube</p>
-        </div>
-        <div class="icon"><i class="fab fa-youtube"></i></div>
-      </div>
+    <div class="menu">
+      <ul>
+        <li>
+          <a href="###">
+            <div class="icon">
+              <i class="fas fa-home"></i>
+            </div>
+            <div class="title">
+              <p>Home</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="###">
+            <div class="icon">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="title">
+              <p>Profile</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="###">
+            <div class="icon">
+              <i class="fas fa-comment"></i>
+            </div>
+            <div class="title">
+              <p>Message</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="###">
+            <div class="icon">
+              <i class="fas fa-question-circle"></i>
+            </div>
+            <div class="title">
+              <p>Help</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="###">
+            <div class="icon">
+              <i class="fas fa-cog"></i>
+            </div>
+            <div class="title">
+              <p>Setting</p>
+            </div>
+          </a>
+        </li>
+      </ul>
     </div>
   </body>
 </html>
