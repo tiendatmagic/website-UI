@@ -11,24 +11,23 @@
         padding: 0px;
         box-sizing: border-box;
       }
-
       body {
+        background-color: yellow;
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
         height: 100vh;
-        background-color: orange;
       }
-
-      .menu {
+      .menu-icon {
+        display: inline-block;
         background-color: #fff;
         border-radius: 20px;
         box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
         font-family: Arial, Helvetica, sans-serif;
       }
 
-      .menu li {
+      .menu-icon li {
         list-style: none;
         width: 70px;
         height: 60px;
@@ -39,43 +38,46 @@
         align-items: center;
         position: relative;
       }
-      .menu li:hover {
+
+      .menu-icon li:hover {
         background-color: #0076fe;
       }
 
-      .menu li:hover .icon {
+      .menu-icon li:hover .icon {
         color: #fff;
       }
-      .menu li a {
+
+      .menu-icon li a {
         text-decoration: none;
         display: flex;
         justify-content: center;
         align-items: center;
       }
-      .menu li .icon {
+
+      .menu-icon li .icon {
         position: absolute;
         color: #0076fe;
         font-size: 25px;
         z-index: 2;
       }
 
-      .menu li .title {
+      .menu-icon li .title {
         position: absolute;
         top: 5px;
-        left: 60px;
+        left: 70px;
         padding: 10px;
         visibility: hidden;
-        opacity: 1;
+        opacity: 0;
         border-radius: 10px;
         background-color: #fff;
         color: #0076fe;
         font-weight: bold;
         font-size: 17px;
         box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
-
         transition: 0.2s ease-out;
       }
-      .menu li .title::after {
+
+      .menu-icon li .title::after {
         content: "";
         position: absolute;
         width: 0;
@@ -87,19 +89,22 @@
         border-bottom: 10px solid transparent;
         border-top: 10px solid transparent;
       }
-      .menu li:hover .title {
-        opacity: 1;
+
+      .menu-icon li:hover .title {
         visibility: visible;
-        left: 85px;
+        opacity: 1;
+
+        left: 90px;
       }
     </style>
   </head>
+
   <body>
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css"
     />
-    <div class="menu">
+    <div class="menu-icon ">
       <ul>
         <li>
           <a href="###">
