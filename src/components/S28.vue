@@ -79,7 +79,7 @@ export default {
 
 .modal-box {
   width: 90%;
-  height: 320px;
+  padding: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.096);
   margin: 0 auto;
   margin-top: 30px;
