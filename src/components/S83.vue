@@ -106,16 +106,19 @@ export default {
 }
 
 .menu-icon {
-  display: inline-block;
+  display: block;
+  width: 70px;
   background-color: #fff;
   border-radius: 20px;
+  text-align: center;
+  margin: 0 auto;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .menu-icon li {
   list-style: none;
-  width: 70px;
+  width: 100%;
   height: 60px;
   border-radius: 20px;
   border: 4px solid #fff;
