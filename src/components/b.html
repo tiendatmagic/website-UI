@@ -1,142 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <style>
-    * {
-      margin: 0px;
-      padding: 0px;
-      box-sizing: border-box;
-    }
+      .menu {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 60px;
+      }
+      .menu.active {
+        max-width: 200px;
+      }
+      .menu-icon {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+        font-family: Arial, Helvetica, sans-serif;
+        position: relative;
+        overflow: hidden;
+        transition: 0.3s ease-out;
+      }
 
-    body {
-      width: 100%;
-      height: 100vh;
-      background-color: gray;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+      .more {
+        width: 35px;
+        height: 35px;
+        border: 4px solid #6a42d3;
+        color: #6a42d3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: #fff;
+        position: absolute;
+        right: -20px;
+        z-index: 1;
+        cursor: pointer;
+      }
+      .menu-icon li {
+        list-style: none;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        transition: 0.3s ease-out;
+      }
+      .menu-icon li.active {
+        list-style: none;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+      }
 
-    .social-group {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      /* background-color: aqua; */
-      width: 100%;
-      max-width: 700px;
-      flex-wrap: wrap;
-      text-align: center;
-      margin: 0 auto;
-    }
+      .menu-icon a {
+        display: flex;
+        width: 200px;
+        text-decoration: none;
+        color: #6a42d3;
+      }
 
-    .icon {
-      /* background-color: blue; */
-      text-align: center;
-      margin: 0 auto;
-      text-align: center;
+      .menu-icon a div {
+        margin: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
-    }
+      .menu-icon .icon {
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+      }
 
-    .icon .name {
-      color: #fff;
-      padding: 10px;
-      transform: translateY(00%);
-      background-color: brown;
-      transition: 0.3s ease-out;
-      width: 120px;
-      margin: 0 auto;
+      .menu-icon li:hover {
+        background-color: #cccccc62;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
 
-    }
-
-    .icon .name::after {
-      content: "";
-      position: relative;
-      top: 20px;
-      bottom: 1px;
-      display: block;
-      margin: 0 auto;
-      width: 0;
-      height: 0;
-      border-left: 12px solid transparent;
-      border-right: 12px solid transparent;
-      border-top: 12px solid red;
-      transition: 0.3s ease-in-out;
-    }
-
-    /*
-    .social-group .name::after {
-      content: "";
-      position: relative;
-      bottom: 1px;
-      display: block;
-      margin: 0 auto;
-      width: 0;
-      height: 0;
-      border-left: 12px solid transparent;
-      border-right: 12px solid transparent;
-      border-top: 12px solid transparent;
-      transition: 0.3s ease-in-out;
-    } */
-
-    .icon span {
-      background-color: #fff;
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 27px;
-      margin: 0 auto;
-      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-      transition: 0.3s ease-out;
-    }
-
-    .icon:hover .name {
-      transform: translateY(-100%);
-    }
-  </style>
-</head>
-
-<body>
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css" />
-  <div class="social-group">
-    <div class="icon facebook">
-      <div class="name">
-        Facebook
+  <body>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css"
+    />
+    <div class="menu">
+      <div class="more">
+        <i class="fas fa-chevron-left"></i>
       </div>
-      <span><i class="fab fa-facebook-f"></i></span>
-    </div>
-    <div class="icon twitter">
-      <div class="name">
-        Twitter
+      <div class="menu-icon">
+        <ul>
+          <li>
+            <a href="###">
+              <div class="icon">
+                <i class="fas fa-home"></i>
+              </div>
+              <div class="title">
+                <p>Home</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="###">
+              <div class="icon">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="title">
+                <p>Profile</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="###">
+              <div class="icon">
+                <i class="fas fa-comment"></i>
+              </div>
+              <div class="title">
+                <p>Message</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="###">
+              <div class="icon">
+                <i class="fas fa-question-circle"></i>
+              </div>
+              <div class="title">
+                <p>Help</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="###">
+              <div class="icon">
+                <i class="fas fa-cog"></i>
+              </div>
+              <div class="title">
+                <p>Setting</p>
+              </div>
+            </a>
+          </li>
+        </ul>
       </div>
-      <span><i class="fab fa-twitter"></i></span>
     </div>
-    <div class="icon instagram">
-      <div class="name">
-        Instagram
-      </div>
-      <span><i class="fab fa-instagram"></i></span>
-    </div>
-    <div class="icon github">
-      <div class="name">
-        Github
-      </div>
-      <span><i class="fab fa-github"></i></span>
-    </div>
-    <div class="icon youtube">
-      <div class="name">
-        YouTubesssssssssssssssss
-      </div>
-      <span><i class="fab fa-youtube"></i></span>
-    </div>
-  </div>
-</body>
-
+    <script>
+      document
+        .getElementsByClassName("more")[0]
+        .addEventListener("click", () => {
+          document.getElementsByClassName("menu")[0].classList.toggle("active");
+          let list = document.querySelectorAll(".menu-icon li");
+          for (let i = 0; i < list.length; i++) {
+            list[i].classList.toggle("active");
+          }
+        });
+    </script>
+  </body>
 </html>

@@ -408,13 +408,17 @@
           <kbd> Hiệu ứng thanh menu dọc</kbd>
           <S81 />
         </div>
-        <div class="site sitem-lg-4 sitem-md-6">
+        <div class="site sitem-lg-5 sitem-md-6">
           <kbd> Hiệu ứng nút mạng xã hội</kbd>
           <S82 />
         </div>
-        <div class="site sitem-lg-4 sitem-md-6">
+        <div class="site sitem-lg-3 sitem-md-6">
           <kbd> Hiệu ứng thanh menu dọc dạng icon</kbd>
           <S83 />
+        </div>
+        <div class="site sitem-lg-3 sitem-md-6">
+          <kbd> Hiệu ứng thanh menu dọc dạng icon 2</kbd>
+          <S84 />
         </div>
       </div>
       <Like />
@@ -521,7 +525,7 @@ import S80 from "./components/S80.vue";
 import S81 from "./components/S81.vue";
 import S82 from "./components/S82.vue";
 import S83 from "./components/S83.vue";
-
+import S84 from "./components/S84.vue";
 import Donate from "./components/Donate.vue";
 import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";
@@ -615,6 +619,7 @@ export default {
     S81,
     S82,
     S83,
+    S84,
     Donate,
     Like,
     Love,

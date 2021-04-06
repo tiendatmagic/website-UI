@@ -83,14 +83,6 @@ export default {
   box-sizing: border-box;
 }
 
-body {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .social-group {
   display: flex;
   justify-content: space-evenly;

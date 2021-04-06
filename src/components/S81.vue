@@ -156,6 +156,7 @@ export default {
   border-radius: 20px;
   padding: 0px 30px;
   overflow: hidden;
+  margin: 0 auto;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 

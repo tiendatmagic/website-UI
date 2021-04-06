@@ -11,152 +11,71 @@
         padding: 0px;
         box-sizing: border-box;
       }
+
       body {
-        background-color: yellow;
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
         height: 100vh;
       }
-      .menu-icon {
-        display: inline-block;
-        background-color: #fff;
-        border-radius: 20px;
-        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
-        font-family: Arial, Helvetica, sans-serif;
-      }
-
-      .menu-icon li {
-        list-style: none;
-        width: 70px;
+      .button1 {
+        background-color: #dee4f6;
+        color: #000005;
+        width: 250px;
         height: 60px;
-        border-radius: 20px;
-        border: 4px solid #fff;
+        padding: 20px;
+        font-size: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
+        word-wrap: break-word;
+        position: absolute;
+        transition: 0.5s ease-out;
+      }
+      .button2 {
+        background-color: #2424f9;
+        color: #f0f0f0;
+        width: 250px;
+        height: 60px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40px;
+        word-wrap: break-word;
+        position: absolute;
+        transition: 0.4s ease-out;
+      }
+      .button {
+        width: 250px;
+        height: 60px;
         position: relative;
+        border-radius: 40px;
+        overflow: hidden;
+        cursor: pointer;
       }
-
-      .menu-icon li:hover {
-        background-color: #0076fe;
+      .button:hover .button1 {
+        font-size: 24px;
       }
-
-      .menu-icon li:hover .icon {
-        color: #fff;
-      }
-
-      .menu-icon li a {
-        text-decoration: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .menu-icon li .icon {
-        position: absolute;
-        color: #0076fe;
-        font-size: 25px;
-        z-index: 2;
-      }
-
-      .menu-icon li .title {
-        position: absolute;
-        top: 5px;
-        left: 70px;
-        padding: 10px;
-        visibility: hidden;
-        opacity: 0;
-        border-radius: 10px;
-        background-color: #fff;
-        color: #0076fe;
-        font-weight: bold;
-        font-size: 17px;
-        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
-        transition: 0.2s ease-out;
-      }
-
-      .menu-icon li .title::after {
-        content: "";
-        position: absolute;
-        width: 0;
-        height: 0;
-        top: 10px;
-        left: -19px;
-        border-left: 10px solid transparent;
-        border-right: 10px solid #fff;
-        border-bottom: 10px solid transparent;
-        border-top: 10px solid transparent;
-      }
-
-      .menu-icon li:hover .title {
-        visibility: visible;
-        opacity: 1;
-
-        left: 90px;
+      .button:hover .button2 {
+        transform: translateX(-100%);
       }
     </style>
   </head>
-
   <body>
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css"
-    />
-    <div class="menu-icon ">
-      <ul>
-        <li>
-          <a href="###">
-            <div class="icon">
-              <i class="fas fa-home"></i>
-            </div>
-            <div class="title">
-              <p>Home</p>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="###">
-            <div class="icon">
-              <i class="fas fa-user"></i>
-            </div>
-            <div class="title">
-              <p>Profile</p>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="###">
-            <div class="icon">
-              <i class="fas fa-comment"></i>
-            </div>
-            <div class="title">
-              <p>Message</p>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="###">
-            <div class="icon">
-              <i class="fas fa-question-circle"></i>
-            </div>
-            <div class="title">
-              <p>Help</p>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="###">
-            <div class="icon">
-              <i class="fas fa-cog"></i>
-            </div>
-            <div class="title">
-              <p>Setting</p>
-            </div>
-          </a>
-        </li>
-      </ul>
+    <div class="button">
+
+        <p>      <div class="button1">
+          Let's work together!
+        </p>
+      </div>
+
+      <div class="button2">
+        <p>
+          Contact Us
+        </p>
+      </div>
     </div>
   </body>
 </html>

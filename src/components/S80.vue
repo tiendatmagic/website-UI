@@ -136,8 +136,8 @@ export default {
   left: 0;
 }
 .buttonsocial {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -155,75 +155,74 @@ export default {
 }
 
 .social-group div {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 22px;
+  font-size: 25px;
   color: #fff;
   border-radius: 50%;
   cursor: pointer;
-  box-shadow: 0px 0px 0px 0px #fff, 3px 3px 5px #ceced1;
   z-index: 1;
-  transition: 0.2s ease-out;
+  box-shadow: 0px 0px 0px 0px #fff, 3px 3px 5px #ceced1;
+  transition: 0.3s ease-out;
 }
 
 .social-group .bfacebook.active {
-  background-color: red;
+  background-color: #3c5996;
   transform: translateY(-150%);
-  transition-delay: 0.2s;
 }
 .social-group .bfacebook:hover {
   background-color: #fff;
-  color: red;
+  color: #3c5996;
 }
 
 .social-group .btwitter.active {
-  background-color: orange;
+  background-color: #47c0f1;
   transform: translateX(120%) translateY(-70%);
-  transition-delay: 0.3s;
+  transition-delay: 0.1s;
 }
 .social-group .btwitter:hover {
   background-color: #fff;
-  color: orange;
+  color: #47c0f1;
 }
 
 .social-group .binstagram.active {
-  background-color: yellow;
+  background-color: #df306a;
   transform: translateX(120%) translateY(70%);
-  transition-delay: 0.4s;
+  transition-delay: 0.2s;
 }
 .social-group .binstagram:hover {
   background-color: #fff;
-  color: yellow;
+  color: #df306a;
 }
 .social-group .byoutube.active {
-  background-color: blue;
+  background-color: #e0453c;
   transform: translateY(150%);
-  transition-delay: 0.5s;
+  transition-delay: 0.3s;
 }
 .social-group .byoutube:hover {
   background-color: #fff;
-  color: blue;
+  color: #e0453c;
 }
 .social-group .bgithub.active {
-  background-color: aqua;
+  background-color: #343334;
   transform: translateX(-120%) translateY(70%);
-  transition-delay: 0.6s;
+  transition-delay: 0.4s;
 }
 .social-group .bgithub:hover {
   background-color: #fff;
-  color: aqua;
+  color: #343334;
 }
 .social-group .blinkedin.active {
-  background-color: rgb(0, 255, 149);
+  background-color: #0a66c2;
   transform: translateX(-120%) translateY(-70%);
-  transition-delay: 0.7s;
+  transition-delay: 0.5s;
 }
 .social-group .blinkedin:hover {
   background-color: #fff;
-  color: rgb(0, 255, 149);
+  color: #0a66c2;
 }
 </style>

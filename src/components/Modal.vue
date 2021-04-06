@@ -90,7 +90,7 @@ export default {
         document
           .getElementsByClassName("alert-modal")[0]
           .setAttribute("style", "display: none");
-      }, 5500);
+      }, 2500);
     },
   },
 };
