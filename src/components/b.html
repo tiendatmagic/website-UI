@@ -11,162 +11,183 @@
         padding: 0px;
         box-sizing: border-box;
       }
+      /* body {
+        width: 100%;
+        height: 100vh;
+
+        justify-content: center;
+        align-items: center;
+        background-color: #2295f5;
+      } */
+      .personal-information {
+        position: relative;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .imgprofile {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        cursor: pointer;
+        height: 100px;
+      }
+      .imgprofile img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+      }
 
       .menu {
-        position: relative;
-        display: flex;
-        align-items: center;
-        margin: 0 auto;
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 10px;
+        position: absolute;
         width: 100%;
-        max-width: 60px;
+        top: 130px;
+        visibility: hidden;
+        opacity: 0;
+        box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.425);
+        transition: 0.35s ease-out;
       }
       .menu.active {
-        max-width: 200px;
-      }
-      .menu-icon {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
-        font-family: Arial, Helvetica, sans-serif;
-        position: relative;
-        overflow: hidden;
-        transition: 0.3s ease-out;
+        top: 100px;
+        visibility: visible;
+        opacity: 1;
       }
 
-      .more {
-        width: 35px;
-        height: 35px;
-        border: 4px solid #6a42d3;
-        color: #6a42d3;
+      .menu .name {
+        height: 90px;
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 50%;
-        background-color: #fff;
+      }
+      .menu::after {
+        content: "";
         position: absolute;
-        right: -20px;
-        z-index: 1;
-        cursor: pointer;
+        top: -12px;
+        right: 20px;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 15px solid #fff;
       }
-      .menu-icon li {
-        list-style: none;
-        width: 60px;
-        height: 60px;
-        display: flex;
-        align-items: center;
-        transition: 0.3s ease-out;
+      .menu h3 {
+        text-align: center;
+        color: #6a6464;
       }
-      .menu-icon li.active {
+      .menu span {
+        color: #cacaca;
+        font-size: 15px;
+      }
+      .menu li {
         list-style: none;
-        width: 100%;
-        height: 60px;
-        display: flex;
-        align-items: center;
+        font-size: 18px;
+        padding: 12px;
+        border-top: 0.1px solid #d1d1d1b4;
+        border-bottom: 0.1px solid #d1d1d1b4;
+      }
+      .menu li:hover i {
+        color: #6e6e6e;
+      }
+      .menu li:hover span {
+        color: #ff0095;
       }
 
-      .menu-icon a {
-        display: flex;
-        width: 200px;
+      .menu li a {
         text-decoration: none;
-        color: #6a42d3;
       }
-
-      .menu-icon a div {
-        margin: 15px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      .menu li i {
+        color: #aaaaaa;
       }
-
-      .menu-icon .icon {
-        width: 30px;
-        height: 30px;
-        font-size: 20px;
-      }
-
-      .menu-icon li:hover {
-        background-color: #cccccc62;
-        border-radius: 10px;
+      .menu li span {
+        color: #5a5a5a;
+        font-weight: bold;
+        margin: 10px;
       }
     </style>
   </head>
-
   <body>
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css"
-    />
-    <div class="menu">
-      <div class="more">
-        <i class="fas fa-chevron-left"></i>
+    <div class="personal-information">
+      <link
+        rel="stylesheet"
+        href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css"
+      />
+      <div class="imgprofile">
+        <img
+          src="https://raw.githubusercontent.com/tiendatmagic/website-UI/master/src/img/aILP3CD.png"
+          alt=""
+        />
       </div>
-      <div class="menu-icon">
+      <div class="menu">
+        <div class="name">
+          <h3>
+            Someone Famous
+
+            <br />
+            <span>
+              Website Designer
+            </span>
+          </h3>
+        </div>
         <ul>
           <li>
             <a href="###">
-              <div class="icon">
-                <i class="fas fa-home"></i>
-              </div>
-              <div class="title">
-                <p>Home</p>
-              </div>
+              <i class="fas fa-user"></i>
+              <span>
+                My Profile
+              </span>
             </a>
           </li>
           <li>
             <a href="###">
-              <div class="icon">
-                <i class="fas fa-user"></i>
-              </div>
-              <div class="title">
-                <p>Profile</p>
-              </div>
+              <i class="fas fa-user-md"></i>
+              <span>
+                Edit Profile
+              </span>
             </a>
           </li>
           <li>
             <a href="###">
-              <div class="icon">
-                <i class="fas fa-comment"></i>
-              </div>
-              <div class="title">
-                <p>Message</p>
-              </div>
+              <i class="fas fa-inbox"></i>
+              <span>
+                Inbox
+              </span>
             </a>
           </li>
           <li>
             <a href="###">
-              <div class="icon">
-                <i class="fas fa-question-circle"></i>
-              </div>
-              <div class="title">
-                <p>Help</p>
-              </div>
+              <i class="fas fa-cog"></i>
+              <span>
+                Setting
+              </span>
             </a>
           </li>
           <li>
             <a href="###">
-              <div class="icon">
-                <i class="fas fa-cog"></i>
-              </div>
-              <div class="title">
-                <p>Setting</p>
-              </div>
+              <i class="fas fa-question-circle"></i>
+              <span>
+                Help
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="###">
+              <i class="fas fa-sign-out-alt"></i>
+              <span>
+                Log out
+              </span>
             </a>
           </li>
         </ul>
       </div>
     </div>
+
     <script>
       document
-        .getElementsByClassName("more")[0]
+        .getElementsByClassName("imgprofile")[0]
         .addEventListener("click", () => {
           document.getElementsByClassName("menu")[0].classList.toggle("active");
-          let list = document.querySelectorAll(".menu-icon li");
-          for (let i = 0; i < list.length; i++) {
-            list[i].classList.toggle("active");
-          }
         });
     </script>
   </body>

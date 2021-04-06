@@ -420,6 +420,10 @@
           <kbd> Hiệu ứng thanh menu dọc dạng icon 2</kbd>
           <S84 />
         </div>
+        <div class="site sitem-lg-6 sitem-md-6">
+          <kbd> Menu hiển thị thông tin tài khoản </kbd>
+          <S85 />
+        </div>
       </div>
       <Like />
       <Love />
@@ -526,6 +530,7 @@ import S81 from "./components/S81.vue";
 import S82 from "./components/S82.vue";
 import S83 from "./components/S83.vue";
 import S84 from "./components/S84.vue";
+import S85 from "./components/S85.vue";
 import Donate from "./components/Donate.vue";
 import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";
@@ -620,6 +625,7 @@ export default {
     S82,
     S83,
     S84,
+    S85,
     Donate,
     Like,
     Love,
