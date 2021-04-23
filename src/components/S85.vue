@@ -69,14 +69,9 @@
       document.getElementsByClassName("menu")[0].classList.toggle("active"); });
     </code>
     <div class="buttonhtmlcss">
-      <button @click="html()" class="btn">
-         Xem HTML</button
-      ><button @click="js()" class="btn">
-         Xem Javascript
-      </button>
-      <button @click="css()" class="btn">
-         Xem CSS
-      </button>
+      <button @click="html()" class="btn">Xem HTML</button
+      ><button @click="js()" class="btn">Xem Javascript</button>
+      <button @click="css()" class="btn">Xem CSS</button>
     </div>
   </div>
 </template>
@@ -155,7 +150,7 @@ export default {
   visibility: hidden;
   opacity: 0;
   box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.425);
-  z-index: 2;
+  z-index: 3;
   transition: 0.35s ease-out;
 }
 .menu.active {

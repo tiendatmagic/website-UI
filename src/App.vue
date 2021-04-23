@@ -633,18 +633,18 @@ export default {
     Modal,
     Footer,
   },
-  mounted: function() {
+  mounted: function () {
     setTimeout(() => {
       this.load();
     }, 2000);
   },
   methods: {
-    load: function() {
+    load: function () {
       const loader = document.querySelector(".loader");
       loader.className += " hidden"; //
     },
 
-    myFunction: function() {
+    myFunction: function () {
       var input, filter, smain, div, td, i, txtValue;
       input = document.getElementById("myInput");
       filter = input.value.toUpperCase();
@@ -721,7 +721,7 @@ kbd {
     outline: none;
     margin-top: 10px;
     margin-bottom: 10px;
-  font-size: 14px;
+    font-size: 14px;
     cursor: pointer;
     transition: 0.4s ease-out;
     &:nth-child(1):hover {
@@ -731,11 +731,9 @@ kbd {
       background-color: #ffae00;
     }
 
-     &:nth-child(3):hover {
+    &:nth-child(3):hover {
       background-color: #88ff00;
     }
-
-
   }
 }
 
