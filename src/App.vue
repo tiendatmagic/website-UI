@@ -424,6 +424,10 @@
           <kbd> Menu hiển thị thông tin tài khoản </kbd>
           <S85 />
         </div>
+        <div class="site sitem-lg-3 sitem-md-6">
+          <kbd> Cuộn lên đầu trang </kbd>
+          <S86 />
+        </div>
       </div>
       <Like />
       <Love />
@@ -531,6 +535,7 @@ import S82 from "./components/S82.vue";
 import S83 from "./components/S83.vue";
 import S84 from "./components/S84.vue";
 import S85 from "./components/S85.vue";
+import S86 from "./components/S86.vue";
 import Donate from "./components/Donate.vue";
 import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";
@@ -626,6 +631,7 @@ export default {
     S83,
     S84,
     S85,
+    S86,
     Donate,
     Like,
     Love,

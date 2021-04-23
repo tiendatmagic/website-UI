@@ -20,9 +20,29 @@
         height: 100vh;
       }
       .toup {
-        width: 30px;
-        height: 30px;
-        background-color: rebeccapurple;
+        width: 50px;
+        height: 50px;
+        overflow: hidden;
+        border-radius: 50%;
+        background-image: linear-gradient(#b658bc, #a664e9);
+        font-size: 18px;
+        color: #fff;
+        cursor: pointer;
+      }
+      .toup:hover .up {
+        transform: translateY(-100%);
+      }
+      .toup .up {
+        width: 100%;
+        height: 100%;
+        transition: 0.3s ease-out;
+      }
+      .toup .up div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     </style>
   </head>
@@ -32,12 +52,14 @@
       href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css"
     />
     <div class="toup">
-      <div>
-        <i class="fas fa-arrow-up"></i>
-      </div>
+      <div class="up">
+        <div>
+          <i class="fas fa-arrow-up"></i>
+        </div>
 
-      <div>
-        <i class="fas fa-arrow-up"></i>
+        <div>
+          <i class="fas fa-arrow-up"></i>
+        </div>
       </div>
     </div>
   </body>
