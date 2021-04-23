@@ -63,13 +63,19 @@
         </div>
       </div>
     </div>
-
+    <code style="display: none">
+      document.getElementsByClassName("imgprofile")[0]
+      .addEventListener("click", () => {
+      document.getElementsByClassName("menu")[0].classList.toggle("active"); });
+    </code>
     <div class="buttonhtmlcss">
       <button @click="html()" class="btn">
-        <i class="fa fa-eye"></i> Xem HTML
+         Xem HTML</button
+      ><button @click="js()" class="btn">
+         Xem Javascript
       </button>
       <button @click="css()" class="btn">
-        <i class="fa fa-eye"></i> Xem CSS
+         Xem CSS
       </button>
     </div>
   </div>
@@ -94,6 +100,15 @@ export default {
 
       document.getElementById("html").style.display = "none";
       document.getElementById("css").style.display = "block";
+    },
+    js() {
+      var c = document.getElementsByTagName("code")[4].innerHTML;
+      document.getElementById("tjs").innerHTML = c;
+      document.getElementsByClassName("modal")[0].style.display = "block";
+
+      document.getElementById("html").style.display = "none";
+      document.getElementById("css").style.display = "none";
+      document.getElementById("javascript").style.display = "block";
     },
     action() {
       document.getElementsByClassName("menu")[0].classList.toggle("active");

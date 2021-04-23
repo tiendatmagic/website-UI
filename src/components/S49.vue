@@ -81,10 +81,10 @@
 
     <div class="buttonhtmlcss">
       <button @click="html()" class="btn">
-        <i class="fa fa-eye"></i> Xem HTML
+         Xem HTML
       </button>
       <button @click="css()" class="btn">
-        <i class="fa fa-eye"></i> Xem CSS
+         Xem CSS
       </button>
     </div>
   </div>
@@ -147,7 +147,9 @@ export default {
   cursor: pointer;
   transition: 0.4s ease-out;
 }
-
+.icon img {
+  width: 50px;
+}
 .icon:hover {
   transform: translateY(-40%);
   transition: 0.4s ease-out;
@@ -155,18 +157,16 @@ export default {
 
 .icon:hover .name {
   opacity: 1;
+  visibility: visible;
   transition: 0.5s ease-out;
 }
 
 .icon .name {
   opacity: 0;
+  visibility: hidden;
   position: absolute;
   top: -35px;
   transition: 0.5s ease-out;
-}
-
-.icon img {
-  width: 50px;
 }
 
 @media only screen and (max-width: 400px) {

@@ -75,12 +75,12 @@
     </code>
     <div class="buttonhtmlcss">
       <button @click="html()" class="btn">
-        <i class="fa fa-eye"></i> Xem HTML</button
+         Xem HTML</button
       ><button @click="js()" class="btn">
-        <i class="fa fa-eye"></i> Xem Javascript
+         Xem Javascript
       </button>
       <button @click="css()" class="btn">
-        <i class="fa fa-eye"></i> Xem CSS
+         Xem CSS
       </button>
     </div>
   </div>

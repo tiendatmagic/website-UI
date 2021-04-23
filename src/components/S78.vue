@@ -25,10 +25,10 @@
 
     <div class="buttonhtmlcss">
       <button @click="html()" class="btn">
-        <i class="fa fa-eye"></i> Xem HTML
+         Xem HTML
       </button>
       <button @click="css()" class="btn">
-        <i class="fa fa-eye"></i> Xem CSS
+         Xem CSS
       </button>
     </div>
   </div>

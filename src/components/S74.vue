@@ -3,9 +3,11 @@
     <br />
     <div id="s74">
 
+
+
     <div class="calculator">
       <form name="calculator">
-        <input type="text" id="display" value="" />
+        <input type="text" id="display" value="" disabled />
 
         <div class="line"></div>
         <div class="keyboard">
@@ -47,10 +49,10 @@
 
     <div class="buttonhtmlcss">
       <button @click="html()" class="btn">
-        <i class="fa fa-eye"></i> Xem HTML
+         Xem HTML
       </button>
       <button @click="css()" class="btn">
-        <i class="fa fa-eye"></i> Xem CSS
+         Xem CSS
       </button>
     </div>
   </div>
@@ -83,70 +85,75 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
 
-.calculator {
-  width: 100%;
-  max-width: 300px;
-  background-color: #141414;
-  border-radius: 30px;
-  overflow: hidden;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 25px;
-  margin: 0 auto;
-}
-#display {
-  width: 100%;
-  height: 200px;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
-  color: #fff;
-  word-wrap: break-word;
-  font-size: 30px;
-  background-color: #141414;
-  border: none;
-}
-.line {
-  width: 95%;
-  margin: 0 auto;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  border-bottom: 2.3px solid #5d5d5d;
-}
-.keyboard {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 5px;
-  padding: 10px;
-}
-.button-item {
-  width: 65px;
-  height: 65px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #bdbbbb;
-  cursor: pointer;
-}
-.button-item:active {
-  color: #fff;
-}
-.hot {
-  color: #ff0099;
-}
-.hot:active {
-  color: #920058;
-}
-.result {
-  background-color: #ff0099;
-  transform: scale(0.8);
-  border-radius: 25px;
-}
+
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+
+      .calculator {
+        width: 100%;
+        max-width: 300px;
+        background-color: #141414;
+        border-radius: 30px;
+        overflow: hidden;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        margin: 0 auto;
+      }
+      #display {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        word-wrap: break-word;
+        font-size: 30px;
+        background-color: #141414;
+        padding: 15px;
+        border: none;
+      }
+      .line {
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border-bottom: 2.3px solid #5d5d5d;
+      }
+      .keyboard {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 5px;
+        padding: 10px;
+      }
+      .button-item {
+        width: 65px;
+        height: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #bdbbbb;
+        cursor: pointer;
+      }
+      .button-item:active {
+        color: #fff;
+      }
+      .hot {
+        color: #ff0099;
+      }
+      .hot:active {
+        color: #920058;
+      }
+      .result {
+        background-color: #ff0099;
+        transform: scale(0.8);
+        border-radius: 25px;
+      }
+
 
 
 </style>

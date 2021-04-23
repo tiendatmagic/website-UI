@@ -420,7 +420,7 @@
           <kbd> Hiệu ứng thanh menu dọc dạng icon 2</kbd>
           <S84 />
         </div>
-        <div class="site sitem-lg-6 sitem-md-6">
+        <div class="site sitem-lg-3 sitem-md-6">
           <kbd> Menu hiển thị thông tin tài khoản </kbd>
           <S85 />
         </div>
@@ -712,13 +712,16 @@ kbd {
   justify-content: space-between;
 
   & button.btn {
-    background-color: rgb(166, 255, 255);
-    padding: 7.5px;
+    background-color: #B5B5B5;
+    width: 100px;
+    height: 50px;
+    color: #fff;
     border-radius: 10px;
     border: none;
     outline: none;
     margin-top: 10px;
     margin-bottom: 10px;
+
     cursor: pointer;
 
     &:hover {

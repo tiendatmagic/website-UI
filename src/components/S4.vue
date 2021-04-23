@@ -10,10 +10,10 @@
 
     <div class="buttonhtmlcss">
       <button @click="html()" class="btn">
-        <i class="fa fa-eye"></i> Xem HTML
+         Xem HTML
       </button>
       <button @click="css()" class="btn">
-        <i class="fa fa-eye"></i> Xem CSS
+         Xem CSS
       </button>
     </div>
   </div>
@@ -62,14 +62,13 @@ input.text {
   background-color: #f5f1ff;
   border-radius: 10px;
   outline: none;
-  transition: 0.4s ease-out;
+  transition: 0.2s ease-out;
 }
 
 input.text:focus {
   background-color: transparent;
   border-color: #ff0077;
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.308);
-
+            box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.10);
   outline: none;
 }
 

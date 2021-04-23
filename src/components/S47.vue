@@ -116,10 +116,10 @@
 
     <div class="buttonhtmlcss">
       <button @click="html()" class="btn">
-        <i class="fa fa-eye"></i> Xem HTML
+         Xem HTML
       </button>
       <button @click="css()" class="btn">
-        <i class="fa fa-eye"></i> Xem CSS
+         Xem CSS
       </button>
     </div>
   </div>
@@ -254,7 +254,7 @@ export default {
   border-radius: 30px;
   background-color: #fff;
   padding: 20px;
-  
+
 }
 
 .form-input h5 {
@@ -308,7 +308,7 @@ export default {
 
 .form-footer {
   border-top: 1px solid gray;
-  
+
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 15px;
