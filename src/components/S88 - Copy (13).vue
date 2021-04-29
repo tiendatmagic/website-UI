@@ -1,7 +1,7 @@
 <template>
   <div class="smainn">
     <br />
-    <div id="s86">
+    <div id="s88">
 
     </div>
 
@@ -9,9 +9,7 @@
     <div class="buttonhtmlcss">
       <button @click="html()" class="btn">
          Xem HTML</button
-      ><button @click="js()" class="btn">
-         Xem Javascript
-      </button>
+      >	  
       <button @click="css()" class="btn">
          Xem CSS
       </button>
@@ -23,7 +21,7 @@
 export default {
   methods: {
     html() {
-      var a = document.getElementById("s85").innerHTML;
+      var a = document.getElementById("s88").innerHTML;
 
       document.getElementById("thtml").innerHTML = a;
       document.getElementsByClassName("modal")[0].style.display = "block";
@@ -32,7 +30,7 @@ export default {
       document.getElementById("css").style.display = "none";
     },
     css() {
-      var b = document.getElementsByTagName("style")[85].innerHTML;
+      var b = document.getElementsByTagName("style")[88].innerHTML;
       document.getElementById("tcss").innerHTML = b;
       document.getElementsByClassName("modal")[0].style.display = "block";
 

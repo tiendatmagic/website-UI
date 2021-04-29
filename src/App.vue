@@ -416,17 +416,21 @@
           <kbd> Hiệu ứng thanh menu dọc dạng icon</kbd>
           <S83 />
         </div>
-        <div class="site sitem-lg-3 sitem-md-6">
+        <div class="site sitem-lg-4 sitem-md-6">
           <kbd> Hiệu ứng thanh menu dọc dạng icon 2</kbd>
           <S84 />
         </div>
-        <div class="site sitem-lg-3 sitem-md-6">
+        <div class="site sitem-lg-4 sitem-md-6">
           <kbd> Menu hiển thị thông tin tài khoản </kbd>
           <S85 />
         </div>
-        <div class="site sitem-lg-3 sitem-md-6">
+        <div class="site sitem-lg-4 sitem-md-6">
           <kbd> Cuộn lên đầu trang </kbd>
           <S86 />
+        </div>
+        <div class="site sitem-lg-6 sitem-md-12">
+          <kbd> Welcome từ Cốc Cốc </kbd>
+          <S87 />
         </div>
       </div>
       <Like />
@@ -536,6 +540,7 @@ import S83 from "./components/S83.vue";
 import S84 from "./components/S84.vue";
 import S85 from "./components/S85.vue";
 import S86 from "./components/S86.vue";
+import S87 from "./components/S87.vue";
 import Donate from "./components/Donate.vue";
 import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";
@@ -632,6 +637,7 @@ export default {
     S84,
     S85,
     S86,
+    S87,
     Donate,
     Like,
     Love,
