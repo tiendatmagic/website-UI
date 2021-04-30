@@ -63,12 +63,8 @@
     </div>
 
     <div class="buttonhtmlcss">
-      <button @click="html()" class="btn">
-         Xem HTML
-      </button>
-      <button @click="css()" class="btn">
-         Xem CSS
-      </button>
+      <button @click="html()" class="btn">Xem HTML</button>
+      <button @click="css()" class="btn">Xem CSS</button>
     </div>
   </div>
 </template>
@@ -110,8 +106,6 @@ export default {
   width: 70px;
   background-color: #fff;
   border-radius: 20px;
-  text-align: center;
-  margin: 0 auto;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
   font-family: Arial, Helvetica, sans-serif;
 }
