@@ -19,7 +19,7 @@
               <b>Tiến Đạt Magic</b>
             </div>
             <div class="job">
-              <p>Front end, UX/UI Developer</p>
+              <p>Front end, UX/UI Designer</p>
             </div>
 
             <div class="social">

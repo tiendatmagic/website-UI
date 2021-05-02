@@ -23,7 +23,7 @@
           <div class="job">
             <p>
               <i class="fas fa-star"></i>
-              <span> Front end, UX/UI Developer </span>
+              <span> Front end, UX/UI Designer </span>
             </p>
           </div>
 
@@ -78,12 +78,8 @@
     </div>
 
     <div class="buttonhtmlcss">
-      <button @click="html()" class="btn">
-         Xem HTML
-      </button>
-      <button @click="css()" class="btn">
-         Xem CSS
-      </button>
+      <button @click="html()" class="btn">Xem HTML</button>
+      <button @click="css()" class="btn">Xem CSS</button>
     </div>
   </div>
 </template>
