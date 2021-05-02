@@ -19,12 +19,8 @@
     </div>
 
     <div class="buttonhtmlcss">
-      <button @click="html()" class="btn">
-         Xem HTML
-      </button>
-      <button @click="css()" class="btn">
-         Xem CSS
-      </button>
+      <button @click="html()" class="btn">Xem HTML</button>
+      <button @click="css()" class="btn">Xem CSS</button>
     </div>
   </div>
 </template>
@@ -65,21 +61,17 @@ export default {
   display: flex;
   background-color: rgb(82, 82, 82);
   width: 50px;
-
   max-width: 400px;
   padding: 5px;
   border-radius: 30px;
-
   margin: 0 auto;
-
   justify-content: center;
   align-items: center;
-  transition: 1s ease-out;
+  transition: 0.5s ease-out;
 }
 
 .formsearch:hover {
   width: 100%;
-  transition: 1.5s ease-out;
 }
 
 .formsearch:hover .inputsearch {
@@ -92,7 +84,7 @@ export default {
 
 .inputsearch {
   width: 00%;
-  transition: 0.5s ease-out;
+  transition: 0.6s ease-out;
 }
 
 .inputsearch input {
@@ -119,7 +111,7 @@ export default {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  transition: 1s ease-out;
+  transition: 0.6s ease-out;
 }
 
 .searchinput::placeholder {

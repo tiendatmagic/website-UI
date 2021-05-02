@@ -65,12 +65,8 @@
     </div>
 
     <div class="buttonhtmlcss">
-      <button @click="html()" class="btn">
-         Xem HTML
-      </button>
-      <button @click="css()" class="btn">
-         Xem CSS
-      </button>
+      <button @click="html()" class="btn">Xem HTML</button>
+      <button @click="css()" class="btn">Xem CSS</button>
     </div>
   </div>
 </template>
@@ -136,7 +132,7 @@ export default {
   position: relative;
   top: 30px;
   margin: 0 auto;
-  border: 5px solid hotpink;
+  border: 5px solid #304b69;
 }
 
 .info {

@@ -33,7 +33,7 @@
           <S2 />
         </div>
 
-        <div class="site sitem-lg-4">
+        <div class="site sitem-lg-5">
           <kbd>Form đăng nhập</kbd>
           <S1 />
         </div>
@@ -43,7 +43,7 @@
           <S4 />
         </div>
 
-        <div class="site sitem-lg-4 sitem-md-6">
+        <div class="site sitem-lg-3 sitem-md-6">
           <kbd>Gradient Button</kbd>
           <S5 />
         </div>
@@ -432,6 +432,10 @@
           <kbd> Welcome từ Cốc Cốc </kbd>
           <S87 />
         </div>
+        <div class="site sitem-lg-6 sitem-md-6">
+          <kbd> Sidebar menu </kbd>
+          <S88 />
+        </div>
       </div>
       <Like />
       <Love />
@@ -541,6 +545,7 @@ import S84 from "./components/S84.vue";
 import S85 from "./components/S85.vue";
 import S86 from "./components/S86.vue";
 import S87 from "./components/S87.vue";
+import S88 from "./components/S88.vue";
 import Donate from "./components/Donate.vue";
 import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";
@@ -638,6 +643,7 @@ export default {
     S85,
     S86,
     S87,
+    S88,
     Donate,
     Like,
     Love,
@@ -724,7 +730,7 @@ kbd {
   justify-content: space-between;
 
   & button.btn {
-    background-color: #c0c0c0;
+    background-color: #b6b6b6;
     padding: 0px 20px;
     height: 40px;
     color: #fff;
