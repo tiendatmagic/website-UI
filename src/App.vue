@@ -436,6 +436,14 @@
           <kbd> Sidebar menu </kbd>
           <S88 />
         </div>
+        <div class="site sitem-lg-4 sitem-md-6">
+          <kbd> Sidebar menu </kbd>
+          <S89 />
+        </div>
+        <div class="site sitem-lg-4 sitem-md-6">
+          <kbd> Thông tin người dùng facebook </kbd>
+          <S90 />
+        </div>
       </div>
       <Like />
       <Love />
@@ -546,6 +554,8 @@ import S85 from "./components/S85.vue";
 import S86 from "./components/S86.vue";
 import S87 from "./components/S87.vue";
 import S88 from "./components/S88.vue";
+import S89 from "./components/S89.vue";
+import S90 from "./components/S90.vue";
 import Donate from "./components/Donate.vue";
 import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";
@@ -644,6 +654,8 @@ export default {
     S86,
     S87,
     S88,
+    S89,
+    S90,
     Donate,
     Like,
     Love,
