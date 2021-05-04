@@ -122,6 +122,7 @@ export default {
   background-color: #fff;
   border-radius: 10px;
   margin: 0 auto;
+  box-shadow: 0 10px 25px #00000033;
 }
 .info {
   display: flex;
