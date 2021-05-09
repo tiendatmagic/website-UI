@@ -444,6 +444,18 @@
           <kbd> Thông tin người dùng facebook </kbd>
           <S90 />
         </div>
+        <div class="site sitem-lg-4 sitem-md-6">
+          <kbd> Thông tin cá nhân </kbd>
+          <S91 />
+        </div>
+        <div class="site sitem-lg-4 sitem-md-6">
+          <kbd> Modal thông báo</kbd>
+          <S92 />
+        </div>
+        <div class="site sitem-lg-4 sitem-md-6">
+          <kbd> Modal thông báo nhận mail</kbd>
+          <S93 />
+        </div>
       </div>
       <Like />
       <Love />
@@ -556,6 +568,9 @@ import S87 from "./components/S87.vue";
 import S88 from "./components/S88.vue";
 import S89 from "./components/S89.vue";
 import S90 from "./components/S90.vue";
+import S91 from "./components/S91.vue";
+import S92 from "./components/S92.vue";
+import S93 from "./components/S93.vue";
 import Donate from "./components/Donate.vue";
 import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";
@@ -656,6 +671,9 @@ export default {
     S88,
     S89,
     S90,
+    S91,
+    S92,
+    S93,
     Donate,
     Like,
     Love,
@@ -663,18 +681,18 @@ export default {
     Modal,
     Footer,
   },
-  mounted: function () {
+  mounted: function() {
     setTimeout(() => {
       this.load();
     }, 2000);
   },
   methods: {
-    load: function () {
+    load: function() {
       const loader = document.querySelector(".loader");
       loader.className += " hidden"; //
     },
 
-    myFunction: function () {
+    myFunction: function() {
       var input, filter, smain, div, td, i, txtValue;
       input = document.getElementById("myInput");
       filter = input.value.toUpperCase();

@@ -2,8 +2,8 @@
   <div class="smainn">
     <div id="footer">
       <p>
-        © {{ year }} Copyright by Tiendatmagic - All Rights Reserved | Designed by
-        Tiendatmagic
+        © {{ year }} Copyright by Tiendatmagic - All Rights Reserved | Designed
+        by Tiendatmagic
       </p>
       <p class="text-danger text-d">
         <span>
@@ -21,7 +21,7 @@ export default {
   data() {
     return {
       year: new Date().getFullYear(),
-    }
+    };
   },
   methods: {
     html() {
@@ -49,7 +49,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 p {
-  font-size: 20px !important;
+  font-size: 20px;
   color: deeppink;
   text-align: center;
 }

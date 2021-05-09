@@ -185,7 +185,12 @@ export default {
   font-size: 15px;
   display: flex;
   align-items: center;
+  cursor: pointer;
   background-color: #e4e6eb;
+}
+
+.option button:hover {
+  filter: brightness(90%);
 }
 .option button.message {
   background-color: #1877f2;
