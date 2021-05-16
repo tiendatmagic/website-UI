@@ -27,10 +27,10 @@
 
     <div class="buttonhtmlcss">
       <button @click="html()" class="btn">
-         Xem HTML
+        Xem HTML
       </button>
       <button @click="css()" class="btn">
-         Xem CSS
+        Xem CSS
       </button>
     </div>
   </div>
@@ -63,7 +63,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-*[data-v-18ce4759] {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -78,14 +78,14 @@ form {
   width: 90%;
 }
 
-label[data-v-18ce4759] {
-  color: #9395cc;
+label {
+  color: #242ac4;
 }
 
-.form-control[data-v-18ce4759] {
+.form-control {
   width: 100%;
-  height: 60px;
-  border-radius: 20px;
+  height: 50px;
+  border-radius: 30px;
   outline: none;
   background-color: #f5f1ff;
   border: none;
@@ -96,7 +96,7 @@ label[data-v-18ce4759] {
   color: #5558ad;
 }
 
-.form-content[data-v-18ce4759] {
+.form-content {
   width: 100%;
   height: 120px;
   border-radius: 20px;
@@ -112,11 +112,11 @@ label[data-v-18ce4759] {
   color: #5558ad;
 }
 
-button.send[data-v-18ce4759] {
+button.send {
   background-color: #7b78f8;
   width: 50%;
-  height: 60px;
-  border-radius: 20px;
+  height: 55px;
+  border-radius: 30px;
   font-size: 17px;
   color: #fff;
   outline: none;

@@ -123,30 +123,27 @@ export default {
 .box-group {
   width: 100%;
   max-width: 800px;
-  height: 170px;
-  background-color: rgba(255, 255, 255, 0.199);
+  background-color: #ffffff33;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 15px;
   font-family: Arial, Helvetica, sans-serif;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.253);
+  box-shadow: 0px 0px 15px #00000041;
+  padding: 20px;
 }
 
 .box {
-  width: 94%;
-  height: 80%;
-  padding: 8px;
-  background-color: rgba(250, 250, 250, 0.836);
+  background-color: #fafafad5;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   border-radius: 15px;
   flex-wrap: wrap;
 }
 
 .box .day {
-  width: 12%;
-  height: 100%;
+  width: 90px;
+  height: 130px;
   background-color: #fff;
   border-radius: 15px;
   display: flex;
@@ -156,12 +153,13 @@ export default {
   color: #fff;
   font-weight: bold;
   cursor: pointer;
+  margin: 10px;
   transition: 0.5s ease-out;
 }
 
 .box .day:hover {
   background-color: #8566ff;
-  box-shadow: -10px 5px 17px 0px rgba(0, 0, 0, 0.171);
+  box-shadow: -10px 5px 17px 0px #0000002c;
   transition: 0.5s ease-out;
 }
 
@@ -180,7 +178,7 @@ export default {
 }
 
 .box .day:hover .bottom {
-  color: rgb(235, 235, 235);
+  color: #ebebeb;
 }
 
 .box .day .disable {

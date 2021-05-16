@@ -128,7 +128,7 @@ div.dropdown-list {
 ul.dropdown {
   width: 100%;
   filter: brightness(100%);
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 ul.dropdown li:nth-child(1) {
@@ -137,15 +137,16 @@ ul.dropdown li:nth-child(1) {
 ul.dropdown li:nth-child(1)::after {
   content: "";
   position: absolute;
-  top: -40px;
+  top: 1px;
   left: 30px;
   width: 0px;
   height: 0px;
   background-color: transparent;
-  border-top: 20px solid transparent;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-bottom: 20px solid hotpink;
+
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid hotpink;
+  transform: translateY(-100%);
 }
 
 ul.dropdown li:nth-last-child(1) {

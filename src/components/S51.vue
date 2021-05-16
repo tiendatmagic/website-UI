@@ -2,18 +2,22 @@
   <div class="smainn">
     <br />
     <div id="s51">
+      <link
+        rel="stylesheet"
+        href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css"
+      />
       <div class="search">
         <input type="text" placeholder="Search" />
-        <button>LOOK UP</button>
+        <button><i class="fa fa-search"></i></button>
       </div>
     </div>
 
     <div class="buttonhtmlcss">
       <button @click="html()" class="btn">
-         Xem HTML
+        Xem HTML
       </button>
       <button @click="css()" class="btn">
-         Xem CSS
+        Xem CSS
       </button>
     </div>
   </div>
@@ -52,36 +56,28 @@ export default {
 }
 
 .search {
-  width: 100%;
   display: flex;
-  justify-content: center;
 }
-
 .search input {
-  width: 300px;
-  height: 40px;
+  width: 100%;
+  max-width: 400px;
+  height: 50px;
   outline: none;
-  border: 0.1px solid #000;
+  border: none;
   border-radius: 8px;
   text-indent: 20px;
   font-size: 17px;
-  margin-right: 5px;
+  margin-right: 15px;
+  background-color: #fafafa;
 }
 
 .search button {
-  width: 100px;
-  height: 40px;
+  width: 45px;
+  height: 50px;
   outline: none;
   border: none;
   border-radius: 10px;
-  background-image: linear-gradient(
-    50deg,
-    #85abf3,
-    #8885f3,
-    #b745e1,
-    #dc53c8,
-    #e557c6
-  );
+  background-color: #fc8383;
   font-size: 16px;
   color: #fff;
   cursor: pointer;
