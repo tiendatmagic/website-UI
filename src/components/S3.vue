@@ -8,10 +8,10 @@
     </div>
     <div class="buttonhtmlcss">
       <button @click="html()" class="btn">
-         Xem HTML
+        Xem HTML
       </button>
       <button @click="css()" class="btn">
-         Xem CSS
+        Xem CSS
       </button>
     </div>
   </div>
@@ -52,7 +52,7 @@ export default {
 
 .proccessbar {
   width: 100%;
-  height: 15px;
+  height: 10px;
   background-color: rgb(255, 255, 255);
   border-radius: 50px;
   overflow: hidden;

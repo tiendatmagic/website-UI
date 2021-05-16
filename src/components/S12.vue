@@ -26,10 +26,10 @@
 
     <div class="buttonhtmlcss">
       <button @click="html()" class="btn">
-         Xem HTML
+        Xem HTML
       </button>
       <button @click="css()" class="btn">
-         Xem CSS
+        Xem CSS
       </button>
     </div>
   </div>
@@ -83,11 +83,9 @@ button.button {
   height: 50px;
   cursor: pointer;
 }
-button.button:hover {
-  filter: hue-rotate(-69deg);
-}
+
 button.button i {
-  font-size: 20px;
+  font-size: 25px;
   color: #fff;
 }
 

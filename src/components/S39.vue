@@ -79,10 +79,10 @@
 
     <div class="buttonhtmlcss">
       <button @click="html()" class="btn">
-         Xem HTML
+        Xem HTML
       </button>
       <button @click="css()" class="btn">
-         Xem CSS
+        Xem CSS
       </button>
     </div>
   </div>
@@ -141,6 +141,7 @@ export default {
   display: flex;
   justify-content: space-around;
   border-radius: 15px;
+  flex-wrap: wrap;
 }
 
 .box .day {
@@ -187,7 +188,8 @@ export default {
 }
 
 .dot {
-  padding: 5px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background-color: #fff;
   margin-left: 50%;

@@ -9,10 +9,10 @@
 
     <div class="buttonhtmlcss">
       <button @click="html()" class="btn">
-         Xem HTML
+        Xem HTML
       </button>
       <button @click="css()" class="btn">
-         Xem CSS
+        Xem CSS
       </button>
     </div>
   </div>
@@ -57,15 +57,13 @@ button.button {
   outline: none;
   border: none;
   border-radius: 10px;
-  margin: 0 auto;
-  display: block;
   transition: 0.3s ease-out;
   color: #fff;
   cursor: pointer;
 }
 
 button.button:hover {
-  padding-right: 25px;
+  padding-right: 20px;
   transition: 0.3s ease-out;
 }
 

@@ -742,6 +742,9 @@ html {
   height: 100%;
   position: relative;
 }
+.site {
+  margin: 10px 0px;
+}
 
 h1 {
   text-align: center;
@@ -771,7 +774,7 @@ kbd {
     margin-bottom: 10px;
     font-size: 14px;
     cursor: pointer;
-    transition: 0.4s ease-out;
+    transition: 0.5s ease-out;
     &:nth-child(1):hover {
       background-color: #008cff;
     }
