@@ -72,7 +72,7 @@ export default {
   outline: none;
   border: none;
   border-radius: 0px 8px 8px 0px;
-  background-color: #fc8383;
+  background-color: #cc5fff;
   font-size: 15px;
   font-weight: bold;
   color: #fff;
