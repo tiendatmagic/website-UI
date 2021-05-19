@@ -75,12 +75,12 @@
     </code>
     <div class="buttonhtmlcss">
       <button @click="html()" class="btn">
-         Xem HTML</button
+        Xem HTML</button
       ><button @click="js()" class="btn">
-         Xem Javascript
+        Xem Javascript
       </button>
       <button @click="css()" class="btn">
-         Xem CSS
+        Xem CSS
       </button>
     </div>
   </div>

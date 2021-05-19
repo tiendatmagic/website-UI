@@ -83,10 +83,6 @@ export default {
       document.getElementById("html").style.display = "none";
       document.getElementById("css").style.display = "block";
     },
-
-    action() {
-      document.getElementsByClassName("menu")[0].classList.toggle("active");
-    },
   },
 };
 </script>

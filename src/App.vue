@@ -456,6 +456,11 @@
           <kbd> Modal thông báo nhận mail</kbd>
           <S93 />
         </div>
+
+        <div class="site sitem-lg-4 sitem-md-6">
+          <kbd> Thanh tìm kiếm 2</kbd>
+          <S94 />
+        </div>
       </div>
       <Like />
       <Love />
@@ -571,6 +576,7 @@ import S90 from "./components/S90.vue";
 import S91 from "./components/S91.vue";
 import S92 from "./components/S92.vue";
 import S93 from "./components/S93.vue";
+import S94 from "./components/S94.vue";
 import Donate from "./components/Donate.vue";
 import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";
@@ -673,7 +679,7 @@ export default {
     S90,
     S91,
     S92,
-    S93,
+    S93,S94,
     Donate,
     Like,
     Love,

@@ -19,67 +19,69 @@
         height: 100vh;
         background-color: yellow;
       }
-
       div.dropdown {
         width: 90%;
-
         margin: 0 auto;
         position: relative;
-        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
       }
-
       div.dropdown li {
         list-style: none;
         display: flex;
         justify-content: space-between;
         list-style: none;
-        height: 50px;
-        background-color: #fff;
+        height: 58px;
+        background-color: hotpink;
         width: 100%;
         display: flex;
         cursor: pointer;
         justify-content: space-between;
-        padding: 0px 20px;
+        padding-left: 30px;
+        padding-right: 30px;
         align-items: center;
         transition: 0.3s ease-out;
-        color: #616161;
+        color: #fff;
       }
-
       .dropdown-button li {
-        border-radius: 7px;
+        border-radius: 10px;
       }
-
       div.dropdown:hover div.dropdown-list {
         display: block;
       }
-
       div.dropdown-list {
         display: none;
-        display: block;
         position: absolute;
         right: 0px;
         width: 90%;
         z-index: 1;
       }
-
       ul.dropdown {
         width: 100%;
         filter: brightness(100%);
-        margin-top: 10px;
-        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
+        margin-top: 30px;
       }
-
       ul.dropdown li:nth-child(1) {
-        border-radius: 7px 7px 0px 0px;
+        border-radius: 10px 10px 0px 0px;
       }
-
+      ul.dropdown li:nth-child(1)::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 3rem;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid red;
+        transform: translateY(-100%);
+        transition: 0.2s linear;
+      }
       ul.dropdown li:nth-last-child(1) {
-        border-radius: 0px 0px 7px 7px;
+        border-radius: 0px 0px 10px 10px;
       }
-
       ul.dropdown li:hover {
         filter: brightness(85%);
         transition: 1s ease-out;
+      }
+      ul.dropdown i {
+        font-size: 30px;
       }
     </style>
   </head>
@@ -92,22 +94,24 @@
       <div class="dropdown-button">
         <ul>
           <li>
-            <p>RÊ CHUỘT VÀO ĐÂY</p>
+            <p>Rê chuột vào đây</p>
             <i class="fa fa-caret-down dropdown__caret"></i>
           </li>
         </ul>
       </div>
-
       <div class="dropdown-list">
         <ul class="dropdown">
           <li>
             <p>HTML</p>
+            <i class="fab fa-html5"></i>
           </li>
           <li>
             <p>CSS</p>
+            <i class="fab fa-css3-alt"></i>
           </li>
           <li>
             <p>JAVASCRIPT</p>
+            <i class="fab fa-js-square"></i>
           </li>
         </ul>
       </div>

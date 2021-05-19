@@ -58,10 +58,6 @@ export default {
       document.getElementById("html").style.display = "none";
       document.getElementById("css").style.display = "block";
     },
-
-    action() {
-      document.getElementsByClassName("menu")[0].classList.toggle("active");
-    },
   },
 };
 </script>
@@ -76,7 +72,7 @@ export default {
 
 .modals {
   width: 100%;
-  max-width: 300px;
+  max-width: 400px;
   background-color: #fff;
   box-shadow: 0 10px 25px #0000001a;
   padding: 15px;

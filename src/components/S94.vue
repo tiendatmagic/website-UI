@@ -1,17 +1,21 @@
 <template>
   <div class="smainn">
     <br />
-    <div id="s88">
-
+    <div id="s94">
+      <div class="search">
+        <input type="text" placeholder="Find" />
+        <button>
+          Search
+        </button>
+      </div>
     </div>
-
 
     <div class="buttonhtmlcss">
       <button @click="html()" class="btn">
-         Xem HTML</button
-      >	  
+        Xem HTML
+      </button>
       <button @click="css()" class="btn">
-         Xem CSS
+        Xem CSS
       </button>
     </div>
   </div>
@@ -21,7 +25,7 @@
 export default {
   methods: {
     html() {
-      var a = document.getElementById("s88").innerHTML;
+      var a = document.getElementById("s94").innerHTML;
 
       document.getElementById("thtml").innerHTML = a;
       document.getElementsByClassName("modal")[0].style.display = "block";
@@ -30,16 +34,12 @@ export default {
       document.getElementById("css").style.display = "none";
     },
     css() {
-      var b = document.getElementsByTagName("style")[88].innerHTML;
+      var b = document.getElementsByTagName("style")[94].innerHTML;
       document.getElementById("tcss").innerHTML = b;
       document.getElementsByClassName("modal")[0].style.display = "block";
 
       document.getElementById("html").style.display = "none";
       document.getElementById("css").style.display = "block";
-    },
-
-    action() {
-      document.getElementsByClassName("menu")[0].classList.toggle("active");
     },
   },
 };
@@ -47,5 +47,35 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 
+.search input {
+  width: 300px;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-radius: 8px 0px 0px 8px;
+  text-indent: 20px;
+  font-size: 17px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.05);
+}
+
+.search button {
+  width: 100px;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-radius: 0px 8px 8px 0px;
+  background-color: #fc8383;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
 </style>
