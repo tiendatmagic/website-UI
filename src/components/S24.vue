@@ -23,35 +23,41 @@
 
         <hr />
         <div class="selected">
-          <ul class="selected">
-            <li>
-              <a href="#">
-                <i class="far fa-comment"></i>
-                <p>Đóng góp ý kiến</p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fas fa-cog"></i> Cài đặt và quyền riêng tư
-                <i class="fas fa-chevron-right"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="far fa-question-circle"></i> Trợ giúp và hỗ trợ
-                <i class="fas fa-chevron-right"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fas fa-sun"></i> Hiển thị tùy chọn
-                <i class="fas fa-chevron-right"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#"> <i class="fas fa-power-off"></i> Đăng xuất </a>
-            </li>
-          </ul>
+          <li>
+            <a href="###">
+              <i class="far fa-comment"></i>
+              <span>Đóng góp ý kiến</span>
+            </a>
+          </li>
+          <li>
+            <a href="###">
+              <i class="fas fa-cog"></i>
+              <span> Cài đặt và quyền riêng tư </span>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </li>
+          <li>
+            <a href="###">
+              <i class="far fa-question-circle"></i>
+
+              <span>Trợ giúp và hỗ trợ</span>
+              <i class="fas fa-chevron-right"></i
+            ></a>
+          </li>
+          <li>
+            <a href="###">
+              <i class="fas fa-sun"></i>
+
+              <span> Hiển thị tùy chọn </span>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </li>
+          <li>
+            <a href="###  ">
+              <i class="fas fa-power-off"></i>
+              <span> Đăng xuất </span>
+            </a>
+          </li>
         </div>
       </div>
     </div>
@@ -112,16 +118,14 @@ hr {
 }
 
 .info {
-  width: 96%;
-  height: 100px;
+  width: 100%;
   display: flex;
+  justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   margin: 0 auto;
-}
-
-.info .img {
-  margin: 0 30px;
-  justify-content: center;
+  padding: 10px;
+  text-align: center;
 }
 
 .info img {
@@ -166,32 +170,30 @@ hr {
 
 .selected li:hover {
   background-color: #f2f2f2;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 .selected a {
   text-decoration: none;
-  font-size: 17px;
+  font-size: 16px;
   color: #1c1d21;
-  font-weight: bold;
-  margin: 0 30px;
+  font-weight: 600;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   align-items: center;
+  padding: 0 25px;
 }
 
 .selected a i:nth-child(1) {
-  font-size: 20px;
   margin-right: 30px;
   background-color: #d8dadf;
   padding: 10px;
   border-radius: 50%;
+  font-size: 18px;
 }
 
-.selected a i.fa-chevron-right {
-  font-size: 20px;
-  display: flex;
-  justify-content: flex-end;
+.selected a i:nth-child(3) {
+  font-size: 17px;
   position: absolute;
   right: 10px;
 }

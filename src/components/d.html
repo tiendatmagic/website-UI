@@ -11,77 +11,103 @@
         padding: 0;
         box-sizing: border-box;
       }
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100vh;
-        background-color: yellow;
-      }
-      div.dropdown {
+
+      hr {
         width: 90%;
+        height: 2.5px;
         margin: 0 auto;
+        background-color: black;
+      }
+      .box {
+        width: 100%;
+        padding: 10px 0;
+        background-color: #fff;
+        box-shadow: -2px 10px 15px 0px rgba(0, 0, 0, 0.377);
+        margin: 0 auto;
+        border-radius: 12px;
+        overflow: hidden;
+      }
+
+      .info {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .info img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: pink;
+      }
+      .info:hover {
+        background-color: #f2f2f2;
+        border-radius: 15px;
+        cursor: pointer;
+      }
+
+      .info-name p:nth-child(1) {
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serifs;
+      }
+
+      .info-name p:nth-child(2) {
+        color: rgb(148, 148, 148);
+        font-family: Arial, Helvetica, sans-serifs;
+      }
+
+      .selected {
+        margin-left: 4px;
+        margin-right: 4px;
+        margin-top: 4px;
+      }
+
+      .selected li {
+        list-style: none;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        cursor: pointer;
         position: relative;
       }
-      div.dropdown li {
-        list-style: none;
+
+      .selected li:hover {
+        background-color: #f2f2f2;
+        border-radius: 20px;
+      }
+
+      .selected a {
+        text-decoration: none;
+        font-size: 16px;
+        color: #1c1d21;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
         display: flex;
-        justify-content: space-between;
-        list-style: none;
-        height: 58px;
-        background-color: hotpink;
-        width: 100%;
-        display: flex;
-        cursor: pointer;
-        justify-content: space-between;
-        padding-left: 30px;
-        padding-right: 30px;
         align-items: center;
-        transition: 0.3s ease-out;
-        color: #fff;
+        padding: 0 20px;
       }
-      .dropdown-button li {
-        border-radius: 10px;
+
+      .selected a i:nth-child(1) {
+        font-size: 20px;
+        margin-right: 30px;
+        background-color: #d8dadf;
+        padding: 10px;
+        border-radius: 50%;
+        font-size: 20px;
       }
-      div.dropdown:hover div.dropdown-list {
-        display: block;
-      }
-      div.dropdown-list {
-        display: none;
+
+      .selected a i:nth-child(3) {
+        font-size: 20px;
         position: absolute;
-        right: 0px;
-        width: 90%;
-        z-index: 1;
-      }
-      ul.dropdown {
-        width: 100%;
-        filter: brightness(100%);
-        margin-top: 30px;
-      }
-      ul.dropdown li:nth-child(1) {
-        border-radius: 10px 10px 0px 0px;
-      }
-      ul.dropdown li:nth-child(1)::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 3rem;
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
-        border-bottom: 10px solid red;
-        transform: translateY(-100%);
-        transition: 0.2s linear;
-      }
-      ul.dropdown li:nth-last-child(1) {
-        border-radius: 0px 0px 10px 10px;
-      }
-      ul.dropdown li:hover {
-        filter: brightness(85%);
-        transition: 1s ease-out;
-      }
-      ul.dropdown i {
-        font-size: 30px;
+        right: 10px;
       }
     </style>
   </head>
@@ -90,30 +116,58 @@
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css"
     />
-    <div class="dropdown">
-      <div class="dropdown-button">
-        <ul>
-          <li>
-            <p>Rê chuột vào đây</p>
-            <i class="fa fa-caret-down dropdown__caret"></i>
-          </li>
-        </ul>
+
+    <div class="box">
+      <div class="info">
+        <div class="img">
+          <img
+            src="https://raw.githubusercontent.com/tiendatmagic/website-UI/master/src/img/aILP3CD.png"
+            alt=""
+          />
+        </div>
+        <div class="info-name">
+          <p>Tiến Đạt Magic</p>
+          <p>Xem trang cá nhân của bạn</p>
+        </div>
       </div>
-      <div class="dropdown-list">
-        <ul class="dropdown">
-          <li>
-            <p>HTML</p>
-            <i class="fab fa-html5"></i>
-          </li>
-          <li>
-            <p>CSS</p>
-            <i class="fab fa-css3-alt"></i>
-          </li>
-          <li>
-            <p>JAVASCRIPT</p>
-            <i class="fab fa-js-square"></i>
-          </li>
-        </ul>
+
+      <hr />
+      <div class="selected">
+        <li>
+          <a href="#">
+            <i class="far fa-comment"></i>
+            <span>Đóng góp ý kiến</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-cog"></i>
+            <span> Cài đặt và quyền riêng tư </span>
+            <i class="fas fa-chevron-right"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="far fa-question-circle"></i>
+
+            <span>Trợ giúp và hỗ trợ</span>
+            <i class="fas fa-chevron-right"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-sun"></i>
+
+            <span> Hiển thị tùy chọn </span>
+            <i class="fas fa-chevron-right"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-power-off"></i>
+            <span> Đăng xuất </span>
+          </a>
+        </li>
       </div>
     </div>
   </body>
