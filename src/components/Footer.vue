@@ -32,7 +32,6 @@ export default {
 
       document.getElementById("html").style.display = "block";
       document.getElementById("css").style.display = "none";
-      // document.getElementsByTagName("style")[0].classList.add("abc");
     },
     css() {
       var b = document.getElementsByTagName("style")[7].innerHTML;

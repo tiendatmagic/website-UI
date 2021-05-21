@@ -10,34 +10,22 @@
             </div>
 
             <div class="name">
-              <p>
-                $15/month
-              </p>
+              <p>$15/month</p>
             </div>
           </div>
         </div>
         <div class="main">
           <div class="mains">
-            <p>
-              1 GB RAM
-            </p>
+            <p>1 GB RAM</p>
 
-            <p>
-              50 GB STORAGE
-            </p>
+            <p>50 GB STORAGE</p>
 
-            <p>
-              15 EMAIL ACCOUNTS
-            </p>
+            <p>15 EMAIL ACCOUNTS</p>
 
-            <p>
-              LIFETIME SUPPORTS
-            </p>
+            <p>LIFETIME SUPPORTS</p>
 
             <div class="button">
-              <button>
-                BUY PLAN
-              </button>
+              <button>BUY PLAN</button>
             </div>
           </div>
         </div>
@@ -45,12 +33,8 @@
     </div>
 
     <div class="buttonhtmlcss">
-      <button @click="html()" class="btn">
-         Xem HTML
-      </button>
-      <button @click="css()" class="btn">
-         Xem CSS
-      </button>
+      <button @click="html()" class="btn">Xem HTML</button>
+      <button @click="css()" class="btn">Xem CSS</button>
     </div>
   </div>
 </template>
@@ -82,8 +66,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 

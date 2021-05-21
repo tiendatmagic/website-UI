@@ -15,12 +15,8 @@
     </div>
 
     <div class="buttonhtmlcss">
-      <button @click="html()" class="btn">
-         Xem HTML
-      </button>
-      <button @click="css()" class="btn">
-         Xem CSS
-      </button>
+      <button @click="html()" class="btn">Xem HTML</button>
+      <button @click="css()" class="btn">Xem CSS</button>
     </div>
   </div>
 </template>
@@ -61,6 +57,7 @@ ul.pagination {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 ul.pagination li {
@@ -70,17 +67,16 @@ ul.pagination li {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 10px;
-  border: 0.1px solid #7a8199;
+  margin: 5px;
+  border: 0.1px solid rgb(207, 207, 207);
   border-radius: 50%;
   outline: none;
-  transition: 0.2s ease-out;
   cursor: pointer;
+  transition: 0.2s ease-out;
 }
 
 ul.pagination li:hover {
   background-color: #10182f;
-  transition: 0.2s ease-out;
 }
 
 ul.pagination li:hover a {

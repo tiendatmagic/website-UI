@@ -8,9 +8,7 @@
       />
       <div class="modals">
         <div class="header">
-          <div class="title">
-            Thông báo
-          </div>
+          <div class="title">Thông báo</div>
           <div class="close">
             <i data-v-186ba2d2="" class="far fa-times"></i>
           </div>
@@ -21,27 +19,19 @@
               <i class="far fa-check-circle"></i>
             </div>
             <div class="info">
-              <p>
-                Xác thực thành công!
-              </p>
+              <p>Xác thực thành công!</p>
             </div>
           </div>
         </div>
         <div class="footer">
-          <button>
-            Close
-          </button>
+          <button>Close</button>
         </div>
       </div>
     </div>
 
     <div class="buttonhtmlcss">
-      <button @click="html()" class="btn">
-        Xem HTML
-      </button>
-      <button @click="css()" class="btn">
-        Xem CSS
-      </button>
+      <button @click="html()" class="btn">Xem HTML</button>
+      <button @click="css()" class="btn">Xem CSS</button>
     </div>
   </div>
 </template>
@@ -73,8 +63,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 

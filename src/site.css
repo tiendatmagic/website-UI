@@ -7,7 +7,6 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-
 }
 
 .container,
@@ -24,25 +23,35 @@ html {
 }
 
 @media (min-width: 576px) {
-  .container, .container-sm {
+  .container,
+  .container-sm {
     max-width: 540px;
   }
 }
 
 @media (min-width: 768px) {
-  .container, .container-sm, .container-md {
+  .container,
+  .container-sm,
+  .container-md {
     max-width: 720px;
   }
 }
 
 @media (min-width: 992px) {
-  .container, .container-sm, .container-md, .container-lg {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg {
     max-width: 960px;
   }
 }
 
 @media (min-width: 1200px) {
-  .container, .container-sm, .container-md, .container-lg, .container-xl {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl {
     max-width: 1140px;
   }
 }
@@ -56,11 +65,75 @@ html {
   margin-left: -15px;
 }
 
-.sitem-1, .sitem-2, .sitem-3, .sitem-4, .sitem-5, .sitem-6, .sitem-7, .sitem-8, .sitem-9, .sitem-10, .sitem-11, .sitem-12, .sitem,
-.sitem-auto, .sitem-sm-1, .sitem-sm-2, .sitem-sm-3, .sitem-sm-4, .sitem-sm-5, .sitem-sm-6, .sitem-sm-7, .sitem-sm-8, .sitem-sm-9, .sitem-sm-10, .sitem-sm-11, .sitem-sm-12, .sitem-sm,
-.sitem-sm-auto, .sitem-md-1, .sitem-md-2, .sitem-md-3, .sitem-md-4, .sitem-md-5, .sitem-md-6, .sitem-md-7, .sitem-md-8, .sitem-md-9, .sitem-md-10, .sitem-md-11, .sitem-md-12, .sitem-md,
-.sitem-md-auto, .sitem-lg-1, .sitem-lg-2, .sitem-lg-3, .sitem-lg-4, .sitem-lg-5, .sitem-lg-6, .sitem-lg-7, .sitem-lg-8, .sitem-lg-9, .sitem-lg-10, .sitem-lg-11, .sitem-lg-12, .sitem-lg,
-.sitem-lg-auto, .sitem-xl-1, .sitem-xl-2, .sitem-xl-3, .sitem-xl-4, .sitem-xl-5, .sitem-xl-6, .sitem-xl-7, .sitem-xl-8, .sitem-xl-9, .sitem-xl-10, .sitem-xl-11, .sitem-xl-12, .sitem-xl,
+.sitem-1,
+.sitem-2,
+.sitem-3,
+.sitem-4,
+.sitem-5,
+.sitem-6,
+.sitem-7,
+.sitem-8,
+.sitem-9,
+.sitem-10,
+.sitem-11,
+.sitem-12,
+.sitem,
+.sitem-auto,
+.sitem-sm-1,
+.sitem-sm-2,
+.sitem-sm-3,
+.sitem-sm-4,
+.sitem-sm-5,
+.sitem-sm-6,
+.sitem-sm-7,
+.sitem-sm-8,
+.sitem-sm-9,
+.sitem-sm-10,
+.sitem-sm-11,
+.sitem-sm-12,
+.sitem-sm,
+.sitem-sm-auto,
+.sitem-md-1,
+.sitem-md-2,
+.sitem-md-3,
+.sitem-md-4,
+.sitem-md-5,
+.sitem-md-6,
+.sitem-md-7,
+.sitem-md-8,
+.sitem-md-9,
+.sitem-md-10,
+.sitem-md-11,
+.sitem-md-12,
+.sitem-md,
+.sitem-md-auto,
+.sitem-lg-1,
+.sitem-lg-2,
+.sitem-lg-3,
+.sitem-lg-4,
+.sitem-lg-5,
+.sitem-lg-6,
+.sitem-lg-7,
+.sitem-lg-8,
+.sitem-lg-9,
+.sitem-lg-10,
+.sitem-lg-11,
+.sitem-lg-12,
+.sitem-lg,
+.sitem-lg-auto,
+.sitem-xl-1,
+.sitem-xl-2,
+.sitem-xl-3,
+.sitem-xl-4,
+.sitem-xl-5,
+.sitem-xl-6,
+.sitem-xl-7,
+.sitem-xl-8,
+.sitem-xl-9,
+.sitem-xl-10,
+.sitem-xl-11,
+.sitem-xl-12,
+.sitem-xl,
 .sitem-xl-auto {
   position: relative;
   width: 100%;
@@ -401,7 +474,6 @@ html {
     flex: 0 0 100%;
     max-width: 100%;
   }
-  
 }
 
 @media (min-width: 992px) {
@@ -614,7 +686,6 @@ html {
     flex: 0 0 100%;
     max-width: 100%;
   }
-  
 }
 
 .flex-wrap {

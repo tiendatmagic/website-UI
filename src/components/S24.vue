@@ -57,12 +57,8 @@
     </div>
 
     <div class="buttonhtmlcss">
-      <button @click="html()" class="btn">
-         Xem HTML
-      </button>
-      <button @click="css()" class="btn">
-         Xem CSS
-      </button>
+      <button @click="html()" class="btn">Xem HTML</button>
+      <button @click="css()" class="btn">Xem CSS</button>
     </div>
   </div>
 </template>
@@ -94,8 +90,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -107,7 +103,7 @@ hr {
 }
 .box {
   width: 100%;
-  height: 470px;
+  padding: 10px 0;
   background-color: #fff;
   box-shadow: -2px 10px 15px 0px rgba(0, 0, 0, 0.377);
   margin: 0 auto;
@@ -121,13 +117,10 @@ hr {
   display: flex;
   align-items: center;
   margin: 0 auto;
-  margin-top: 4px;
-  margin-bottom: 4px;
 }
 
 .info .img {
-  margin-left: 30px;
-  margin-right: 30px;
+  margin: 0 30px;
   justify-content: center;
 }
 
@@ -144,7 +137,7 @@ hr {
 }
 
 .info-name p:nth-child(1) {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serifs;
 }
@@ -163,11 +156,10 @@ hr {
 .selected li {
   list-style: none;
   width: 100%;
-  height: 70px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-
   cursor: pointer;
   position: relative;
 }
@@ -179,19 +171,17 @@ hr {
 
 .selected a {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 17px;
   color: #1c1d21;
   font-weight: bold;
-  letter-spacing: 1.2px;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin: 0 30px;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   align-items: center;
 }
 
 .selected a i:nth-child(1) {
-  font-size: 30px;
+  font-size: 20px;
   margin-right: 30px;
   background-color: #d8dadf;
   padding: 10px;
@@ -199,7 +189,7 @@ hr {
 }
 
 .selected a i.fa-chevron-right {
-  font-size: 40px;
+  font-size: 20px;
   display: flex;
   justify-content: flex-end;
   position: absolute;

@@ -14,31 +14,17 @@
           </div>
           <div class="content">
             <div class="name">
-              <b>
-                Lon cocacola
-              </b>
+              <b> Lon cocacola </b>
             </div>
             <div class="size">
-              <p>
-                Size:
-              </p>
-              <div class="sizes">
-                7
-              </div>
-              <div class="sizes">
-                8
-              </div>
-              <div class="sizes">
-                9
-              </div>
-              <div class="sizes">
-                10
-              </div>
+              <p>Size:</p>
+              <div class="sizes">7</div>
+              <div class="sizes">8</div>
+              <div class="sizes">9</div>
+              <div class="sizes">10</div>
             </div>
             <div class="color">
-              <p>
-                Colors:
-              </p>
+              <p>Colors:</p>
               <div class="colors"></div>
               <div class="colors"></div>
               <div class="colors"></div>
@@ -52,12 +38,8 @@
     </div>
 
     <div class="buttonhtmlcss">
-      <button @click="html()" class="btn">
-         Xem HTML
-      </button>
-      <button @click="css()" class="btn">
-         Xem CSS
-      </button>
+      <button @click="html()" class="btn">Xem HTML</button>
+      <button @click="css()" class="btn">Xem CSS</button>
     </div>
   </div>
 </template>
@@ -89,8 +71,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 

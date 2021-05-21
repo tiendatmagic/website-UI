@@ -112,11 +112,11 @@
           <kbd>Danh sách sản phẩm</kbd>
           <S19 />
         </div>
-        <div class="site sitem-lg-3 sitem-md-6">
+        <div class="site sitem-lg-4 sitem-md-6">
           <kbd>Thẻ thông tin</kbd>
           <S20 />
         </div>
-        <div class="site sitem-lg-5 sitem-md-6">
+        <div class="site sitem-lg-4 sitem-md-6">
           <kbd>Đặt câu hỏi story Facebook</kbd>
           <S21 />
         </div>
@@ -200,12 +200,12 @@
           <S38 />
         </div>
 
-        <div class="site sitem-md-6 sitem-lg-6">
+        <div class="site sitem-md-6 sitem-lg-7">
           <kbd>Danh sách các thứ</kbd>
           <S39 />
         </div>
 
-        <div class="site sitem-md-6 sitem-lg-6">
+        <div class="site sitem-md-6 sitem-lg-5">
           <kbd>Danh sách người thân</kbd>
           <S40 />
         </div>
@@ -679,7 +679,8 @@ export default {
     S90,
     S91,
     S92,
-    S93,S94,
+    S93,
+    S94,
     Donate,
     Like,
     Love,
@@ -687,18 +688,18 @@ export default {
     Modal,
     Footer,
   },
-  mounted: function() {
+  mounted: function () {
     setTimeout(() => {
       this.load();
     }, 2000);
   },
   methods: {
-    load: function() {
+    load: function () {
       const loader = document.querySelector(".loader");
       loader.className += " hidden"; //
     },
 
-    myFunction: function() {
+    myFunction: function () {
       var input, filter, smain, div, td, i, txtValue;
       input = document.getElementById("myInput");
       filter = input.value.toUpperCase();

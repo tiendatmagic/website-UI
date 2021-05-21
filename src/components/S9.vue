@@ -8,12 +8,8 @@
     </div>
 
     <div class="buttonhtmlcss">
-      <button @click="html()" class="btn">
-        Xem HTML
-      </button>
-      <button @click="css()" class="btn">
-        Xem CSS
-      </button>
+      <button @click="html()" class="btn">Xem HTML</button>
+      <button @click="css()" class="btn">Xem CSS</button>
     </div>
   </div>
 </template>
@@ -29,7 +25,6 @@ export default {
 
       document.getElementById("html").style.display = "block";
       document.getElementById("css").style.display = "none";
-      // document.getElementsByTagName("style")[0].classList.add("abc");
     },
     css() {
       var b = document.getElementsByTagName("style")[9].innerHTML;
@@ -57,14 +52,13 @@ button.button {
   outline: none;
   border: none;
   border-radius: 10px;
-  transition: 0.3s ease-out;
+  transition: 0.2s ease-out;
   color: #fff;
   cursor: pointer;
 }
 
 button.button:hover {
   padding-right: 20px;
-  transition: 0.3s ease-out;
 }
 
 button.button:hover i {
@@ -74,6 +68,6 @@ button.button:hover i {
 button.button i {
   display: inline;
   opacity: 0;
-  transition: 0.3s ease-out;
+  transition: 0.2s ease-out;
 }
 </style>

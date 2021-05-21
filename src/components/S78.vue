@@ -14,9 +14,7 @@
         </div>
         <div class="content">
           <div class="contents">
-            <p>
-              Ngày mai chẳng biết ra sao nữa. Mà có ra sao cũng chẳng sao
-            </p>
+            <p>Ngày mai chẳng biết ra sao nữa. Mà có ra sao cũng chẳng sao</p>
             <button>Read More</button>
           </div>
         </div>
@@ -24,12 +22,8 @@
     </div>
 
     <div class="buttonhtmlcss">
-      <button @click="html()" class="btn">
-         Xem HTML
-      </button>
-      <button @click="css()" class="btn">
-         Xem CSS
-      </button>
+      <button @click="html()" class="btn">Xem HTML</button>
+      <button @click="css()" class="btn">Xem CSS</button>
     </div>
   </div>
 </template>
@@ -61,8 +55,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 

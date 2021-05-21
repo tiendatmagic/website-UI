@@ -36,12 +36,8 @@
       </div>
     </div>
     <div class="buttonhtmlcss">
-      <button @click="html()" class="btn">
-        Xem HTML
-      </button>
-      <button @click="css()" class="btn">
-        Xem CSS
-      </button>
+      <button @click="html()" class="btn">Xem HTML</button>
+      <button @click="css()" class="btn">Xem CSS</button>
     </div>
   </div>
 </template>
@@ -57,7 +53,6 @@ export default {
 
       document.getElementById("html").style.display = "block";
       document.getElementById("css").style.display = "none";
-      // document.getElementsByTagName("style")[0].classList.add("abc");
     },
     css() {
       var b = document.getElementsByTagName("style")[18].innerHTML;

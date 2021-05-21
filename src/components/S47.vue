@@ -115,12 +115,8 @@
     </div>
 
     <div class="buttonhtmlcss">
-      <button @click="html()" class="btn">
-         Xem HTML
-      </button>
-      <button @click="css()" class="btn">
-         Xem CSS
-      </button>
+      <button @click="html()" class="btn">Xem HTML</button>
+      <button @click="css()" class="btn">Xem CSS</button>
     </div>
   </div>
 </template>
@@ -254,7 +250,6 @@ export default {
   border-radius: 30px;
   background-color: #fff;
   padding: 20px;
-
 }
 
 .form-input h5 {

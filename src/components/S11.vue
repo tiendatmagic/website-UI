@@ -5,26 +5,39 @@
         rel="stylesheet"
         href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css"
       />
-      <button type="button" class="button btn1">
-        <i class="fab fa-facebook"></i> Facebook
-      </button>
+      <div class="button-group">
+        <button type="button" class="button btn1">
+          <div class="icon">
+            <i class="fab fa-facebook"></i>
+          </div>
+          <div class="name">
+            Share on Facebook
+          </div>
+        </button>
 
-      <button type="button" class="button btn2">
-        <i class="fab fa-instagram"></i> Instagram
-      </button>
+        <button type="button" class="button btn2">
+          <div class="icon">
+            <i class="fab fa-instagram"></i>
+          </div>
+          <div class="name">
+            Share on Instagram
+          </div>
+        </button>
 
-      <button type="button" class="button btn3">
-        <i class="fab fa-twitter"></i> Twitter
-      </button>
+        <button type="button" class="button btn3">
+          <div class="icon">
+            <i class="fab fa-twitter"></i>
+          </div>
+          <div class="name">
+            Share on Twitter
+          </div>
+        </button>
+      </div>
     </div>
 
     <div class="buttonhtmlcss">
-      <button @click="html()" class="btn">
-         Xem HTML
-      </button>
-      <button @click="css()" class="btn">
-         Xem CSS
-      </button>
+      <button @click="html()" class="btn">Xem HTML</button>
+      <button @click="css()" class="btn">Xem CSS</button>
     </div>
   </div>
 </template>
@@ -40,7 +53,6 @@ export default {
 
       document.getElementById("html").style.display = "block";
       document.getElementById("css").style.display = "none";
-      // document.getElementsByTagName("style")[0].classList.add("abc");
     },
     css() {
       var b = document.getElementsByTagName("style")[11].innerHTML;
@@ -61,33 +73,65 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
-button.button {
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 60px;
-  border-radius: 20px;
-  font-size: 17px;
-  color: #fff;
-  outline: none;
+  height: 100vh;
+  background-color: rgb(255, 228, 215);
+}
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+.button-group button {
+  width: 320px;
+  padding: 10px;
   border: none;
+  outline: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+.button-group button .icon {
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  transition: 0.25s ease-out;
-  margin: 5px 5px auto auto;
-  cursor: pointer;
-  transition: 0.5 ease-out;
+  border-radius: inherit;
+  justify-content: center;
+  font-size: 20px;
+  background-color: #fff;
 }
 
-button.button i {
-  font-size: 30px;
+.button-group button .name {
+  font-size: 16px;
+  margin-left: 20px;
+  color: #fff;
+  letter-spacing: 1px;
 }
-.btn1 {
+
+.button-group .btn1 {
   background-color: #3b5999;
 }
-.btn2 {
+.button-group .btn1 .icon {
+  color: #3b5999;
+}
+.button-group .btn2 {
   background-color: #e4405f;
 }
-.btn3 {
+.button-group .btn2 .icon {
+  color: #e4405f;
+}
+
+.button-group .btn3 {
   background-color: #55acee;
+}
+.button-group .btn3 .icon {
+  color: #55acee;
 }
 </style>

@@ -4,12 +4,8 @@
     <div id="s95"></div>
 
     <div class="buttonhtmlcss">
-      <button @click="html()" class="btn">
-        Xem HTML
-      </button>
-      <button @click="css()" class="btn">
-        Xem CSS
-      </button>
+      <button @click="html()" class="btn">Xem HTML</button>
+      <button @click="css()" class="btn">Xem CSS</button>
     </div>
   </div>
 </template>

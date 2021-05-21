@@ -2,78 +2,59 @@
   <div class="smainn">
     <br />
     <div id="s62">
-
-<div class="card">
-  <div class="header">
-    <div class="img">
-      <img src="https://raw.githubusercontent.com/tiendatmagic/website-UI/master/src/img/aILP3CD.png" alt="">
-    </div>
-  </div>
-  <div class="info">
-    <div class="main">
-
-      <div class="row-group">
-
-        <div class="row">
-
-          <div class="name">
-            <p>Đồng hồ</p>
-          </div>
-          <div class="type">
-            <p>Lớn</p>
+      <div class="card">
+        <div class="header">
+          <div class="img">
+            <img
+              src="https://raw.githubusercontent.com/tiendatmagic/website-UI/master/src/img/aILP3CD.png"
+              alt=""
+            />
           </div>
         </div>
-        <div class="row">
-          <div class="money">
-            <p>$100</p>
+        <div class="info">
+          <div class="main">
+            <div class="row-group">
+              <div class="row">
+                <div class="name">
+                  <p>Đồng hồ</p>
+                </div>
+                <div class="type">
+                  <p>Lớn</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="money">
+                  <p>$100</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="size-group">
+              <b>Size</b>
+              <p>20mm 25mm 30mm 35mm 40mm</p>
+            </div>
+
+            <div class="color-group">
+              <b>Colors</b>
+              <div class="colors-group">
+                <div class="blue"></div>
+                <div class="red"></div>
+                <div class="cyan"></div>
+                <div class="yellow"></div>
+                <div class="purple"></div>
+              </div>
+            </div>
+            <div class="buttons">
+              <button>Buy It Now</button>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="size-group">
-        <b>Size</b>
-        <p>20mm 25mm 30mm 35mm 40mm</p>
-      </div>
-
-      <div class="color-group">
-        <b>Colors</b>
-        <div class="colors-group">
-          <div class="blue">
-
-          </div>
-          <div class="red">
-
-          </div>
-          <div class="cyan">
-
-          </div>
-          <div class="yellow">
-
-          </div>
-          <div class="purple">
-
-          </div>
-
-        </div>
-      </div>
-      <div class="buttons">
-        <button>Buy It Now</button>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-
     </div>
 
     <div class="buttonhtmlcss">
-      <button @click="html()" class="btn">
-         Xem HTML
-      </button>
-      <button @click="css()" class="btn">
-         Xem CSS
-      </button>
+      <button @click="html()" class="btn">Xem HTML</button>
+      <button @click="css()" class="btn">Xem CSS</button>
     </div>
   </div>
 </template>
@@ -105,8 +86,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -248,5 +229,4 @@ export default {
 .buttons button:hover {
   background-color: #2a81a7;
 }
-
 </style>

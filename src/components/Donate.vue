@@ -3,18 +3,14 @@
     <br />
     <div id="sdonate">
       <div class="donate">
-        <div class="item">
-          Donate:
-        </div>
+        <div class="item">Donate:</div>
         <div class="item">
           <img
             src="https://raw.githubusercontent.com/tiendatmagic/website-UI/master/src/img/logo-momo.jpg"
             alt=""
           />
         </div>
-        <div class="item">
-          0901980543
-        </div>
+        <div class="item">0901980543</div>
       </div>
     </div>
   </div>
@@ -47,8 +43,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 

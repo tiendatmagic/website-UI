@@ -119,7 +119,7 @@ h3 {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 100;
 }
@@ -127,7 +127,6 @@ h3 {
 .modal-content {
   width: 55%;
   background-color: deeppink;
-
   margin: 0 auto;
   margin-top: 15vh;
   border-radius: 20px;
