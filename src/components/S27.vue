@@ -129,7 +129,7 @@ form {
 
 button.login {
   width: 70%;
-  height: 60px;
+  height: 50px;
   background-color: royalblue;
   border: none;
   outline: none;
@@ -140,12 +140,6 @@ button.login {
   align-items: center;
   color: rgb(245, 245, 245);
   cursor: pointer;
-  transition: 0.3s ease-out;
-}
-
-button.login:hover {
-  background-color: rgb(3, 57, 219);
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.514);
   transition: 0.3s ease-out;
 }
 
@@ -178,7 +172,7 @@ a.qmk:hover {
 
 button.createaccount {
   width: 70%;
-  height: 60px;
+  height: 50px;
   background-color: #36a420;
   border: none;
   outline: none;
@@ -191,12 +185,6 @@ button.createaccount {
   align-items: center;
   color: rgb(245, 245, 245);
   cursor: pointer;
-  transition: 0.3s ease-out;
-}
-
-button.createaccount:hover {
-  background-color: #1ba500;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.514);
   transition: 0.3s ease-out;
 }
 </style>
