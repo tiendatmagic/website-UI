@@ -104,7 +104,7 @@ export default {
 hr {
   width: 90%;
   height: 2.5px;
-  margin: 0 auto;
+  margin: 10px auto;
   background-color: black;
 }
 .box {
@@ -115,6 +115,7 @@ hr {
   margin: 0 auto;
   border-radius: 12px;
   overflow: hidden;
+  padding: 10px;
 }
 
 .info {
@@ -124,8 +125,8 @@ hr {
   align-items: center;
   flex-wrap: wrap;
   margin: 0 auto;
-  padding: 10px;
   text-align: center;
+  padding: 10px;
 }
 
 .info img {
@@ -149,12 +150,6 @@ hr {
 .info-name p:nth-child(2) {
   color: rgb(148, 148, 148);
   font-family: Arial, Helvetica, sans-serifs;
-}
-
-.selected {
-  margin-left: 4px;
-  margin-right: 4px;
-  margin-top: 4px;
 }
 
 .selected li {

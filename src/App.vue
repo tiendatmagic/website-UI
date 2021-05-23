@@ -124,7 +124,7 @@
           <kbd>Trang báo lỗi</kbd>
           <S22 />
         </div>
-        <div class="site sitem-lg-3 sitem-md-6">
+        <div class="site sitem-lg-4 sitem-md-6">
           <kbd>Nút phân trang</kbd>
           <S23 />
         </div>
@@ -136,7 +136,7 @@
           <kbd>Hiệu ứng lắc lư</kbd>
           <S25 />
         </div>
-        <div class="site sitem-lg-3 sitem-md-12">
+        <div class="site sitem-lg-2 sitem-md-12">
           <kbd>Danh sách tag</kbd>
           <S26 />
         </div>
@@ -461,6 +461,15 @@
           <kbd> Thanh tìm kiếm 2</kbd>
           <S94 />
         </div>
+
+        <div class="site sitem-lg-4 sitem-md-6">
+          <kbd> Hiệu ứng rê chuột button</kbd>
+          <S95 />
+        </div>
+        <div class="site sitem-lg-4 sitem-md-6">
+          <kbd> Các hiệu ứng rê chuột button</kbd>
+          <S96 />
+        </div>
       </div>
       <Like />
       <Love />
@@ -577,6 +586,8 @@ import S91 from "./components/S91.vue";
 import S92 from "./components/S92.vue";
 import S93 from "./components/S93.vue";
 import S94 from "./components/S94.vue";
+import S95 from "./components/S95.vue";
+import S96 from "./components/S96.vue";
 import Donate from "./components/Donate.vue";
 import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";
@@ -681,6 +692,8 @@ export default {
     S92,
     S93,
     S94,
+    S95,
+    S96,
     Donate,
     Like,
     Love,

@@ -19,6 +19,7 @@
         width: 100%;
         height: 100vh;
       }
+
       .button1 {
         background-color: #dee4f6;
         color: #000005;
@@ -33,8 +34,9 @@
         position: absolute;
         transition: 0.5s ease-out;
       }
+
       .button2 {
-        background-color: #2424f9;
+        background-color: #f924e7;
         color: #f0f0f0;
         width: 250px;
         height: 60px;
@@ -47,6 +49,7 @@
         position: absolute;
         transition: 0.4s ease-out;
       }
+
       .button {
         width: 250px;
         height: 60px;
@@ -55,26 +58,25 @@
         overflow: hidden;
         cursor: pointer;
       }
+
       .button:hover .button1 {
-        font-size: 24px;
+        transform: scale(1.2);
       }
+
       .button:hover .button2 {
         transform: translateX(-100%);
       }
     </style>
   </head>
+
   <body>
     <div class="button">
-
-        <p>      <div class="button1">
-          Let's work together!
-        </p>
+      <div class="button1">
+        <p>Let's work together!</p>
       </div>
 
       <div class="button2">
-        <p>
-          Contact Us
-        </p>
+        <p>Contact Us</p>
       </div>
     </div>
   </body>

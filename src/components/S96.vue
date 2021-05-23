@@ -1,7 +1,7 @@
 <template>
   <div class="smainn">
     <br />
-    <div id="s95"></div>
+    <div id="s96"></div>
 
     <div class="buttonhtmlcss">
       <button @click="html()" class="btn">Xem HTML</button>
@@ -14,7 +14,7 @@
 export default {
   methods: {
     html() {
-      var a = document.getElementById("s95").innerHTML;
+      var a = document.getElementById("s96").innerHTML;
 
       document.getElementById("thtml").innerHTML = a;
       document.getElementsByClassName("modal")[0].style.display = "block";
@@ -23,7 +23,7 @@ export default {
       document.getElementById("css").style.display = "none";
     },
     css() {
-      var b = document.getElementsByTagName("style")[95].innerHTML;
+      var b = document.getElementsByTagName("style")[96].innerHTML;
       document.getElementById("tcss").innerHTML = b;
       document.getElementsByClassName("modal")[0].style.display = "block";
 
