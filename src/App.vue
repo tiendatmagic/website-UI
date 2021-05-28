@@ -466,7 +466,7 @@
           <kbd> Hiệu ứng rê chuột button</kbd>
           <S95 />
         </div>
-        <div class="site sitem-lg-4 sitem-md-6">
+        <div class="site sitem-lg-8 sitem-md-6">
           <kbd> Các hiệu ứng rê chuột button</kbd>
           <S96 />
         </div>

@@ -7,343 +7,226 @@
     <title>Document</title>
     <style>
       * {
-        margin: 0px;
-        padding: 0px;
+        margin: 0;
+        padding: 0;
         box-sizing: border-box;
       }
+
       body {
         display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
         height: 100vh;
-        justify-content: center;
-        align-items: center;
+        background-color: #f0f2f5;
       }
 
-      .button-group {
+      .addfriend {
         width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-wrap: wrap;
-      }
-      .button-group > div {
-        margin: 10px;
-      }
-      .button1 {
-        width: 200px;
-        height: 60px;
-        background-color: #d782ff;
-        color: #000005;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 20px;
-        transition: 0.5s ease-out;
+        max-width: 420px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        font-family: Arial, Helvetica, sans-serif;
+        box-shadow: 0px 1.2px 0px 1.5px rgb(228, 228, 228);
         position: relative;
-        cursor: pointer;
-        overflow: hidden;
-      }
-      .button1::after {
-        content: "";
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        width: 100%;
-        height: 100%;
-        background-color: #0379ff;
-        transform: translateX(-100%);
-        transition: 0.2s ease-out;
       }
 
-      .button1:hover::after {
-        transform: translateX(0%);
-      }
-      .button1 p {
-        color: #fff;
-        z-index: 1;
+      .addfriend .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
       }
 
-      .button2 {
-        width: 200px;
-        height: 60px;
-        background-color: #d782ff;
-        color: #000005;
+      .addfriend .title .icon {
+        font-size: 20px;
+      }
+
+      .addfriend .title .nametitle {
+        font-size: 18px;
+        flex: 1;
+        margin-left: 10px;
+        font-weight: bold;
+      }
+      .addfriend .title .more {
+        font-size: 16.5px;
+        color: #646464;
+        width: 30px;
+        height: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 20px;
-        transition: 0.5s ease-out;
-        position: relative;
         cursor: pointer;
-        overflow: hidden;
-      }
-      .button2::after {
-        content: "";
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        width: 100%;
-        height: 100%;
-        background-color: #0379ff;
-        transform: translateY(-100%);
-        transition: 0.5s ease-out;
-      }
-      .button2::before {
-        content: "";
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        width: 100%;
-        height: 100%;
-        background-color: #0379ff;
-        transform: translateY(100%);
-        transition: 0.5s ease-out;
       }
 
-      .button2:hover::after {
-        transform: translateY(0%);
-      }
-      .button2:hover::before {
-        transform: translateY(0%);
-      }
-      .button2 p {
-        color: #fff;
-        z-index: 1;
+      @supports (-webkit-background-clip: text) {
+        .addfriend .title .icon {
+          color: transparent;
+          background-image: linear-gradient(50deg, #1b84f5, #00ffdd);
+          -webkit-background-clip: text;
+          font-size: 20px;
+        }
       }
 
-      .button3 {
-        width: 200px;
-        height: 60px;
-        background-color: #d782ff;
-        color: #000005;
+      .addfriend .main {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 10px 0;
+      }
+
+      .addfriend .main .img {
+        margin-left: 15px;
+      }
+
+      .addfriend .main .img img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+      }
+
+      .addfriend .main .info {
+        margin-left: 15px;
+      }
+
+      .addfriend .main .info div {
+        margin: 10px 0px;
+      }
+      .addfriend .main .info .name {
+        font-size: 18px;
+        font-weight: bold;
+        word-break: break-word;
+      }
+
+      .addfriend .main .info .button-group button {
+        width: 120px;
+        height: 45px;
+        border-radius: 6px;
+        margin: 0 3px;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        font-weight: bolder;
+        cursor: pointer;
+      }
+      .addfriend .main .info .button-group button:hover {
+        filter: brightness(95%);
+      }
+
+      .addfriend .main .info .button-group button:nth-child(1) {
+        background-color: #1877f2;
+        color: #f0f0f0;
+      }
+      .addfriend .main .info .button-group button:nth-child(2) {
+        background-color: #e4e6eb;
+        color: #505050;
+      }
+
+      .addfriend .showmore {
+        display: none;
+      }
+
+      .addfriend .showmore.active {
+        display: block;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        width: 100%;
+        border-radius: 8px;
+        background-color: #fff;
+        box-shadow: 0px 1.2px 0px 1.5px rgb(228, 228, 228),
+          0 10px 25px #0000001a;
+        padding: 10px;
+      }
+      .addfriend .showmore li {
+        display: flex;
+        align-items: center;
+        border-radius: 8px;
+        padding: 10px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .addfriend .showmore li .icon {
+        width: 40px;
+        height: 40px;
+        background-color: #d8dadf;
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 20px;
-        transition: 0.5s ease-out;
-        position: relative;
-        cursor: pointer;
-        overflow: hidden;
+        border-radius: 50%;
+        margin-right: 15px;
       }
-      .button3::after {
-        content: "";
-        position: absolute;
-        top: 0px;
-        left: 30%;
-        width: 40%;
-        height: 100%;
-        background-color: #0379ff;
-        transform: scaleX(1);
-        opacity: 0;
-        transition: 0.25s ease-out;
-      }
-
-      .button3:hover::after {
-        opacity: 1;
-        transform: scaleX(2.5);
-      }
-
-      .button3 p {
-        color: #fff;
-        z-index: 1;
-      }
-
-      .button4 {
-        width: 200px;
-        height: 60px;
-        background-color: #d782ff;
-        color: #000005;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 20px;
-        transition: 0.5s ease-out;
-        position: relative;
-        cursor: pointer;
-        overflow: hidden;
-      }
-      .button4::after {
-        content: "";
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        width: 115%;
-        height: 100%;
-        background-color: #0379ff;
-        transform: translateX(-70%) translateY(-70%) skew(-50deg);
-        opacity: 0;
-        transition: 0.25s ease-out;
-      }
-      .button4::before {
-        content: "";
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        width: 115%;
-        height: 100%;
-        background-color: #0379ff;
-        transform: translateX(70%) translateY(70%) skew(-50deg);
-        opacity: 0;
-        transition: 0.25s ease-out;
-      }
-      .button4:hover::after {
-        transform: translateX(0%) translateY(0%) skew(-50deg);
-        opacity: 1;
-      }
-      .button4:hover::before {
-        transform: translateX(0%) translateY(0%) skew(-50deg);
-        opacity: 1;
-      }
-      .button4 p {
-        color: #fff;
-        z-index: 1;
-      }
-
-      .button5 {
-        width: 200px;
-        height: 60px;
-        background-color: #d782ff;
-        color: #000005;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 20px;
-        transition: 0.5s ease-out;
-        position: relative;
-        cursor: pointer;
-        overflow: hidden;
-      }
-      .button5::after {
-        content: "";
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        width: 115%;
-        height: 100%;
-        background-color: #0379ff;
-        transform: translateX(70%) translateY(-70%) skew(-50deg);
-        opacity: 0;
-        transition: 0.25s ease-out;
-      }
-      .button5::before {
-        content: "";
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        width: 115%;
-        height: 100%;
-        background-color: #0379ff;
-        transform: translateX(-70%) translateY(70%) skew(-50deg);
-        opacity: 0;
-        transition: 0.25s ease-out;
-      }
-      .button5:hover::after {
-        transform: translateX(0%) translateY(0%) skew(-50deg);
-        opacity: 1;
-      }
-      .button5:hover::before {
-        transform: translateX(0%) translateY(0%) skew(-50deg);
-        opacity: 1;
-      }
-      .button5 p {
-        color: #fff;
-        z-index: 1;
-      }
-
-      .button6 {
-        width: 200px;
-        height: 60px;
-        background-color: #d782ff;
-        color: #000005;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 20px;
-        transition: 0.5s ease-out;
-        position: relative;
-        cursor: pointer;
-        overflow: hidden;
-      }
-      .button6 .buttons:nth-child(1) {
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        width: 100%;
-        height: 100%;
-        background-color: #0379ff;
-        transform: translateX(-100%) translateY(-100%);
-        transition: 0.25s ease-out;
-      }
-
-      .button6 .buttons:nth-child(2) {
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        width: 100%;
-        height: 100%;
-        background-color: #0379ff;
-        transform: translateX(100%) translateY(-100%);
-        transition: 0.25s ease-out;
-      }
-
-      .button6 .buttons:nth-child(3) {
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        width: 100%;
-        height: 100%;
-        background-color: #0379ff;
-        transform: translateX(-100%) translateY(100%);
-        transition: 0.25s ease-out;
-      }
-
-      .button6 .buttons:nth-child(4) {
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        width: 100%;
-        height: 100%;
-        background-color: #0379ff;
-        transform: translateX(100%) translateY(100%);
-        transition: 0.25s ease-out;
-      }
-
-      .button6:hover .buttons:nth-child(1),
-      .button6:hover .buttons:nth-child(2),
-      .button6:hover .buttons:nth-child(3),
-      .button6:hover .buttons:nth-child(4) {
-        transform: translateX(0%) translateY(0%);
-      }
-      .button6 p {
-        color: #fff;
-        z-index: 1;
+      .addfriend .showmore li:hover {
+        background-color: #f2f2f2;
       }
     </style>
   </head>
   <body>
-    <div class="button-group">
-      <div class="button1">
-        <p>GO</p>
+    <link
+      data-v-24ce4b33=""
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css"
+    />
+
+    <div class="addfriend">
+      <div class="title">
+        <div class="icon">
+          <i class="fas fa-user-friends"></i>
+        </div>
+        <div class="nametitle">
+          <span>Lời mời kết bạn</span>
+        </div>
+        <div class="more">
+          <i class="fas fa-ellipsis-h"></i>
+        </div>
       </div>
-      <div class="button2">
-        <p>GO</p>
+
+      <div class="main">
+        <div class="img">
+          <img
+            src="https://raw.githubusercontent.com/tiendatmagic/website-UI/master/src/img/aILP3CD.png"
+            alt=""
+          />
+        </div>
+
+        <div class="info">
+          <div class="name">
+            <p>Thu Hải</p>
+          </div>
+          <div class="button-group">
+            <button>Xác nhận</button>
+            <button>Xóa</button>
+          </div>
+        </div>
       </div>
-      <div class="button3">
-        <p>GO</p>
-      </div>
-      <div class="button4">
-        <p>GO</p>
-      </div>
-      <div class="button5">
-        <p>GO</p>
-      </div>
-      <div class="button6">
-        <div class="buttons"></div>
-        <div class="buttons"></div>
-        <div class="buttons"></div>
-        <div class="buttons"></div>
-        <p>GO</p>
+      <div class="showmore">
+        <ul>
+          <li>
+            <div class="icon">
+              <i class="fas fa-window-close"></i>
+            </div>
+            <div class="name">
+              <span> Ẩn lời mời kết bạn </span>
+            </div>
+          </li>
+          <li>
+            <div class="icon">
+              <i class="fas fa-user-plus"></i>
+            </div>
+            <div class="name">
+              <span> Đi đến Lời mời kết bạn </span>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
+
+    <script>
+      document.getElementsByClassName("more")[0].onclick = () => {
+        document
+          .getElementsByClassName("showmore")[0]
+          .classList.toggle("active");
+      };
+    </script>
   </body>
 </html>

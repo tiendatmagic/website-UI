@@ -59,6 +59,7 @@ export default {
   overflow: hidden;
   cursor: pointer;
   font-size: 18px;
+  margin: 0 auto;
 }
 
 .button:hover .button1 {
@@ -87,6 +88,7 @@ export default {
   color: #f0f0f0;
   width: 100%;
   height: 100%;
+  border-radius: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
