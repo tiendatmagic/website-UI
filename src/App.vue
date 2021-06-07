@@ -466,11 +466,14 @@
           <kbd> Hiệu ứng rê chuột button</kbd>
           <S95 />
         </div>
-        <div class="site sitem-lg-8 sitem-md-6">
+        <div class="site sitem-lg-8 sitem-md-12">
           <kbd> Các hiệu ứng rê chuột button</kbd>
           <S96 />
         </div>
-
+        <div class="site sitem-lg-8 sitem-md-12">
+          <kbd> Form đăng nhập</kbd>
+          <S98 />
+        </div>
         <div class="site sitem-lg-4 sitem-md-6">
           <kbd> Dropdown sáng</kbd>
           <S97 />
@@ -594,6 +597,7 @@ import S94 from "./components/S94.vue";
 import S95 from "./components/S95.vue";
 import S96 from "./components/S96.vue";
 import S97 from "./components/S97.vue";
+import S98 from "./components/S98.vue";
 import Donate from "./components/Donate.vue";
 import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";
@@ -701,6 +705,7 @@ export default {
     S95,
     S96,
     S97,
+    S98,
     Donate,
     Like,
     Love,
