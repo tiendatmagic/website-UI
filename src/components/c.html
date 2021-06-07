@@ -23,7 +23,7 @@
 
       .addfriend {
         width: 100%;
-        max-width: 420px;
+        max-width: 450px;
         padding: 20px;
         background-color: #fff;
         border-radius: 8px;
@@ -72,21 +72,24 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        flex-wrap: wrap;
+
         margin: 10px 0;
       }
 
       .addfriend .main .img {
-        margin-left: 15px;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
       }
 
       .addfriend .main .img img {
         width: 80px;
         height: 80px;
         border-radius: 50%;
-      }
-
-      .addfriend .main .info {
-        margin-left: 15px;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
       }
 
       .addfriend .main .info div {
@@ -99,10 +102,10 @@
       }
 
       .addfriend .main .info .button-group button {
-        width: 120px;
+        width: 140px;
         height: 45px;
         border-radius: 6px;
-        margin: 0 3px;
+        margin: 5px 3px;
         border: none;
         outline: none;
         font-size: 18px;
@@ -110,7 +113,7 @@
         cursor: pointer;
       }
       .addfriend .main .info .button-group button:hover {
-        filter: brightness(95%);
+        filter: brightness(92%);
       }
 
       .addfriend .main .info .button-group button:nth-child(1) {
@@ -134,15 +137,30 @@
         width: 100%;
         border-radius: 8px;
         background-color: #fff;
-        box-shadow: 0px 1.2px 0px 1.5px rgb(228, 228, 228),
-          0 10px 25px #0000001a;
+        box-shadow: 0 12px 28px 0 rgb(0 0 0 / 20%), 0 2px 4px 0 rgb(0 0 0 / 10%),
+          inset 0 0 0 1px rgb(255 255 255 / 50%);
         padding: 10px;
+      }
+
+      .addfriend .showmore.active::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 15px;
+        width: 0px;
+        height: 0px;
+        background-color: transparent;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #fff;
+        transform: translateY(-100%);
       }
       .addfriend .showmore li {
         display: flex;
         align-items: center;
         border-radius: 8px;
         padding: 10px;
+        font-size: 18px;
         font-weight: bold;
         cursor: pointer;
       }
@@ -158,6 +176,13 @@
       }
       .addfriend .showmore li:hover {
         background-color: #f2f2f2;
+      }
+
+      @media only screen and (max-width: 416px) {
+        .addfriend .main .info {
+          text-align: center;
+          margin: 0 auto;
+        }
       }
     </style>
   </head>
