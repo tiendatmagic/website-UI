@@ -19,18 +19,16 @@
         justify-content: center;
         align-items: center;
       }
-
       .card {
         width: 100%;
         max-width: 350px;
-        background-color: #fff;
         padding: 20px;
+        background-color: #fff;
         border-radius: 15px;
-        font-family: Arial, Helvetica, sans-serif;
-        box-shadow: 0 12px 28px 0 rgb(0 0 0 / 20%), 0 2px 4px 0 rgb(0 0 0 / 10%),
-          inset 0 0 0 1px rgb(255 255 255 / 50%);
         box-shadow: 0 2px 14px rgb(0 0 0 / 20%);
         font-family: "Poppins", sans-serif;
+      }
+      .cardinfo {
         overflow: hidden;
       }
 
@@ -38,6 +36,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
         margin: 0 auto;
         padding: 5px;
         border-radius: 30px;
@@ -73,13 +72,12 @@
       }
 
       .pricingcard {
-        margin: 0 20px;
         border: 1px solid #fff;
       }
 
       .cardheader {
         text-align: center;
-        padding: 20px;
+        padding: 15px;
         width: 100%;
         border-bottom: 1px solid #000;
       }
@@ -91,7 +89,7 @@
       }
 
       .cardheader .price b {
-        font-size: 45px;
+        font-size: 50px;
       }
 
       .cardheader .namecard {
@@ -107,6 +105,9 @@
         line-height: 25px;
         list-style: none;
         flex-wrap: wrap;
+        font-size: 15px;
+        font-weight: 600;
+        color: #696969;
       }
 
       .info ul li input[type="checkbox"] {
@@ -131,6 +132,7 @@
         background-image: linear-gradient(to right, #ab8bcc, #6482bd);
         color: #f8f8f8;
         letter-spacing: 1px;
+        font-size: 17px;
         cursor: pointer;
       }
     </style>
@@ -143,158 +145,160 @@
       rel="stylesheet"
     />
     <div class="card">
-      <div class="selection">
-        <div class="option basic active">
-          Basic
-        </div>
-        <div class="option standard">
-          Standard
-        </div>
-        <div class="option team">
-          Team
-        </div>
-      </div>
-      <div class="pricing">
-        <div class="pricingcard">
-          <div class="cardheader">
-            <div class="price">
-              <span>
-                <sup>
-                  $
-                </sup>
-                <b>19</b>/mon
-              </span>
-            </div>
-            <div class="namecard">
-              <b>
-                For beginner use
-              </b>
-            </div>
+      <div class="cardinfo">
+        <div class="selection">
+          <div class="option basic active">
+            Basic
           </div>
-          <div class="info">
-            <ul>
-              <li>
-                <input type="checkbox" checked name="" id="" />
-                <span>
-                  100GB Premium Bandwith
-                </span>
-              </li>
-              <li>
-                <input type="checkbox" checked name="" id="" />
-                <span>
-                  FREE 50+ Installation Scripts Wordpress supported
-                </span>
-              </li>
-              <li>
-                <input type="checkbox" checked name="" id="" />
-                <span>
-                  One FREE Domain Registration .com and .np extensions only
-                </span>
-              </li>
-              <li>
-                <input type="checkbox" checked name="" id="" />
-                <span>
-                  Unlimited Email Accounts & Databases
-                </span>
-              </li>
-            </ul>
+          <div class="option standard">
+            Standard
+          </div>
+          <div class="option team">
+            Team
           </div>
         </div>
-        <div class="pricingcard">
-          <div class="cardheader">
-            <div class="price">
-              <span>
-                <sup>
-                  $
-                </sup>
-                <b>19</b>/mon
-              </span>
+        <div class="pricing">
+          <div class="pricingcard">
+            <div class="cardheader">
+              <div class="price">
+                <span>
+                  <sup>
+                    $
+                  </sup>
+                  <b>19</b>/mon
+                </span>
+              </div>
+              <div class="namecard">
+                <b>
+                  For beginner use
+                </b>
+              </div>
             </div>
-            <div class="namecard">
-              <b>
-                For beginner use
-              </b>
+            <div class="info">
+              <ul>
+                <li>
+                  <input type="checkbox" checked name="" id="" />
+                  <span>
+                    100GB Premium Bandwith
+                  </span>
+                </li>
+                <li>
+                  <input type="checkbox" checked name="" id="" />
+                  <span>
+                    FREE 50+ Installation Scripts Wordpress supported
+                  </span>
+                </li>
+                <li>
+                  <input type="checkbox" checked name="" id="" />
+                  <span>
+                    One FREE Domain Registration .com and .np extensions only
+                  </span>
+                </li>
+                <li>
+                  <input type="checkbox" checked name="" id="" />
+                  <span>
+                    Unlimited Email Accounts & Databases
+                  </span>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="info">
-            <ul>
-              <li>
-                <input type="checkbox" checked name="" id="" />
+          <div class="pricingcard">
+            <div class="cardheader">
+              <div class="price">
                 <span>
-                  100GB Premium Bandwith
+                  <sup>
+                    $
+                  </sup>
+                  <b>19</b>/mon
                 </span>
-              </li>
-              <li>
-                <input type="checkbox" checked name="" id="" />
+              </div>
+              <div class="namecard">
+                <b>
+                  For standard use
+                </b>
+              </div>
+            </div>
+            <div class="info">
+              <ul>
+                <li>
+                  <input type="checkbox" checked name="" id="" />
+                  <span>
+                    100GB Premium Bandwith
+                  </span>
+                </li>
+                <li>
+                  <input type="checkbox" checked name="" id="" />
+                  <span>
+                    FREE 50+ Installation Scripts Wordpress supported
+                  </span>
+                </li>
+                <li>
+                  <input type="checkbox" checked name="" id="" />
+                  <span>
+                    One FREE Domain Registration .com and .np extensions only
+                  </span>
+                </li>
+                <li>
+                  <input type="checkbox" checked name="" id="" />
+                  <span>
+                    Unlimited Email Accounts & Databases
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="pricingcard">
+            <div class="cardheader">
+              <div class="price">
                 <span>
-                  FREE 50+ Installation Scripts Wordpress supported
+                  <sup>
+                    $
+                  </sup>
+                  <b>19</b>/mon
                 </span>
-              </li>
-              <li>
-                <input type="checkbox" checked name="" id="" />
-                <span>
-                  One FREE Domain Registration .com and .np extensions only
-                </span>
-              </li>
-              <li>
-                <input type="checkbox" checked name="" id="" />
-                <span>
-                  Unlimited Email Accounts & Databases
-                </span>
-              </li>
-            </ul>
+              </div>
+              <div class="namecard">
+                <b>
+                  For team use
+                </b>
+              </div>
+            </div>
+            <div class="info">
+              <ul>
+                <li>
+                  <input type="checkbox" checked name="" id="" />
+                  <span>
+                    100GB Premium Bandwith
+                  </span>
+                </li>
+                <li>
+                  <input type="checkbox" checked name="" id="" />
+                  <span>
+                    FREE 50+ Installation Scripts Wordpress supported
+                  </span>
+                </li>
+                <li>
+                  <input type="checkbox" checked name="" id="" />
+                  <span>
+                    One FREE Domain Registration .com and .np extensions only
+                  </span>
+                </li>
+                <li>
+                  <input type="checkbox" checked name="" id="" />
+                  <span>
+                    Unlimited Email Accounts & Databases
+                  </span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="pricingcard">
-          <div class="cardheader">
-            <div class="price">
-              <span>
-                <sup>
-                  $
-                </sup>
-                <b>19</b>/mon
-              </span>
-            </div>
-            <div class="namecard">
-              <b>
-                For beginner use
-              </b>
-            </div>
-          </div>
-          <div class="info">
-            <ul>
-              <li>
-                <input type="checkbox" checked name="" id="" />
-                <span>
-                  100GB Premium Bandwith
-                </span>
-              </li>
-              <li>
-                <input type="checkbox" checked name="" id="" />
-                <span>
-                  FREE 50+ Installation Scripts Wordpress supported
-                </span>
-              </li>
-              <li>
-                <input type="checkbox" checked name="" id="" />
-                <span>
-                  One FREE Domain Registration .com and .np extensions only
-                </span>
-              </li>
-              <li>
-                <input type="checkbox" checked name="" id="" />
-                <span>
-                  Unlimited Email Accounts & Databases
-                </span>
-              </li>
-            </ul>
-          </div>
+        <div class="button-group">
+          <button>
+            Choose plan
+          </button>
         </div>
-      </div>
-      <div class="button-group">
-        <button>
-          Choose plan
-        </button>
       </div>
     </div>
     <script>
