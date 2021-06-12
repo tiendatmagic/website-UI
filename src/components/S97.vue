@@ -67,7 +67,7 @@ export default {
       document.getElementById("css").style.display = "block";
     },
     js() {
-      var c = document.getElementsByTagName("code")[5].innerHTML;
+      var c = document.getElementsByTagName("code")[7].innerHTML;
       document.getElementById("tjs").innerHTML = c;
       document.getElementsByClassName("modal")[0].style.display = "block";
 
