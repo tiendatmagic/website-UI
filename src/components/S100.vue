@@ -111,6 +111,7 @@ export default {
 .searchh .input {
   display: none;
   padding-right: 50px;
+
 }
 .searchh.active .input {
   display: flex;
