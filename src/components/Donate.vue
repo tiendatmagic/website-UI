@@ -6,7 +6,7 @@
         <div class="item">Donate:</div>
         <div class="item">
           <img
-            src="https://raw.githubusercontent.com/tiendatmagic/website-UI/master/src/img/logo-momo.jpg"
+            src="https://raw.githubusercontent.com/tiendatmagic/website-UI/master/src/img/logo-momo.png"
             alt=""
           />
         </div>
