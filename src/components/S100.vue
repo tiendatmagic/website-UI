@@ -1,32 +1,34 @@
 <template>
   <div class="smainn">
     <br />
-    <div id="s100">   <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css"
-    />
-    <div class="searchh">
-      <div class="icon" @click="long()"><i class="fas fa-search"></i></div>
-      <div class="input">
-        <input type="text" name="" id="inputsearch" placeholder="Search" /><span
-          class="clear" @click="clear()"
-          ><i class="fas fa-times"></i>
-        </span>
+    <div id="s100">
+      <link
+        rel="stylesheet"
+        href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css"
+      />
+      <div class="searchh">
+        <div class="icon" @click="long()"><i class="fas fa-search"></i></div>
+        <div class="input">
+          <input
+            type="text"
+            name=""
+            id="inputsearch"
+            placeholder="Search"
+          /><span class="clear" @click="clear()"
+            ><i class="fas fa-times"></i>
+          </span>
+        </div>
       </div>
-    </div></div>
-  <code style="display: none">
-
-
+    </div>
+    <code style="display: none">
       document.getElementsByClassName("icon")[0].onclick = function () {
-        document.getElementsByClassName("search")[0].classList.toggle("active");
-      };
-      document.getElementsByClassName("clear")[0].onclick = function () {
-        document.getElementById("inputsearch").value = "";
-      };
-
-  </code>
+      document.getElementsByClassName("search")[0].classList.toggle("active");
+      }; document.getElementsByClassName("clear")[0].onclick = function () {
+      document.getElementById("inputsearch").value = ""; };
+    </code>
     <div class="buttonhtmlcss">
       <button @click="html()" class="btn">Xem HTML</button>
+      <button @click="js()" class="btn">Xem Javascript</button>
       <button @click="css()" class="btn">Xem CSS</button>
     </div>
   </div>
@@ -51,7 +53,8 @@ export default {
 
       document.getElementById("html").style.display = "none";
       document.getElementById("css").style.display = "block";
-    },js() {
+    },
+    js() {
       var c = document.getElementsByTagName("code")[9].innerHTML;
       document.getElementById("tjs").innerHTML = c;
       document.getElementsByClassName("modal")[0].style.display = "block";
@@ -61,11 +64,11 @@ export default {
       document.getElementById("javascript").style.display = "block";
     },
     long() {
-     document.getElementsByClassName("searchh")[0].classList.toggle("active");
+      document.getElementsByClassName("searchh")[0].classList.toggle("active");
     },
     clear() {
-           document.getElementById("inputsearch").value = "";
-    }
+      document.getElementById("inputsearch").value = "";
+    },
   },
 };
 </script>
@@ -93,7 +96,8 @@ export default {
   transition: 0.5s ease;
 }
 .searchh.active {
-  width: 360px;
+  width: 100%;
+  max-width: 360px;
 }
 
 .searchh .icon {
@@ -111,7 +115,6 @@ export default {
 .searchh .input {
   display: none;
   padding-right: 50px;
-
 }
 .searchh.active .input {
   display: flex;
