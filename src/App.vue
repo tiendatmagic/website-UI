@@ -483,9 +483,13 @@
           <kbd> Lựa chọn gói người dùng</kbd>
           <S99 />
         </div>
-        <div class="site sitem-lg-4 sitem-md-6">
+        <div class="site sitem-lg-3 sitem-md-6">
           <kbd> Thanh search tìm kiếm</kbd>
           <S100 />
+        </div>
+        <div class="site sitem-lg-5 sitem-md-6">
+          <kbd> Lời mời kết bạn</kbd>
+          <S101 />
         </div>
       </div>
       <Like />
@@ -609,6 +613,7 @@ import S97 from "./components/S97.vue";
 import S98 from "./components/S98.vue";
 import S99 from "./components/S99.vue";
 import S100 from "./components/S100.vue";
+import S101 from "./components/S101.vue";
 import Donate from "./components/Donate.vue";
 import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";
@@ -719,6 +724,7 @@ export default {
     S98,
     S99,
     S100,
+    S101,
     Donate,
     Like,
     Love,

@@ -90,7 +90,7 @@ export default {
         document
           .getElementsByClassName("alert-modal")[0]
           .setAttribute("style", "display: none");
-      }, 2500);
+      }, 25000);
     },
   },
 };
@@ -159,7 +159,8 @@ h3 {
 }
 
 .alert-modal {
-  width: 25%;
+  width: 100%;
+  max-width: 300px;
   margin: 0 auto;
   margin: 15px;
   z-index: 10;
@@ -284,9 +285,6 @@ h3 {
     width: 75% !important;
   }
 
-  .alert-modal {
-    width: 40%;
-  }
   @keyframes run {
     from {
       width: 0%;
@@ -303,23 +301,11 @@ h3 {
   .modal-content {
     width: 80% !important;
   }
-  .alert-modal {
-    width: 55%;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .alert-modal {
-    width: 65%;
-  }
 }
 
 @media only screen and (max-width: 400px) {
   .modal-content {
-    width: 85% !important;
-  }
-
-  .alert-modal {
-    width: 85%;
+    width: 90% !important;
   }
 }
 </style>
