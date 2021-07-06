@@ -62,18 +62,20 @@ export default {
 
 .box {
   width: 100%;
+  max-width: 300px;
   height: 100px;
   background-color: rgba(255, 255, 255, 0.308);
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
   border-radius: 15px;
   font-family: Arial, Helvetica, sans-serif;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.219);
+  box-shadow: 0px 0px 10px #00000038;
 }
 
 .box2 {
-  width: 92%;
+  width: 100%;
   height: 80%;
   background-color: rgba(255, 255, 255, 0.76);
   border-radius: 15px;

@@ -93,7 +93,7 @@ export default {
   justify-content: space-between;
   align-items: center;
   width: 95%;
-  margin: 0 auto;
+  margin: 10px auto;
   padding-top: 10px;
 }
 

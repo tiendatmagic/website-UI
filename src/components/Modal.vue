@@ -129,7 +129,7 @@ h3 {
   background-color: deeppink;
   margin: 0 auto;
   margin-top: 15vh;
-  border-radius: 20px;
+  border-radius: 10px;
   overflow: hidden;
   z-index: 101;
 }
@@ -141,7 +141,7 @@ h3 {
   border-radius: 20px;
   border: none;
   font-size: 15px;
-  margin-left: 5%;
+  margin-left: 3%;
   margin-bottom: 10px;
   outline: none;
   background-color: rgb(184, 0, 184);

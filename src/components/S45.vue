@@ -14,7 +14,7 @@
           </div>
 
           <div class="main">
-            <div class="item item-active">
+            <div class="item">
               <div class="icon">
                 <i class="fas fa-address-card"></i>
               </div>
@@ -116,7 +116,6 @@ export default {
   height: 100px;
 }
 
-.item-active,
 .item:hover {
   border: 2px solid rgb(0, 195, 255);
   border-radius: 20px;
