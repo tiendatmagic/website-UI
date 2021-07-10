@@ -109,9 +109,10 @@ hr {
 }
 .box {
   width: 100%;
-  padding: 10px 0;
+  max-width: 400px;
   background-color: #fff;
-  box-shadow: -2px 10px 15px 0px rgba(0, 0, 0, 0.377);
+  box-shadow: 0 12px 28px 0 rgb(0 0 0 / 20%), 0 2px 4px 0 rgb(0 0 0 / 10%),
+    inset 0 0 0 1px rgb(255 255 255 / 10%);
   margin: 0 auto;
   border-radius: 12px;
   overflow: hidden;
@@ -126,7 +127,6 @@ hr {
   flex-wrap: wrap;
   margin: 0 auto;
   text-align: center;
-  padding: 10px;
 }
 
 .info img {
@@ -176,7 +176,7 @@ hr {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   align-items: center;
-  padding: 0 25px;
+  padding: 0 10px;
 }
 
 .selected a i:nth-child(1) {
@@ -184,7 +184,7 @@ hr {
   background-color: #d8dadf;
   padding: 10px;
   border-radius: 50%;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .selected a i:nth-child(3) {
