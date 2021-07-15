@@ -17,49 +17,46 @@
             <p>Magic</p>
           </div>
           <div class="card-content">
-            <p>
-              tiến đạt magic tiến đạt magic tiến đạt magic tiến đạt magic tiến
-              đạt magic
-            </p>
+            Ngày mai chẳng biết ra sao nữa. Mà có ra sao cũng chẳng sao
           </div>
           <div class="card-next">
-            <i class="fas fa-arrow-right"></i>
+            <div class="icon-next">
+              <i class="fas fa-arrow-right"></i>
+            </div>
           </div>
         </div>
         <div class="card-item">
           <div class="card-img">
-            <i class="fas fa-ice-cream"></i>
+            <i class="fas fa-trophy"></i>
           </div>
           <div class="card-title">
             <p>Tiến Đạt</p>
             <p>Magic</p>
           </div>
           <div class="card-content">
-            <p>
-              tiến đạt magic tiến đạt magic tiến đạt magic tiến đạt magic tiến
-              đạt magic
-            </p>
+            Ngày mai chẳng biết ra sao nữa. Mà có ra sao cũng chẳng sao
           </div>
           <div class="card-next">
-            <i class="fas fa-arrow-right"></i>
+            <div class="icon-next">
+              <i class="fas fa-arrow-right"></i>
+            </div>
           </div>
         </div>
         <div class="card-item">
           <div class="card-img">
-            <i class="fas fa-volleyball-ball"></i>
+            <i class="fas fa-trophy"></i>
           </div>
           <div class="card-title">
             <p>Tiến Đạt</p>
             <p>Magic</p>
           </div>
           <div class="card-content">
-            <p>
-              tiến đạt magic tiến đạt magic tiến đạt magic tiến đạt magic tiến
-              đạt magic
-            </p>
+            Ngày mai chẳng biết ra sao nữa. Mà có ra sao cũng chẳng sao
           </div>
           <div class="card-next">
-            <i class="fas fa-arrow-right"></i>
+            <div class="icon-next">
+              <i class="fas fa-arrow-right"></i>
+            </div>
           </div>
         </div>
       </div>
@@ -115,12 +112,10 @@ h1 {
 }
 
 .card-item {
-  width: 180px;
-  height: 300px;
+  max-width: 180px;
   border-radius: 15px;
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
   margin: 10px;
-  position: relative;
   cursor: pointer;
   position: relative;
   bottom: 0px;
@@ -128,7 +123,7 @@ h1 {
 }
 
 .card-item:hover {
-  box-shadow: 0 10px 30px rgba(116, 116, 116, 0.226);
+  box-shadow: 0 5px 20px rgba(116, 116, 116, 0.226);
   position: relative;
   bottom: 5px;
   transition: 0.2s ease-out;
@@ -137,39 +132,40 @@ h1 {
 .card-img {
   width: 40px;
   height: 40px;
-
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 6px;
   margin-top: 30px;
   margin-left: 30px;
-}
-.card-item:nth-child(1) .card-img {
-  background-color: rgba(128, 0, 128, 0.308);
-}
-
-.card-item:nth-child(2) .card-img {
-  background-color: rgba(54, 215, 243, 0.308);
-}
-
-.card-item:nth-child(3) .card-img {
-  background-color: rgba(255, 135, 36, 0.308);
-}
-
-.card-item:nth-child(1) i {
+  position: relative;
   font-size: 20px;
-  color: rgba(128, 0, 128, 0.808);
-}
-.card-item:nth-child(2) i {
-  font-size: 20px;
-  color: rgba(54, 215, 243, 0.808);
-}
-.card-item:nth-child(3) i {
-  font-size: 20px;
-  color: rgba(255, 135, 36, 0.808);
 }
 
+.card-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 6px;
+  background-color: currentColor;
+  font-size: 20px;
+  opacity: 0.2;
+}
+
+.card-item:nth-child(1) .card-img,
+.card-item:nth-child(1) .icon-next {
+  color: #800080ce;
+}
+.card-item:nth-child(2) .card-img,
+.card-item:nth-child(2) .icon-next {
+  color: #36d7f3ce;
+}
+.card-item:nth-child(3) .card-img,
+.card-item:nth-child(3) .icon-next {
+  color: #ff8724ce;
+}
 .card-title {
   color: #000;
   font-weight: bold;
@@ -179,20 +175,20 @@ h1 {
 }
 
 .card-content {
-  margin-top: 10px;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin: 10px 30px;
+  color: #333;
+  font-size: 18px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-
 .card-next {
   display: flex;
-  width: 50px;
-  height: 50px;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  font-size: 30px;
-  position: absolute;
-  right: 0px;
-  color: rgb(24, 163, 206);
+  padding: 20px;
+  font-size: 22px;
 }
 </style>

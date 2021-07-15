@@ -3,24 +3,23 @@
     <br />
     <div id="s17">
       <div class="form">
-        <form data-v-18ce4759="" action="javscript:voi(0);">
-          <div data-v-18ce4759="" class="form-group">
-            <label data-v-18ce4759="" for="name"> Your Name</label
-            ><input data-v-18ce4759="" type="text" class="form-control" />
+        <form action="javscript:voi(0);">
+          <div class="form-group">
+            <label for="name"> Your Name</label
+            ><input type="text" class="form-control" />
           </div>
-          <div data-v-18ce4759="" class="form-group">
-            <label data-v-18ce4759="" for="email"> Your Email </label
-            ><input data-v-18ce4759="" type="email" class="form-control" />
+          <div class="form-group">
+            <label for="email"> Your Email </label
+            ><input type="email" class="form-control" />
           </div>
-          <div data-v-18ce4759="" class="form-group">
-            <label data-v-18ce4759="" for="message"> Your Email </label
+          <div class="form-group">
+            <label for="message"> Your Content </label
             ><textarea
-              data-v-18ce4759=""
               placeholder="Nhập nội dung"
               class="form-content"
             ></textarea>
           </div>
-          <button data-v-18ce4759="" type="submit" class="send">Gửi</button>
+          <button type="submit" class="send">Gửi</button>
         </form>
       </div>
     </div>
@@ -84,8 +83,7 @@ label {
   outline: none;
   background-color: #f5f1ff;
   border: none;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px 0;
   text-indent: 30px;
   font-size: 17px;
   color: #5558ad;
@@ -98,9 +96,8 @@ label {
   outline: none;
   background-color: #f5f1ff;
   border: none;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-top: 5px;
+  margin: 10px 0;
+  padding-top: 10px;
   padding-left: 28px;
   font-size: 17px;
   resize: none;
