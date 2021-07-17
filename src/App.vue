@@ -491,6 +491,14 @@
           <kbd> Lời mời kết bạn</kbd>
           <S101 />
         </div>
+        <div class="site sitem-lg-4 sitem-md-6">
+          <kbd> Thẻ thông tin lựa chọn màu sắc</kbd>
+          <S102 />
+        </div>
+        <div class="site sitem-lg-4 sitem-md-6">
+          <kbd> Form đăng nhập Neumorphism</kbd>
+          <S103 />
+        </div>
       </div>
       <Like />
       <Love />
@@ -614,6 +622,8 @@ import S98 from "./components/S98.vue";
 import S99 from "./components/S99.vue";
 import S100 from "./components/S100.vue";
 import S101 from "./components/S101.vue";
+import S102 from "./components/S102.vue";
+import S103 from "./components/S103.vue";
 import Donate from "./components/Donate.vue";
 import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";
@@ -725,6 +735,8 @@ export default {
     S99,
     S100,
     S101,
+    S102,
+    S103,
     Donate,
     Like,
     Love,

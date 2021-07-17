@@ -126,6 +126,7 @@ export default {
   font-family: Arial, Helvetica, sans-serif;
   box-shadow: 0px 1.2px 0px 1.5px rgb(228, 228, 228);
   position: relative;
+  margin: 0 auto;
 }
 
 .addfriend .title {

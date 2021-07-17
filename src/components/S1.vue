@@ -143,7 +143,6 @@ button.login:hover {
 }
 
 .form-control:focus {
-  border-radius: 14px;
   outline: none;
   background-color: #fff;
   box-shadow: 0 10px 20px -5px #cacaca;
