@@ -187,6 +187,7 @@ export default {
   justify-content: center;
   align-items: center;
   margin: 20px 10px;
+  cursor: pointer;
 }
 .profile .follow div:nth-child(1) button {
   background-color: #ff2d52;

@@ -503,6 +503,10 @@
           <kbd> Hiệu ứng Input focus 2 </kbd>
           <S104 />
         </div>
+        <div class="site sitem-lg-4 sitem-md-6">
+          <kbd> Switchbutton </kbd>
+          <S105 />
+        </div>
       </div>
       <Like />
       <Love />
@@ -629,6 +633,7 @@ import S101 from "./components/S101.vue";
 import S102 from "./components/S102.vue";
 import S103 from "./components/S103.vue";
 import S104 from "./components/S104.vue";
+import S105 from "./components/S105.vue";
 import Donate from "./components/Donate.vue";
 import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";
@@ -743,6 +748,7 @@ export default {
     S102,
     S103,
     S104,
+    S105,
     Donate,
     Like,
     Love,
