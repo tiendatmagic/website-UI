@@ -11,9 +11,15 @@
         padding: 0;
         box-sizing: border-box;
       }
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
       .card-atm {
         width: 100%;
-        max-width: 430px;
+        max-width: 400px;
         height: 250px;
         margin: 0 auto;
         border-radius: 20px;
@@ -24,21 +30,9 @@
         background-repeat: no-repeat;
         background-color: white;
         box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+        overflow: hidden;
       }
-      .card-atm p:nth-child(1) {
-        color: #004623;
-        font-weight: 1000;
-        text-align: right;
-        margin-top: 30px;
-        font-size: 24px;
-      }
-      .card-atm p:nth-child(2) {
-        color: #004623;
-        font-weight: bold;
-        text-align: right;
-        margin-right: 100px;
-        font-size: 24px;
-      }
+
       .cardlogo {
         display: flex;
         justify-content: flex-end;
@@ -53,6 +47,21 @@
         margin-top: 20px;
         background-color: #fff;
       }
+
+      .cardlogo p:nth-child(1) {
+        color: #004623;
+        font-weight: 1000;
+        text-align: right;
+        margin-top: 30px;
+        font-size: 24px;
+      }
+      .card-atm p:nth-child(2) {
+        color: #004623;
+        font-weight: bold;
+        text-align: right;
+        margin-right: 100px;
+        font-size: 24px;
+      }
       .number {
         display: flex;
         justify-content: space-around;
@@ -62,6 +71,9 @@
       p.info {
         margin-top: 30px;
         text-align: center;
+      }
+      p.info span {
+        margin: 0 5px;
       }
       p.info span:nth-child(1) {
         color: #000;
@@ -107,11 +119,18 @@
         <span>1234</span><span>5678</span><span>9012</span><span>3456</span>
       </div>
       <p class="info">
-        <span>MEMBERSINCE:</span><span>01/1-2020</span><span>CLASS</span
+        <span>MEMBERSINCE:</span><span>01/20</span><span>CLASS:</span
         ><span> A</span>
       </p>
       <p>CARRD HOLDER</p>
     </div>
-    <script src="https://raw.githubusercontent.com/micku7zu/vanilla-tilt.js/master/dist/vanilla-tilt.js"></script>
+    <script type="text/javascript" src="./vanilla-tilt.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelector(".card-atm"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+      });
+    </script>
   </body>
 </html>
