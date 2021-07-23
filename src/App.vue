@@ -507,6 +507,10 @@
           <kbd> Switchbutton </kbd>
           <S105 />
         </div>
+        <div class="site sitem-lg-5 sitem-md-6">
+          <kbd> Switchbutton </kbd>
+          <S106 />
+        </div>
       </div>
       <Like />
       <Love />
@@ -634,6 +638,7 @@ import S102 from "./components/S102.vue";
 import S103 from "./components/S103.vue";
 import S104 from "./components/S104.vue";
 import S105 from "./components/S105.vue";
+import S106 from "./components/S106.vue";
 import Donate from "./components/Donate.vue";
 import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";
@@ -749,6 +754,7 @@ export default {
     S103,
     S104,
     S105,
+    S106,
     Donate,
     Like,
     Love,

@@ -6,7 +6,13 @@
         href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
         rel="stylesheet"
       />
-      <div class="card-atm">
+      <div
+        class="card-atm"
+        data-tilt
+        data-tilt-max="50"
+        data-tilt-speed="400"
+        data-tilt-perspective="500"
+      >
         <div class="cardlogo">
           <p>Vietcombank</p>
           <img
@@ -25,6 +31,9 @@
         </p>
         <p>CARRD HOLDER</p>
       </div>
+      <scrip
+        src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.js"
+      ></scrip>
     </div>
 
     <div class="buttonhtmlcss">
@@ -36,6 +45,17 @@
 
 <script>
 export default {
+  created() {
+    var scripts = [
+      "https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.js",
+    ];
+    scripts.forEach((script) => {
+      let tag = document.createElement("script");
+      tag.setAttribute("src", script);
+      document.head.appendChild(tag);
+    });
+  },
+
   methods: {
     html() {
       var a = document.getElementById("s15").innerHTML;
@@ -65,12 +85,7 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .card-atm {
   width: 100%;
   max-width: 400px;
@@ -83,7 +98,7 @@ body {
   background-position-y: -220px;
   background-repeat: no-repeat;
   background-color: white;
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 10px 25px #0000001a;
   overflow: hidden;
 }
 
