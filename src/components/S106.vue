@@ -109,6 +109,7 @@ export default {
   border-radius: 8px;
   box-shadow: rgba(17, 17, 26, 0.26) 0px 0px 16px;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
 }
 
 .wrapper .title {

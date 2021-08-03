@@ -7,139 +7,98 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-
-    }
-
-    body {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #ff76dd;
+      font-family: 'Poppins', sans-serif;
     }
 
     .wrapper {
-      width: 450px;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      border-radius: 12px;
       background-color: #fff;
+    }
+
+    .wrapper .header {
+      line-height: 35px;
       padding: 20px;
-      border-radius: 8px;
-      box-shadow: rgba(17, 17, 26, 0.26) 0px 0px 16px;
-      font-family: Arial, Helvetica, sans-serif;
+      border-bottom: 1px solid #F3F4F6;
     }
 
     .wrapper .title {
-      color: #ea4dc3;
-      font-size: 30px;
-      font-weight: bold;
-      text-align: center;
-      padding: 10px 0;
-    }
-
-    .wrapper .captcha {
-      width: 100%;
-      margin: 20px 0;
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .wrapper .captcha .displaycaptcha {
-
-      width: 100%;
-      height: 60px;
-      background-image: url('https://www.fuegoyamana.com/wp-content/plugins/sendy-widget-pro/inc/captcha/backgrounds/bg6.png');
-      border-radius: 5px;
-      margin-right: 2px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 35px;
-      letter-spacing: 10px;
-      color: #fff;
-      text-shadow: 0 0 2px #a9a9a9;
-      user-select: none;
-
-    }
-
-    .wrapper .captcha .reloadcaptcha {
-
-      width: 60px;
-      min-width: 60px;
-      height: 60px;
-      background-color: #ea4dc3;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #fff;
       font-size: 25px;
-      border-radius: 8px;
-      margin-left: 5px;
-      cursor: pointer;
     }
 
-    .wrapper .fcaptcha {
-      width: 100%;
-      height: 60px;
-      position: relative;
+    .wrapper .table .row {
+      display: flex;
+      align-items: center;
+      padding: 15px 30px;
+      border-bottom: 1px solid #F3F4F6;
     }
 
-    .wrapper .fcaptcha .inputcaptcha {
-      width: 100%;
-      height: 100%;
-      padding-left: 15px;
-      padding-right: 100px;
-      letter-spacing: 1px;
+    .wrapper .table .row .name {
+      flex: 1;
+
+    }
+
+    .wrapper .table .row .namerow {
+      display: flex;
+      align-items: center;
+      flex: 2;
+
+    }
+
+    .wrapper .table .row:nth-child(2) .namerow {
+      font-style: italic;
+
+    }
+
+    .wrapper .table .row .namerow i {
       font-size: 20px;
+      margin-right: 10px;
+    }
+
+    .wrapper .footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+
+    }
+
+    .wrapper .footer button {
+      width: 100%;
+      padding: 15px;
       border-radius: 8px;
-      border: 1px solid #bebebe;
-
-    }
-
-    .wrapper .fcaptcha .inputcaptcha::placeholder {
-      letter-spacing: 0px;
-      color: #bebebe;
-      font-weight: normal;
-    }
-
-    .wrapper .fcaptcha .inputcaptcha:focus {
-      border: 2.3px solid #c867b0;
-      outline: none;
-    }
-
-    .wrapper .fcaptcha input:valid+.btnsubmit {
-      opacity: 1;
-      visibility: visible;
-    }
-
-    .wrapper .fcaptcha .btnsubmit {
-      opacity: 0;
-      visibility: hidden;
-      width: 100px;
-      height: 60px;
-      background-color: #ea4dc3;
-      position: absolute;
-      top: 0px;
-      right: -5px;
-      transform: scale(0.75);
       border: none;
       outline: none;
-      border-radius: 8px;
-      font-size: 20px;
-      color: #fff;
+      font-weight: bold;
       cursor: pointer;
-      transition: 0.3s ease;
+      font-size: 16px;
+      margin: 0 20px;
+
     }
 
-    .wrapper .status {
-      padding: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      display: none;
-      letter-spacing: 1px;
+    .wrapper .footer button.decline {
+      background-color: #F3F4F6;
+      color: #000;
+    }
+
+    .wrapper .footer button.accept {
+      background-color: #F43F5E;
+      color: #fff;
+    }
+
+    @media only screen and (max-width: 400px) {
+      .wrapper .table .row {
+        display: block;
+      }
+
     }
   </style>
 </head>
@@ -147,62 +106,59 @@
 <body>
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css" />
   <div class="wrapper">
-
-    <div class="title">
-      Captcha in JavaScript
-    </div>
-    <div class="captcha">
-      <div class="displaycaptcha">
-
+    <div class="header">
+      <div class="title">
+        Weekly one-on-one
       </div>
-      <div class="reloadcaptcha">
-        <i class="fas fa-redo"></i>
-
+      <div class="time">
+        Thu Nov 15, 2020 10:00am - 11:00am EST
       </div>
     </div>
-    <form action="#" class="fcaptcha">
-      <input type="text" name="" class="inputcaptcha" placeholder="Enter captcha" maxlength="6" spellcheck="false"
-        onpaste="return false;" required>
-      <button type="button" class="btnsubmit">
-        Check
+    <div class="table">
+      <div class="row">
+        <div class="name">
+          LOCATION
+        </div>
+        <div class="namerow">
+          Kitchener, ON
+
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="name">
+          DESCRIPTION
+        </div>
+        <div class="namerow">
+          No meeting description
+
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="name">
+          ATTENDEES
+        </div>
+        <div class="namerow">
+          <i class="fas fa-check-circle"></i>
+          Andrew Parsons
+
+
+        </div>
+
+      </div>
+    </div>
+    <div class="footer">
+      <button class="decline">
+        Decline
       </button>
-    </form>
-    <div class="status">
-
+      <button class="accept">
+        Accept
+      </button>
     </div>
   </div>
-  <script>
-    var character = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-    var captcha = "";
 
-    var randomcaptcha;
-    document.getElementsByClassName("inputcaptcha")[0].onpaste = function () {
-      return false;
-    }
-    function getcaptcha() {
-      captcha = "";
-      document.getElementsByClassName("status")[0].style.display = 'none';
-      for (i = 0; i < 6; i++) {
-        randomcaptcha = character[Math.floor(Math.random() * character.length)];
-        captcha += randomcaptcha;
-      }
-      document.getElementsByClassName("displaycaptcha")[0].innerText = captcha;
-    }
-    document.getElementsByClassName("reloadcaptcha")[0].onclick = getcaptcha;
-    document.getElementsByClassName("btnsubmit")[0].onclick = checkcaptcha;
-    function checkcaptcha() {
-      document.getElementsByClassName("status")[0].style.display = 'flex';
-      if (document.getElementsByClassName("inputcaptcha")[0].value == captcha) {
-        document.getElementsByClassName("status")[0].innerText = "Congratulation"
-        document.getElementsByClassName("status")[0].style.color = '#ea4dc3';
-      }
-      else {
-        document.getElementsByClassName("status")[0].innerText = "Captcha not matched"
-        document.getElementsByClassName("status")[0].style.color = '#FF0000';
-      }
-    }
-    window.onload = getcaptcha;
-  </script>
 
 </body>
 
