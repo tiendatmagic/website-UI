@@ -1,12 +1,170 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); *
-{ margin: 0; padding: 0; box-sizing: border-box; font-family: "Poppins",
-sans-serif; } *, *::before, *::after { box-sizing: border-box; } body { width:
-100%; height: 100vh; display: flex; justify-content: center; align-items:
-center; } .switch-wrapper { width: 150px; height: 60px; background-color: #fff;
-display: block; margin: 0 auto; border-radius: 30px; box-shadow: rgba(100, 100,
-111, 0.2) 0px 7px 29px 0px; position: relative; } .switch-input { display: none;
-} .switch-input:checked + .switch-wrapper .switch-spin { background-color:
-rgb(7, 143, 255); transform: translateX(calc(150px - 60px)); } .switch-wrapper
-.switch-spin { width: 60px; height: 60px; background-color: rgb(233, 233, 233);
-position: absolute; top: 0px; left: 0px; border-radius: 50%; transition: 0.2s
-ease; }
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f5f5f5;
+    }
+
+    .listcard {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .listcard .box {
+
+      width: 320px;
+      height: 450px;
+      box-shadow: 5px 5px calc(5px * 1.8) #dbdbdb, -5px -5px calc(5px * 1.8) #fff,
+        inset 5px 5px calc(5px * 1.8) #dbdbdb, inset -5px -5px calc(5px * 1.8) #fff;
+      border-radius: 15px;
+      padding: 12px;
+    }
+
+    .listcard .box:hover .card {
+      transform: translateY(-20%);
+      background-image: linear-gradient(160deg, #7E42DB, #A955D5);
+
+    }
+
+    .listcard .box:hover .card .card-title,
+    .listcard .box:hover .card .card-content {
+      color: #fff;
+    }
+
+    .listcard .box .card {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+      text-align: center;
+      background-color: #eee;
+      box-shadow: 5px 5px calc(5px * 1.8) #dbdbdb, -5px -5px calc(5px * 1.8) #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.5s ease;
+    }
+
+    .listcard .box:hover .card a {
+      background-color: #f40398;
+    }
+
+    .listcard .box .card a {
+      display: inline-block;
+      padding: 8px 20px;
+      background-color: #03a9f4;
+      margin-top: 20px;
+      border-radius: 20px;
+      color: #fff;
+      text-decoration: none;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .listcard .box .card .card-number {
+      position: absolute;
+      top: 0px;
+      right: 50px;
+      font-size: 100px;
+      opacity: 0.1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="listcard">
+    <div class="box">
+      <div class="card">
+        <div>
+          <div class="card-number">01</div>
+          <div class="card-title">
+            <h2>
+              Card One
+            </h2>
+          </div>
+          <div class="card-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, magni animi expedita eligendi nesciunt
+            illum esse ea. Laudantium maxime reprehenderit nihil earum tempore consequuntur officiis, nemo molestiae
+            enim
+            hic quisquam?
+          </div>
+
+          <a href="###"> Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="card">
+        <div>
+          <div class="card-number">02</div>
+          <div class="card-title">
+            <h2>
+              Card Two
+            </h2>
+          </div>
+          <div class="card-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, magni animi expedita eligendi nesciunt
+            illum esse ea. Laudantium maxime reprehenderit nihil earum tempore consequuntur officiis, nemo molestiae
+            enim
+            hic quisquam?
+          </div>
+
+          <a href="###"> Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="card">
+        <div>
+          <div class="card-number">03</div>
+          <div class="card-title">
+            <h2>
+              Card Three
+            </h2>
+          </div>
+          <div class="card-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, magni animi expedita eligendi nesciunt
+            illum esse ea. Laudantium maxime reprehenderit nihil earum tempore consequuntur officiis, nemo molestiae
+            enim
+            hic quisquam?
+          </div>
+
+          <a href="###"> Read More</a>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</body>
+
+</html>
