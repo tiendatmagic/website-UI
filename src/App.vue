@@ -515,6 +515,10 @@
           <kbd> Thông tin xác nhận </kbd>
           <S107 />
         </div>
+        <div class="site sitem-lg-4 sitem-md-6">
+          <kbd> Gradient Box Shadow</kbd>
+          <S108 />
+        </div>
       </div>
       <Like />
       <Love />
@@ -644,6 +648,7 @@ import S104 from "./components/S104.vue";
 import S105 from "./components/S105.vue";
 import S106 from "./components/S106.vue";
 import S107 from "./components/S107.vue";
+import S108 from "./components/S108.vue";
 import Donate from "./components/Donate.vue";
 import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";
@@ -761,6 +766,7 @@ export default {
     S105,
     S106,
     S107,
+    S108,
     Donate,
     Like,
     Love,

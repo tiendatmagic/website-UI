@@ -1,234 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
 
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100vh;
-        background-color: #f0f2f5;
-      }
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-      .addfriend {
-        width: 100%;
-        max-width: 420px;
-        padding: 20px;
-        background-color: #fff;
-        border-radius: 8px;
-        font-family: Arial, Helvetica, sans-serif;
-        box-shadow: 0px 1.2px 0px 1.5px rgb(228, 228, 228);
-        position: relative;
-      }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
 
-      .addfriend .title {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
 
-      .addfriend .title .icon {
-        font-size: 20px;
-      }
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-      .addfriend .title .nametitle {
-        font-size: 18px;
-        flex: 1;
-        margin-left: 10px;
-        font-weight: bold;
-      }
-      .addfriend .title .more {
-        font-size: 16.5px;
-        color: #646464;
-        width: 30px;
-        height: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-      }
+    .card {
+      width: 400px;
+      height: 200px;
+      background-image: linear-gradient(to right, #A73EF5, #FB53E1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
 
-      @supports (-webkit-background-clip: text) {
-        .addfriend .title .icon {
-          color: transparent;
-          background-image: linear-gradient(50deg, #1b84f5, #00ffdd);
-          -webkit-background-clip: text;
-          font-size: 20px;
-        }
-      }
+    .card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(to right, #a63ef5, #fb53e2);
+      transform: translateY(30%) scale(0.9);
+      filter: blur(50px);
+      opacity: 0.6;
 
-      .addfriend .main {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin: 10px 0;
-      }
+    }
 
-      .addfriend .main .img {
-        margin-left: 15px;
-      }
+    .card h2 {
+      position: relative;
+      color: #fff;
+    }
+  </style>
+</head>
 
-      .addfriend .main .img img {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-      }
+<body>
+  <div class="card">
+    <h2>
+      Gradient Box Shadow
+    </h2>
+  </div>
+</body>
 
-      .addfriend .main .info {
-        margin-left: 15px;
-      }
-
-      .addfriend .main .info div {
-        margin: 10px 0px;
-      }
-      .addfriend .main .info .name {
-        font-size: 18px;
-        font-weight: bold;
-        word-break: break-word;
-      }
-
-      .addfriend .main .info .button-group button {
-        width: 120px;
-        height: 45px;
-        border-radius: 6px;
-        margin: 0 3px;
-        border: none;
-        outline: none;
-        font-size: 18px;
-        font-weight: bolder;
-        cursor: pointer;
-      }
-      .addfriend .main .info .button-group button:hover {
-        filter: brightness(95%);
-      }
-
-      .addfriend .main .info .button-group button:nth-child(1) {
-        background-color: #1877f2;
-        color: #f0f0f0;
-      }
-      .addfriend .main .info .button-group button:nth-child(2) {
-        background-color: #e4e6eb;
-        color: #505050;
-      }
-
-      .addfriend .showmore {
-        display: none;
-      }
-
-      .addfriend .showmore.active {
-        display: block;
-        position: absolute;
-        top: 60px;
-        right: 10px;
-        width: 100%;
-        border-radius: 8px;
-        background-color: #fff;
-        box-shadow: 0px 1.2px 0px 1.5px rgb(228, 228, 228),
-          0 10px 25px #0000001a;
-        padding: 10px;
-      }
-      .addfriend .showmore li {
-        display: flex;
-        align-items: center;
-        border-radius: 8px;
-        padding: 10px;
-        font-weight: bold;
-        cursor: pointer;
-        font-size: 17px;
-      }
-      .addfriend .showmore li .icon {
-        width: 40px;
-        height: 40px;
-        background-color: #d8dadf;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        margin-right: 15px;
-        font-size: 17px;
-      }
-      .addfriend .showmore li:hover {
-        background-color: #f2f2f2;
-      }
-    </style>
-  </head>
-  <body>
-    <link
-      data-v-24ce4b33=""
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css"
-    />
-
-    <div class="addfriend">
-      <div class="title">
-        <div class="icon">
-          <i class="fas fa-user-friends"></i>
-        </div>
-        <div class="nametitle">
-          <span>Lời mời kết bạn</span>
-        </div>
-        <div class="more">
-          <i class="fas fa-ellipsis-h"></i>
-        </div>
-      </div>
-
-      <div class="main">
-        <div class="img">
-          <img
-            src="https://raw.githubusercontent.com/tiendatmagic/website-UI/master/src/img/aILP3CD.png"
-            alt=""
-          />
-        </div>
-
-        <div class="info">
-          <div class="name">
-            <p>Thu Hải</p>
-          </div>
-          <div class="button-group">
-            <button>Xác nhận</button>
-            <button>Xóa</button>
-          </div>
-        </div>
-      </div>
-      <div class="showmore">
-        <ul>
-          <li>
-            <div class="icon">
-              <i class="fas fa-window-close"></i>
-            </div>
-            <div class="name">
-              <span> Ẩn lời mời kết bạn </span>
-            </div>
-          </li>
-          <li>
-            <div class="icon">
-              <i class="fas fa-user-plus"></i>
-            </div>
-            <div class="name">
-              <span> Đi đến Lời mời kết bạn </span>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <script>
-      document.getElementsByClassName("more")[0].onclick = () => {
-        document
-          .getElementsByClassName("showmore")[0]
-          .classList.toggle("active");
-      };
-    </script>
-  </body>
 </html>
