@@ -31,9 +31,9 @@
         </p>
         <p>CARRD HOLDER</p>
       </div>
-      <scrip
+      <s
         src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.js"
-      ></scrip>
+      ></s>
     </div>
 
     <div class="buttonhtmlcss">

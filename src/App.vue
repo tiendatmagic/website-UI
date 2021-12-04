@@ -519,6 +519,16 @@
           <kbd> Gradient Box Shadow</kbd>
           <S108 />
         </div>
+
+        <div class="site sitem-lg-8 sitem-md-12">
+          <kbd> Danh sách card bài viết </kbd>
+          <S109 />
+        </div>
+
+        <div class="site sitem-lg-4 sitem-md-12">
+          <kbd> Form đăng nhập A </kbd>
+          <S110 />
+        </div>
       </div>
       <Like />
       <Love />
@@ -649,6 +659,8 @@ import S105 from "./components/S105.vue";
 import S106 from "./components/S106.vue";
 import S107 from "./components/S107.vue";
 import S108 from "./components/S108.vue";
+import S109 from "./components/S109.vue";
+import S110 from "./components/S110.vue";
 import Donate from "./components/Donate.vue";
 import Like from "./components/Like.vue";
 import Love from "./components/Love.vue";
@@ -767,6 +779,8 @@ export default {
     S106,
     S107,
     S108,
+    S109,
+    S110,
     Donate,
     Like,
     Love,
@@ -846,6 +860,7 @@ h1 {
   color: deeppink;
 }
 kbd {
+  display: block;
   font-size: 17px;
   font-weight: bold;
   font-size: 18px;

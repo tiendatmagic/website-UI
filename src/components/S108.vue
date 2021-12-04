@@ -54,6 +54,7 @@ export default {
   justify-content: center;
   align-items: center;
   position: relative;
+  margin: 0 auto;
 }
 
 .card::before {
