@@ -3,7 +3,10 @@
     <br />
     <div id="s9">
       <button class="button">
-        <p>Rê chuột vào button<i class="fas fa-wine-glass"></i></p>
+        <p>
+          Rê chuột vào button
+          <i class="fa-solid fa-right-long"></i>
+        </p>
       </button>
     </div>
 
@@ -48,22 +51,22 @@ export default {
 
 button.button {
   padding: 15px;
-  background-image: linear-gradient(to right top, #c100af, #e1006e, #cc1700);
+  background-image: linear-gradient(45deg, rgb(255, 0, 55), rgb(255, 0, 247));
   outline: none;
   border: none;
-  border-radius: 10px;
+  border-radius: 8px;
   transition: 0.2s ease-out;
   color: #fff;
   cursor: pointer;
 }
 
 button.button:hover {
-  padding-right: 20px;
+  padding-right: 15px;
 }
 
 button.button:hover i {
   opacity: 1;
-  margin-left: 25px;
+  margin-left: 20px;
 }
 button.button i {
   display: inline;
