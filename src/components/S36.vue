@@ -14,7 +14,7 @@
               <span>Nhập số điện thoại để tìm kiếm</span>
             </div>
             <div class="close">
-              <i class="far fa-times"></i>
+              <i class="fa-solid fa-xmark"></i>
             </div>
           </div>
           <div class="main">

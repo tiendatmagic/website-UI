@@ -14,7 +14,7 @@
               <span>Thông báo mới </span>
             </div>
             <div class="close">
-              <i class="far fa-times"></i>
+              <i class="fa-solid fa-xmark"></i>
             </div>
           </div>
           <div class="main">

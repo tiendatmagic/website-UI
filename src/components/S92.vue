@@ -10,7 +10,7 @@
         <div class="header">
           <div class="title">Thông báo</div>
           <div class="close">
-            <i data-v-186ba2d2="" class="far fa-times"></i>
+            <i data-v-186ba2d2="" class="fa-solid fa-xmark"></i>
           </div>
         </div>
         <div class="content">

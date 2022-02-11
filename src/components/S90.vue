@@ -65,7 +65,7 @@
           </button>
 
           <button class="more">
-            <i class="far fa-ellipsis-h"></i>
+            <i class="fas fa-ellipsis-h"></i>
           </button>
         </div>
       </div>

@@ -3,7 +3,7 @@
     <div class="modal">
       <div class="modal-content">
         <div class="close" @click="close()">
-          <i class="far fa-times-circle"></i>
+          <i class="fa-solid fa-xmark-circle"></i>
         </div>
 
         <div id="html">

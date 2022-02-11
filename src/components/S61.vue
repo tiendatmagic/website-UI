@@ -67,7 +67,7 @@
           </div>
 
           <div class="share">
-            <i class="far fa-share"></i>
+            <i class="fas fa-share-alt"></i>
 
             <b>5.8k</b>
           </div>

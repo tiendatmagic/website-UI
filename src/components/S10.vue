@@ -9,7 +9,7 @@
       <div class="modal-notifications">
         <div class="header">
           <div class="close-notifications">
-            <i class="far fa-times-circle"></i>
+            <i class="fa-solid fa-xmark-circle"></i>
           </div>
         </div>
 
